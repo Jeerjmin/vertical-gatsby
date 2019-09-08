@@ -6,18 +6,33 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Muller";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/Fontfabric - MullerMedium.otf") format("otf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "MullerRegular";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/fonts/Fontfabric - MullerRegular.otf") format("otf");
+  font-display: swap;
+}
+
 body {
-  font-family: "Avenir", Tahoma, Arial, Helvetica, sans-serif;
+  font-family: "Muller", sans-serif;
   font-size: 1em;
   line-height: 1.65;
   color: #373F49;
-  background: #eee;
+  background: white;
   margin: 0;
 }
 
 img {
   display: block;
-  width: 100%;
 }
 
 h1,

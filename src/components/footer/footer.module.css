@@ -1,0 +1,16 @@
+.container {
+    position: relative;
+    font-family: "Muller", sans-serif;
+}
+
+.contacts {
+    position: absolute;
+    top:30%;
+    left: 28%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 30px;
+    color:white;
+}
+

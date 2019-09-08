@@ -2,138 +2,106 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d11bcfd6-a9e7-457b-9bb6-2fb02ece65d8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contacts/contacts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/contacts/contacts.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/footer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/footer/footer.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/home.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/contacts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/contacts.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/arrow-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/contacts-wrapper.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/footer.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/home-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/home-building.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/home-design.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/menu-about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/menu-building.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/menu-contacts.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/menu-design.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/mouse.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/showReal-play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/showreal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerBlack.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerBlackItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerBold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerBoldItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerExtraBold.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerExtraBoldItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerHairline.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerHairlineItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerHeavy.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerHeavyItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerLight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerLightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerMedium.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerMediumItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerRegular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerRegularItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerThin.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerThinItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerUltraLight.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerUltraLightItalic.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/navigation.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/.tmp/" />
-    <ignored path="$PROJECT_DIR$/temp/" />
-    <ignored path="$PROJECT_DIR$/tmp/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.contentful.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="61" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/layouts/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-276">
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/pages/blog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>contentful.createClient</find>
-      <find>content_type: 'person'</find>
-      <find>spaceId</find>
-    </findStrings>
-    <dirStrings>
-      <dir>C:\Users\User\WebstormProjects\starter-gatsby-blog</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/pages/blog.js" />
-      </list>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
     </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="2423" />
-    <option name="height" value="1373" />
-  </component>
+  <component name="ProjectId" id="1QYGBhXfuoIwGSGNSGU9ZJN9Nmw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="starter-gatsby-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="starter-gatsby-blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="starter-gatsby-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="starter-gatsby-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="starter-gatsby-blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="starter-gatsby-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/fonts" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\Олег\WebstormProjects\vertical-gatsby\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\vertical-gatsby\static\fonts" />
+      <recent name="C:\Projects\vertical-gatsby\static\contacts-wrapper.jpg" />
+      <recent name="C:\Projects\vertical-gatsby\static\assets\home1" />
+      <recent name="C:\Projects\vertical-gatsby\static\assets\logo" />
+      <recent name="C:\Projects\vertical-gatsby\src\components\header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\vertical-gatsby\static\fonts" />
+      <recent name="C:\Projects\vertical-gatsby\static\assets" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -158,79 +126,28 @@
       <option name="presentableId" value="Default" />
       <updated>1562504399425</updated>
       <workItem from="1562504402053" duration="2787000" />
+      <workItem from="1567939984342" duration="404000" />
+      <workItem from="1567940601744" duration="2104000" />
+      <workItem from="1567942895149" duration="1017000" />
+      <workItem from="1567943926577" duration="636000" />
+      <workItem from="1567944583362" duration="19035000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2787000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28486452" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329849" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31470588" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.contentful.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="61" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gatsby-config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="71" selection-start-line="9" selection-start-column="71" selection-end-line="9" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/blog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

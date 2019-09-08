@@ -1,0 +1,27 @@
+
+.container {
+    display: flex;
+}
+
+.image {
+    width: 431px;
+    height: 774px;
+}
+
+.building,
+.design,
+.about,
+.contacts {
+    position: relative;
+}
+
+.name {
+    position: absolute;
+    left: 60px;
+    top: 329px;
+    font-size: 20px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    color: black;
+}

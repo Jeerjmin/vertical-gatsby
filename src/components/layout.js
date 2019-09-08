@@ -2,11 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 import base from './base.css'
 import Container from './container'
-import Navigation from './navigation'
+import Header from './header/header'
+import Footer from "./footer/footer";
 
 class Template extends React.Component {
   render() {
-    const { location, children } = this.props
+    const { location, children, footer } = this.props
     let header
 
     let rootPath = `/`
@@ -16,8 +17,9 @@ class Template extends React.Component {
 
     return (
       <Container>
-        <Navigation />
+        <Header />
         {children}
+        {footer && <Footer /> }
       </Container>
     )
   }
