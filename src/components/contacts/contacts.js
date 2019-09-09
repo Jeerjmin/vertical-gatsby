@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './contacts.module.css';
+import Link from "gatsby-link";
 
 export default class Contacts extends React.Component {
 
@@ -27,9 +28,11 @@ export default class Contacts extends React.Component {
                     <p className={styles.addressTitle}>194044 г. Санкт-Петербург, ул. Выборгская, д.5, лит.А, пом. 23-Н</p>
                     <p className={styles.addressNumber}>Смотреть на карте</p>
                 </div>
-                <button className={styles.buttonLink}>
-                    На главную <img className={styles.arrowLink} src="assets/arrow-right.svg" alt="На главную" />
-                </button>
+                <Link to={`/`}>
+                    <button className={styles.buttonLink}>
+                            На главную <img className={styles.arrowLink} src="assets/arrow-right.svg" alt="На главную" />
+                    </button>
+                </Link>
             </div>
         )
     }

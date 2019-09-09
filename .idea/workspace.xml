@@ -2,61 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d11bcfd6-a9e7-457b-9bb6-2fb02ece65d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/contacts/contacts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/contacts/contacts.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer/footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/footer/footer.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/home/home.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/contacts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/contacts.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/arrow-right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/contacts-wrapper.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/footer.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/home-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/home-building.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/home-design.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/menu-about.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/menu-building.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/menu-contacts.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/menu-design.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/menu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/mouse.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/showReal-play.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/showreal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerBlack.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerBlackItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerBold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerBoldItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerExtraBold.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerExtraBoldItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerHairline.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerHairlineItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerHeavy.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerHeavyItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerLight.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerLightItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerMedium.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerMediumItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerRegular.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerRegularItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerThin.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerThinItalic.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerUltraLight.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/Fontfabric - MullerUltraLightItalic.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/design/design.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/design/design.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/design.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/design.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contacts/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/contacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +34,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -91,16 +48,16 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\vertical-gatsby\static\assets" />
+      <recent name="C:\Projects\vertical-gatsby\static\fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\vertical-gatsby\static\fonts" />
       <recent name="C:\Projects\vertical-gatsby\static\contacts-wrapper.jpg" />
       <recent name="C:\Projects\vertical-gatsby\static\assets\home1" />
       <recent name="C:\Projects\vertical-gatsby\static\assets\logo" />
       <recent name="C:\Projects\vertical-gatsby\src\components\header" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projects\vertical-gatsby\static\fonts" />
-      <recent name="C:\Projects\vertical-gatsby\static\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -130,7 +87,8 @@
       <workItem from="1567940601744" duration="2104000" />
       <workItem from="1567942895149" duration="1017000" />
       <workItem from="1567943926577" duration="636000" />
-      <workItem from="1567944583362" duration="19035000" />
+      <workItem from="1567944583362" duration="19994000" />
+      <workItem from="1568051530897" duration="11148000" />
     </task>
     <servers />
   </component>

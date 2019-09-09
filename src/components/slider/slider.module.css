@@ -1,11 +1,16 @@
-img {
+
+.container {
+}
+
+.container .slider {
+    display: -webkit-inline-box;
+    width:1720px;
+    overflow: hidden;
+}
+
+.sliderImage {
     border: 1px solid grey;
     margin: 10px;
     width:340px;
     height: 340px;
-}
-
-.container {
-    display: flex;
-    overflow: hidden;
 }

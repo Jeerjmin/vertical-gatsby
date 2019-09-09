@@ -13,6 +13,7 @@
 .about,
 .contacts {
     position: relative;
+    cursor: pointer;
 }
 
 .name {

@@ -25,7 +25,9 @@ export default class Header extends React.Component {
         return (
             <div style={{ maxWidth: 1720,  margin: '0 auto'}}>
                 <section className={styles.container}>
-                    <img className={styles.logo} src="assets/logo.svg" />
+                    <Link to={`/`}>
+                        <img className={styles.logo} src="assets/logo.svg" />
+                    </Link>
                     <div className={styles.menu}>
                         <p className={styles.menuTitle}>МЕНЮ</p>
                         <img className={styles.burger} src="assets/menu.svg" onClick={() => this.openModal()}  />
