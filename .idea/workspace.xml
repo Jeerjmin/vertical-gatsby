@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d11bcfd6-a9e7-457b-9bb6-2fb02ece65d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/design/design.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/design/design.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/design.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/design.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/building/building.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/projects/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/projects/navigation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/withLocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/building.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/projects.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/building.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contacts/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/design/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/design/design.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/design/design.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/design/design.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/slider/slider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/contacts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/building/building.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/design.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,16 +50,16 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projects\vertical-gatsby\static\assets" />
-      <recent name="C:\Projects\vertical-gatsby\static\fonts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\vertical-gatsby\src\pages\projects" />
       <recent name="C:\Projects\vertical-gatsby\static\fonts" />
       <recent name="C:\Projects\vertical-gatsby\static\contacts-wrapper.jpg" />
       <recent name="C:\Projects\vertical-gatsby\static\assets\home1" />
       <recent name="C:\Projects\vertical-gatsby\static\assets\logo" />
-      <recent name="C:\Projects\vertical-gatsby\src\components\header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\vertical-gatsby\static\assets" />
+      <recent name="C:\Projects\vertical-gatsby\static\fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -88,7 +90,8 @@
       <workItem from="1567942895149" duration="1017000" />
       <workItem from="1567943926577" duration="636000" />
       <workItem from="1567944583362" duration="19994000" />
-      <workItem from="1568051530897" duration="11148000" />
+      <workItem from="1568051530897" duration="11884000" />
+      <workItem from="1568149536289" duration="7587000" />
     </task>
     <servers />
   </component>

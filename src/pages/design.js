@@ -27,7 +27,7 @@ query designItemQuery {
                 id
                 name
                 image {
-                    fluid(quality: 10, sizes: "") {
+                    fluid(quality: 100, sizes: "") {
                         base64
                         tracedSVG
                         aspectRatio

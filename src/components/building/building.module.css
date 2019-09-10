@@ -1,4 +1,4 @@
-.design {
+.building {
     position: relative;
     width: 1718px;
     display: flex;
@@ -85,10 +85,6 @@
     text-transform: uppercase;
 }
 
-.info .title p {
-    margin: 0;
-}
-
 .info .title:after {
     position: absolute;
     content: ' ';
@@ -96,6 +92,10 @@
     width: 450px;
     margin-top: 40px;
     background: #B9261A;
+}
+
+.info .title p {
+    margin: 0;
 }
 
 .info .description {
@@ -108,7 +108,7 @@
     opacity: 0.7;
 }
 
-.design .moreLink {
+.building .moreLink {
     margin-top: 61px;
     margin-bottom: 100px;
 
@@ -129,7 +129,7 @@
 }
 
 
-.design .slider {
+.building .slider {
     position: relative;
     width: 1700px;
 

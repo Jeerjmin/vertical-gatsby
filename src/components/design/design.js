@@ -77,7 +77,7 @@ export default ({data}) => {
 
 
                 {/*<div className={styles.slider}>*/}
-                <Slider designItems={data} />
+                <Slider type="Design" items={data} />
                 {/*</div>*/}
             </div>
 

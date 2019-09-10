@@ -3,6 +3,7 @@
 }
 
 .container .slider {
+
     display: -webkit-inline-box;
     width:1720px;
     overflow: hidden;
@@ -11,6 +12,86 @@
 .sliderImage {
     border: 1px solid grey;
     margin: 10px;
-    width:340px;
-    height: 340px;
+    width: 607px;
+    height: 525px;
+}
+
+.sliderItem {
+    position: relative;
+}
+
+
+.sliderItem .info {
+    position: absolute;
+    background: white;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    max-width: 450px;
+    height: 141px;
+    z-index: 1001;
+}
+
+.sliderItem .title {
+    top: 27px;
+    left: 42px;
+    position: absolute;
+    text-transform: uppercase;
+    color: #B9261A;
+    font-family: Muller, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+
+}
+
+.sliderItem .name {
+    top: 50px;
+    left: 42px;
+    position: absolute;
+    text-transform: uppercase;
+    font-family: Muller, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 2px;
+    color: #222222;
+}
+
+.container .buttonArrow {
+    border: 1px solid #2B2A29;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background: white;
+}
+
+.container .buttonArrow:last-child {
+    margin-left: 20px;
+}
+
+.buttonArrow .imageArrowRight {
+    padding: 5px;
+}
+
+.sliderFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.allProjects {
+    width: 219px;
+    height: 50px;
+    background: white;
+    text-transform: uppercase;
+    font-family: Muller, sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #B9261A;
+    border: 1px solid #B9261A;
+    padding: 0 34px;
 }
