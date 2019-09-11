@@ -1,0 +1,137 @@
+.design {
+    position: relative;
+    width: 1718px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 200px;
+}
+
+.wrapper {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.wrapper img {
+    margin: 0 auto;
+    position: relative;
+    width: 1718px;
+    height: 453px;
+}
+
+.wrapper .title {
+    position: absolute;
+    left: 171px;
+    top: 80px;
+    max-width: 924px;
+    font-family: Muller, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #2B2A29;
+}
+
+.wrapper .description {
+    position: absolute;
+    left: 171px;
+    top: 260px;
+    max-width: 952px;
+    font-family: Muller, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    opacity: 0.7;
+    color: #2B2A29;
+}
+
+.wrapper .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 259px;
+    height: 50px;
+    border: 0;
+    background: #ECECEC;
+
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    right: 0;
+    bottom: 0;
+
+    cursor: pointer;
+}
+
+.wrapper .link .arrowLink {
+    width: 23px;
+    height: 29px;
+    margin: 0 0 0 10px;
+}
+
+
+.info {
+    display: flex;
+}
+
+
+.info .title {
+    width: 550px;
+    font-family: Muller, sans-serif;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.info .title p {
+    margin: 0;
+}
+
+.info .title:after {
+    position: absolute;
+    content: ' ';
+    height: 8px;
+    width: 450px;
+    margin-top: 40px;
+    background: #B9261A;
+}
+
+.info .description {
+    width: 450px;
+
+    font-family: Muller, sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #2B2A29;
+    opacity: 0.7;
+}
+
+.design .moreLink {
+    margin-top: 61px;
+    margin-bottom: 100px;
+
+    width: 219px;
+    height: 50px;
+
+    border: 1px solid #2B2A29;
+    font-family: Muller, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 12px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #2B2A29;
+    background: white;
+    cursor: pointer;
+}
+
+
+.design .slider {
+    position: relative;
+    width: 1700px;
+
+}

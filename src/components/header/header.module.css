@@ -1,0 +1,34 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+  font-family: "Muller", sans-serif;
+}
+
+.logo {
+  width: 170.75px;
+  height: 88px;
+}
+
+.menu {
+  display: flex;
+  align-items: flex-end;
+}
+
+.menuTitle {
+  font-family: Muller;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #2B2A29;
+  margin: 0 20px 13px 0;
+
+}
+
+.burger {
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}

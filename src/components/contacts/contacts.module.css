@@ -1,0 +1,125 @@
+.container {
+    position: relative;
+    width: 1780px;
+    margin: 0 auto;
+    font-family: "Muller", sans-serif;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 1780px;
+    margin: 0 auto;
+    height:700px;
+}
+
+
+.title,
+.phoneTitle,
+.phoneNumber,
+.emailNumber,
+.emailTitle {
+    color: #F2F2F2;
+    text-transform: uppercase;
+}
+
+
+.title {
+    position: absolute;
+    left: 7%;
+    top: 7%;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 55px;
+}
+
+.phone {
+    position: absolute;
+    left: 7%;
+    top: 27%;
+}
+
+.phoneTitle {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+}
+
+.phoneNumber {
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: 0.2em;
+}
+
+.email {
+    position: absolute;
+    left: 40%;
+    top: 27%;
+}
+
+.emailTitle {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
+}
+
+.emailNumber {
+    font-size: 30px;
+    line-height: 130%;
+    letter-spacing: 0.2em;
+}
+
+
+.schedule {
+    position: absolute;
+    left: 7%;
+    top: 47%;
+}
+
+.scheduleNumber,
+.scheduleTitle {
+    font-size: 18px;
+    line-height: 28px;
+    color: #F2F2F2;
+    opacity: 0.7;
+}
+
+.address {
+    position: absolute;
+    left: 40%;
+    top: 47%;
+}
+
+
+.addressNumber,
+.addressTitle {
+    font-size: 18px;
+    line-height: 28px;
+    color: #F2F2F2;
+    opacity: 0.7;
+}
+
+.addressNumber {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.buttonLink {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border: none;
+    background: white;
+    cursor: pointer;
+    padding: 20px;
+
+    font-size: 12px;
+    text-transform: uppercase;
+    display: flex;
+}
+
+.arrowLink {
+    margin-left: 20px;
+    width: 25.72px;
+    height: 17.42px;
+}

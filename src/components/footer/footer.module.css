@@ -1,0 +1,18 @@
+.container {
+    position: absolute;
+    bottom: 0;
+    font-family: "Muller", sans-serif;
+    margin: 0 auto;
+}
+
+.contacts {
+    position: absolute;
+    top:30%;
+    left: 28%;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 30px;
+    color:white;
+}
+
