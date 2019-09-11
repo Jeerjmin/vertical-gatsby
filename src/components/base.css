@@ -29,6 +29,8 @@ body {
   color: #373F49;
   background: white;
   margin: 0;
+  min-height: calc(100vh - 32px);
+  position: relative;
 }
 
 img {

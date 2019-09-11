@@ -1,0 +1,19 @@
+.projectsWrapper {
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.projectsWrapper p {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 80px;
+    top: 32px;
+
+    font-family: Muller, sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 55px;
+    text-transform: uppercase;
+    color: #2B2A29;
+}

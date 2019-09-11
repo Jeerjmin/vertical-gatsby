@@ -7,7 +7,7 @@ import Footer from "./footer/footer";
 
 class Template extends React.Component {
   render() {
-    const { location, children, footer } = this.props
+    const { location, children, footer, template } = this.props
     let header
 
     let rootPath = `/`
@@ -15,11 +15,13 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
+    console.log('_ffff',  __PATH_PREFIX__)
+
     return (
       <Container>
-        <Header />
+        <Header template={template} />
         {children}
-        {footer && <Footer /> }
+        {footer && <Footer template={template} /> }
       </Container>
     )
   }

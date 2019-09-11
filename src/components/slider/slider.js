@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './slider.module.css'
 import Img from "gatsby-image";
+import {Link} from "gatsby";
 
 export default class Slider extends React.Component {
 
@@ -32,13 +33,15 @@ export default class Slider extends React.Component {
 
                     {this.props.items && this.props.items.map(item => {
                         return (
-                            <div key={item.node.id} className={styles.sliderItem}>
-                                <Img  className={styles.sliderImage} alt={item.node.name} fluid={item.node.image.fluid} />
-                                <div className={styles.info}>
-                                    <p className={styles.title}>{this.props.type=== 'Building' ? 'Строительство' : 'Проектирование'}</p>
-                                    <p className={styles.name}>{item.node.name}</p>
+                            <Link to={`/${this.props.type.toLowerCase()}/${item.node.id}`}>
+                                <div key={item.node.id} className={styles.sliderItem}>
+                                    <Img  className={styles.sliderImage} alt={item.node.name} fluid={item.node.image.fluid} />
+                                    <div className={styles.info}>
+                                        <p className={styles.title}>{this.props.type=== 'Building' ? 'Строительство' : 'Проектирование'}</p>
+                                        <p className={styles.name}>{item.node.name}</p>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         )
                     })}
 
@@ -52,9 +55,11 @@ export default class Slider extends React.Component {
                             <img src="assets/arrow-right.svg"  className={styles.imageArrowRight} onClick={this.toScrollRight} />
                         </button>
                     </div>
-                    <button className={styles.allProjects}>
-                        Все проекты
-                    </button>
+                    <Link to={`/projects?type=${this.props.type.toLowerCase()}`}>
+                        <button className={styles.allProjects}>
+                            Все проекты
+                        </button>
+                    </Link>
                 </div>
             </div>
         )

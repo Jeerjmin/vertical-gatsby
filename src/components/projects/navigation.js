@@ -1,21 +1,35 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import styles from './navigation.module.css'
+import withLocation from "../../modules/withLocation";
+import Building from "./projectBuilding";
+import Design from "./projectDesign";
+import classNames from 'classnames';
 
-export default class ProjectsNavigation extends React.Component {
+class ProjectsNavigation extends React.Component {
 
+
+    activeLink(type) {
+
+
+    }
 
     render() {
 
+        const {param} = this.props
 
         return (
-            <div style={{ maxWidth: 1720,  margin: '0 auto'}}>
-                <Link to={`/projects?type=design`}>
+            <div className={styles.navigation}>
+                <Link className={param && param.type === 'design' ? styles.active : styles.deactive}
+                      to={`/projects?type=design`}>
                     Проектирование
                 </Link>
-                <Link to={`/projects?type=building`}>
+                <Link  className={param && param.type === 'building' ? styles.active : styles.deactive}
+                       to={`/projects?type=building`}>
                     Строительство
                 </Link>
-                <Link to={`/projects`}>
+                <Link  className={param && param.type !== 'design' && param.type !== 'building' ? styles.active : styles.deactive}
+                       to={`/projects`}>
                     Все проекты
                 </Link>
             </div>
@@ -24,3 +38,6 @@ export default class ProjectsNavigation extends React.Component {
         );
     }
 }
+
+
+export default withLocation(ProjectsNavigation)

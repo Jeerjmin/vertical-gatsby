@@ -3,6 +3,7 @@ import styles from './home.module.css'
 import Img from "gatsby-image";
 import { BLOCKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import {Link} from "gatsby";
 
 export default ({showReal}) => {
     console.log('showReal', showReal)
@@ -36,7 +37,9 @@ export default ({showReal}) => {
                     <Img  alt={showReal.title.title} fluid={showReal.image.fluid}/>
                     {ShowRealTitle}
                     {ShowRealDescription}
-                    <button className={styles.showRealButton}>К ПРОЕКТАМ</button>
+                    <Link to={`/projects`}>
+                        <button className={styles.showRealButton}>К ПРОЕКТАМ</button>
+                    </Link>
                     <img className={styles.showRealPlay} src="assets\showReal-play.svg" alt="Плэй" />
                 </div>
                 <div className={styles.mouse}>
@@ -52,7 +55,9 @@ export default ({showReal}) => {
                             на этой стадии закладывается базис всех последующих
                             этапов строительных или реконструкционных работ
                         </p>
-                        <button className={styles.designButton}>ПЕРЕЙТИ</button>
+                        <Link to={`/design`}>
+                            <button className={styles.designButton}>ПЕРЕЙТИ</button>
+                        </Link>
                     </div>
                     <div className={styles.building}>
                         <img src="assets\home-building.jpg" alt="Строительство" />
@@ -63,7 +68,9 @@ export default ({showReal}) => {
                             Вертикаль» уже несколько лет успешно развивается в
                             этой области.
                         </p>
-                        <button className={styles.designButton}>ПЕРЕЙТИ</button>
+                        <Link to={`/building`}>
+                            <button className={styles.designButton}>ПЕРЕЙТИ</button>
+                        </Link>
                     </div>
                 </div>
             </div>

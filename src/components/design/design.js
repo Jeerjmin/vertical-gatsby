@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './design.module.css'
 import Slider from "../slider/slider";
+import {Link} from "gatsby";
 
 export default ({data}) => {
 
@@ -11,9 +12,11 @@ export default ({data}) => {
                     <p className={styles.title}>Архитектурно-строительстное проектирование</p>
                     <p className={styles.description}>Проектирование зданий и сооружений – это, пожалуй, основополагающий этап строительства объекта.
                         Именно на этой стадии закладывается базис всех последующих этапов строительных или реконструкционных работ</p>
-                    <button className={styles.link} >
-                        Строительство <img className={styles.arrowLink} src="assets/arrow-right.svg" alt="Строительство" />
-                    </button>
+                    <Link to={`/building`}>
+                        <button className={styles.link} >
+                            Строительство <img className={styles.arrowLink} src="assets/arrow-right.svg" alt="Строительство" />
+                        </button>
+                    </Link>
                 </div>
                 <div className={styles.info}>
                     <div className={styles.title}>

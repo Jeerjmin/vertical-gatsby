@@ -5,19 +5,56 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/blog-post.js')
+    const buildingPage = path.resolve('./src/templates/building.js')
+    const designPage = path.resolve('./src/templates/design.js')
+
     resolve(
       graphql(
         `
           {
-            allContentfulBlogPost {
-              edges {
-                node {
-                  title
-                  slug
+            allContentfulBuildingItem {
+                edges {
+                    node {
+                        id
+                        name
+                        image {
+                            fluid(quality: 100, sizes: "") {
+                                base64
+                                tracedSVG
+                                aspectRatio
+                                src
+                                srcSet
+                                srcWebp
+                                srcSetWebp
+                                sizes
+                            }
+                    }
+                    }
                 }
+            }
+            
+         
+            allContentfulDesignItem {
+              edges {
+                  node {
+                     id
+                    name
+                    image {
+                        fluid(quality: 100, sizes: "") {
+                            base64
+                            tracedSVG
+                            aspectRatio
+                            src
+                            srcSet
+                            srcWebp
+                            srcSetWebp
+                            sizes
+                        }
+                    }
+                  }
               }
             }
+            
           }
           `
       ).then(result => {
@@ -26,14 +63,25 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors)
         }
 
-        const posts = result.data.allContentfulBlogPost.edges
-        posts.forEach((post, index) => {
+        const buildings = result.data.allContentfulBuildingItem.edges
+        const designs = result.data.allContentfulDesignItem.edges
+
+        buildings.forEach((building, index) => {
           createPage({
-            path: `/blog/${post.node.slug}/`,
-            component: blogPost,
+            path: `/building/${building.node.id}/`,
+            component: buildingPage,
             context: {
-              slug: post.node.slug
-            },
+              item: building.node
+            }
+          })
+        })
+        designs.forEach((design, index) => {
+          createPage({
+            path: `/design/${design.node.id}/`,
+            component: designPage,
+            context: {
+              item: design.node
+            }
           })
         })
       })

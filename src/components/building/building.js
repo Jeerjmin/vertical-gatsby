@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './building.module.css'
 import Slider from "../slider/slider";
+import {Link} from "gatsby";
 
 export default ({data}) => {
 
@@ -12,9 +13,11 @@ export default ({data}) => {
                 <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <button className={styles.link} >
-                    Строительство <img className={styles.arrowLink} src="assets/arrow-right.svg" alt="Проектирование" />
-                </button>
+                <Link to={`/design`}>
+                    <button className={styles.link} >
+                        Проектирование <img className={styles.arrowLink} src="assets/arrow-right.svg" alt="Проектирование" />
+                    </button>
+                </Link>
             </div>
             <div className={styles.info}>
                 <div className={styles.title}>
