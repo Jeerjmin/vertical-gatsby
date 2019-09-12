@@ -1,1 +1,1 @@
-web: npm start -- --port ${port?}
+web: yarn start -- --port ${port?}
