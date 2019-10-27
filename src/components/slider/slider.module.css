@@ -1,11 +1,11 @@
 
 .container {
+    width: 100%;
 }
 
 .container .slider {
-
-    display: -webkit-inline-box;
-    width:1720px;
+    display: flex;
+    width:100%;
     overflow: hidden;
 }
 
@@ -20,6 +20,11 @@
     position: relative;
 }
 
+.arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .sliderItem .info {
     position: absolute;
@@ -95,4 +100,39 @@
     border: 1px solid #B9261A;
     padding: 0 34px;
     cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1500px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .slider {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sliderItem {
+        width: 100%;
+    }
+
+    .sliderImage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .buttonArrow {
+        visibility: hidden;
+    }
+
+    .sliderFooter {
+        margin-top: 30px;
+        justify-content: center;
+    }
+
 }

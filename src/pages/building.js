@@ -19,8 +19,8 @@ class BuildingContainer extends React.Component {
     }
 }
 
-export const buildingItemQuery = graphql`
-    query buildingItemQuery {
+export const buildingItemQuery2 = graphql`
+    query buildingItemQuery2 {
         allContentfulBuildingItem {
             edges {
                 node {

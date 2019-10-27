@@ -6,11 +6,11 @@ import {Link} from "gatsby";
 export default ({building, design}) => {
 
     return (
-        <div className={styles.projectAll} style={{ maxWidth: 1980, margin: '0 auto', marginTop: '40px'}}>
+        <div className={styles.projectAll} style={{ margin: '0 auto', marginTop: '40px'}}>
             <div className={styles.container}>
                 {building && building.map(item => {
                     return (
-                        <Link to={`/building/${item.node.id}`}>
+                        <Link className={styles.link} to={`/building/${item.node.id}`}>
                             <div className={styles.item}>
                                 <Img className={styles.itemImage} alt={item.node.name} fluid={item.node.image.fluid} />
                                 <div className={styles.info}>
