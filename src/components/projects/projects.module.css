@@ -17,3 +17,15 @@
     text-transform: uppercase;
     color: #2B2A29;
 }
+
+
+
+
+@media (max-width: 1000px) {
+
+
+    .projectsWrapper p {
+        font-size: 35px;
+    }
+
+}

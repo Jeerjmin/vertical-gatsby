@@ -1,11 +1,13 @@
 
 .container {
+    position: relative;
     display: flex;
 }
 
 .image {
-    width: 431px;
+    width: 100%;
     height: 774px;
+    opacity: 0.4;
 }
 
 .building,
@@ -14,6 +16,47 @@
 .contacts {
     position: relative;
     cursor: pointer;
+}
+
+
+.building .title,
+.design .title {
+    /*left: -30%;*/
+}
+
+.contacts .title {
+    /*left: -10%;*/
+}
+
+.title {
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    transform-origin: 10% 10%;
+    position: absolute;
+    left: 0px;
+    bottom: 3%;
+    font-family: Muller, sans-serif;
+    font-size: 20px;
+    line-height: 70px;
+    color: #222222;
+    letter-spacing: 7px;
+}
+
+
+.building:hover .text {
+    visibility: visible;
+}
+
+.design:hover .text {
+    visibility: visible;
+}
+
+.about:hover .text {
+    visibility: visible;
+}
+
+.contacts:hover .text {
+    visibility: visible;
 }
 
 .name {
@@ -25,4 +68,71 @@
     text-transform: uppercase;
     transform: rotate(-90deg);
     color: black;
+}
+
+.text {
+    display: flex;
+    position: absolute;
+    bottom: 60px;
+    left: 120px;
+    visibility: hidden;
+
+}
+
+.text span {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+
+    font-family: Muller, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 45px;
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+
+    color: #222222;
+    opacity: 0.7;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .building,
+    .design,
+    .about,
+    .contacts {
+        width: 100%;
+        height: 200px;
+    }
+
+    .title {
+        top: 0;
+        left: 5%;
+        transform: rotate(0deg);
+    }
+
+    .text {
+        height: 600px;
+        top: -270%;
+        left: 5%;
+        transform: rotate(90deg);
+        transform-origin: 0% 100%;
+
+    }
+
+    .image {
+        position: relative;
+        max-height: 200px;
+    }
+
+
+
 }

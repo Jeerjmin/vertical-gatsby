@@ -1,6 +1,7 @@
 .projectAll {
     position: relative;
     padding-bottom: 100px;
+    width: 100%;
 }
 
 .projectAll .container {
@@ -10,16 +11,23 @@
 }
 
 
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .projectAll .container .item {
     position: relative;
     width: 450px;
     height: 400px;
 
-    margin-left: 95px;
-    margin-bottom: 50px;
+    margin: 0 40px 50px;
     cursor: pointer;
 
 }
+
+
 
 
 
@@ -60,3 +68,15 @@
     letter-spacing: 2px;
     color: #222222;
 }
+
+
+@media (max-width: 1500px) {
+
+
+    .container {
+        justify-content: center;
+    }
+
+}
+
+

@@ -34,13 +34,17 @@ export default ({showReal}) => {
     return (
             <div className={styles.container}>
                 <div className={styles.showReal}>
-                    <Img  alt={showReal.title.title} fluid={showReal.image.fluid}/>
-                    {ShowRealTitle}
-                    {ShowRealDescription}
-                    <Link to={`/projects`}>
-                        <button className={styles.showRealButton}>К ПРОЕКТАМ</button>
-                    </Link>
-                    <img className={styles.showRealPlay} src="assets\showReal-play.svg" alt="Плэй" />
+                    <Img className={styles.showRealImage} alt={showReal.title.title} fluid={showReal.image.fluid}/>
+                    <div>{ShowRealTitle}</div>
+                    <div>{ShowRealDescription}</div>
+                    <div className={styles.buttonContainer}>
+                        <Link to={`/projects`}>
+                            <button className={styles.showRealButton}>К ПРОЕКТАМ</button>
+                        </Link>
+                    </div>
+                    <div className={styles.buttonContainerPlay}>
+                        <img className={styles.showRealPlay} src="assets\showReal-play.svg" alt="Плэй" />
+                    </div>
                 </div>
                 <div className={styles.mouse}>
                     <img  src="assets\mouse.svg" alt="Скролл" />
@@ -55,22 +59,26 @@ export default ({showReal}) => {
                             на этой стадии закладывается базис всех последующих
                             этапов строительных или реконструкционных работ
                         </p>
-                        <Link to={`/design`}>
-                            <button className={styles.designButton}>ПЕРЕЙТИ</button>
-                        </Link>
+                        <div className={styles.buttonContainer}>
+                            <Link to={`/design`}>
+                                <button className={styles.designButton}>ПЕРЕЙТИ</button>
+                            </Link>
+                        </div>
                     </div>
                     <div className={styles.building}>
                         <img src="assets\home-building.jpg" alt="Строительство" />
-                        <p className={styles.designTitle}>СТРОИТЕЛЬСТВО </p>
-                        <p className={styles.designDescription}>
+                        <p className={styles.buildingTitle}>СТРОИТЕЛЬСТВО </p>
+                        <p className={styles.buildingDescription}>
                             Строительство жилых домов – востребованное
                             направление в сфере недвижимости, и компания «ООО
                             Вертикаль» уже несколько лет успешно развивается в
                             этой области.
                         </p>
-                        <Link to={`/building`}>
-                            <button className={styles.designButton}>ПЕРЕЙТИ</button>
-                        </Link>
+                        <div className={styles.buttonContainer}>
+                            <Link to={`/building`}>
+                                <button className={styles.buildingButton}>ПЕРЕЙТИ</button>
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>

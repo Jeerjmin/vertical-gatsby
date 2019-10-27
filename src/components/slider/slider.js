@@ -33,21 +33,21 @@ export default class Slider extends React.Component {
 
                     {this.props.items && this.props.items.map(item => {
                         return (
-                                <div key={item.node.id} className={styles.sliderItem}>
-                                    <Link to={`/${this.props.type.toLowerCase()}/${item.node.id}`}>
-                                        <Img  className={styles.sliderImage} alt={item.node.name} fluid={item.node.image.fluid} />
-                                        <div className={styles.info}>
-                                            <p className={styles.title}>{this.props.type=== 'Building' ? 'Строительство' : 'Проектирование'}</p>
-                                            <p className={styles.name}>{item.node.name}</p>
-                                        </div>
-                                    </Link>
+                            <Link key={item.node.id} to={`/${this.props.type.toLowerCase()}/${item.node.id}`}>
+                                <div className={styles.sliderItem}>
+                                    <Img  className={styles.sliderImage} alt={item.node.name} fluid={item.node.image.fluid} />
+                                    <div className={styles.info}>
+                                        <p className={styles.title}>{this.props.type=== 'Building' ? 'Строительство' : 'Проектирование'}</p>
+                                        <p className={styles.name}>{item.node.name}</p>
+                                    </div>
                                 </div>
+                            </Link>
                         )
                     })}
 
                 </div>
                 <div className={styles.sliderFooter}>
-                    <div>
+                    <div class={styles.arrows}>
                         <button className={styles.buttonArrow}>
                             <img src="assets/arrow-right.svg" style={{transform: 'rotate(180deg)'}} className={styles.imageArrow} onClick={this.toScrollLeft} />
                         </button>

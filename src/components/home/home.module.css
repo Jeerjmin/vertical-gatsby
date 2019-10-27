@@ -8,7 +8,7 @@
 
 .showReal {
     position: relative;
-    width: 1720px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -21,6 +21,8 @@
     line-height: 55px;
     text-transform: uppercase;
     color: #2B2A29;
+
+
 }
 
 .showRealDescription {
@@ -31,6 +33,28 @@
     line-height: 28px;
     color: #2B2A29;
     width: 953px;
+}
+
+.showReal .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    top: 60%;
+}
+
+.showReal .buttonContainerPlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    top: 30%;
 }
 
 .showRealButton {
@@ -69,7 +93,7 @@
     width: 184px;
     height: 184px;
     position: absolute;
-    top: 35%;
+    top: 15%;
     right: 10%;
 }
 
@@ -83,6 +107,8 @@
 
 
 .types {
+    width: 100%;
+    display: flex;
     position: relative;
 }
 
@@ -90,6 +116,11 @@
     position: relative;
 }
 
+.design img {
+    width: 100%;
+}
+
+.buildingTitle,
 .designTitle {
     position: absolute;
     text-align: center;
@@ -102,6 +133,8 @@
     color: #2B2A29;
 }
 
+
+.buildingDescription,
 .designDescription {
     position: absolute;
     text-align: center;
@@ -114,11 +147,20 @@
     color: #2B2A29;
 }
 
-.designButton {
+.building .buttonContainer,
+.design .buttonContainer {
     position: absolute;
-    left: 35%;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buildingButton,
+.designButton {
+    position: relative;
     width: 219px;
-    top: 60%;
     border: 1px solid #B9261A;
     background: inherit;
     color: #B9261A;
@@ -135,4 +177,217 @@
     position: relative;
 }
 
+.building img {
+    width: 100%;
+}
 
+
+@media (max-width: 1500px) {
+    .showRealTitle {
+        font-size: 35px;
+        top: 5%;
+    }
+
+    .showRealDescription {
+        font-size: 15px;
+        line-height: 21px;
+    }
+
+    .showRealButton {
+        top: 80%;
+    }
+
+    .showRealPlay {
+        width: 100px;
+        height: 100px;
+    }
+
+    .buildingTitle,
+    .designTitle {
+        font-size: 35px;
+        left: 25%;
+    }
+
+
+    .buildingDescription,
+    .designDescription {
+        font-size: 15px;
+        left: 20%;
+        max-width: 400px;
+    }
+
+    .buildingButton,
+    .designButton {
+        width: 160px;
+        padding: 15px 34px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    .showRealTitle {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .showRealDescription {
+        font-size: 14px;
+        line-height: 18px;
+        top: 27%;
+        max-width: 550px;
+    }
+
+    .showRealButton {
+        font-size: 10px;
+        width: 160px;
+        padding: 10px;
+    }
+
+
+    .buildingTitle,
+    .designTitle {
+        font-size: 25px;
+        left: 30%;
+    }
+
+
+    .buildingDescription,
+    .designDescription {
+        font-size: 13px;
+        line-height: 18px;
+        left: 23%;
+        max-width: 300px;
+    }
+
+    .buildingButton,
+    .designButton {
+        width: 160px;
+        font-size: 11px;
+        padding: 10px 30px;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+    .showReal .buttonContainerPlay {
+
+        top: 60%;
+    }
+
+    .showRealImage {
+        height: 800px;
+    }
+
+    .showRealContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .showRealTitle {
+        text-align: center;
+        left: 0;
+        width: 100%;
+        font-size: 45px;
+        line-height: 45px;
+    }
+
+    .showRealDescription {
+        text-align: center;
+        width: 100%;
+        left: 0;
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+
+
+    .showRealButton {
+        position: relative;
+        left: 0%;
+        top: 50%;
+        width: 219px;
+        padding: 20px 34px;
+        margin-bottom:100px;
+
+    }
+
+    .showRealPlay {
+        margin-top:100px;
+        position: relative;
+        left: 0%;
+        top: 70%;
+        width: 184px;
+        height: 184px;
+    }
+
+    .types {
+        flex-direction: column;
+    }
+
+    .buildingTitle,
+    .designTitle {
+        width: 100%;
+        text-align: center;
+        top: 15%;
+        left: 0%;
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+
+    .buildingDescription,
+    .designDescription {
+        width: 100%;
+        max-width: 100%;
+        left: 0%;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .buildingButton,
+    .designButton {
+        width: 219px;
+        top: 60%;
+        font-size: 12px;
+        line-height: 12px;
+        padding: 20px 34px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .showRealTitle {
+        font-size: 35px;
+    }
+
+
+    .buildingTitle,
+    .designTitle {
+        font-size: 35px;
+        line-height: 25px;
+    }
+
+
+    .buildingDescription,
+    .designDescription {
+        font-size: 15px;
+        line-height: 15px;
+    }
+
+
+    .buildingButton,
+    .designButton {
+        position: relative;
+        text-align: center;
+        left: 0%;
+        width: 160px;
+        padding: 10px 34px;
+
+    }
+
+}
