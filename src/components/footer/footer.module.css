@@ -45,3 +45,14 @@
     }
 
 }
+
+
+@media (max-width: 500px) {
+
+    .contacts {
+        top:10%;
+    }
+
+}
+
+

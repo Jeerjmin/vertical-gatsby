@@ -44,3 +44,16 @@
     padding-right: 30px;
   }
 }
+
+
+
+@media (max-width: 350px) {
+
+  .logo {
+    padding-left: 0;
+  }
+
+  .menu {
+    padding-right: 0;
+  }
+}
