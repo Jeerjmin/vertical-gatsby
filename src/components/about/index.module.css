@@ -38,3 +38,27 @@
     opacity: 0.7;
     color: #2B2A29;
 }
+
+@media (max-width: 420px) {
+
+    .wrapper .title {
+        width:100%;
+        text-align: center;
+        left: 0;
+        top: 10%;
+        font-size: 30px;
+
+    }
+
+    .wrapper .description {
+        text-align: center;
+        left: 0;
+        top: 40%;
+        font-size: 15px;
+
+    }
+
+    .info h5 {
+        font-size: 30px;
+    }
+}

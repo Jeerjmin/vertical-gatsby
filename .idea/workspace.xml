@@ -2,57 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d11bcfd6-a9e7-457b-9bb6-2fb02ece65d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/about/about.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/about.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/navigation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/navigation.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/objects.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/team.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/about/work.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/type/type.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/type/type.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/about.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/type.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/about-wrapper.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/building-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/building-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/building-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/toCustomers.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/type-wrapper.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article-preview.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/article-preview.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/building/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/building/building.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/about.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/index.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/building/building.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/building/building.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/design/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/design/design.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/design/design.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/design/design.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/footer/footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/hero.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/projectAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectAll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/navigation.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/navigation.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/projectAll.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectAll.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/projectBuilding.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectBuilding.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/projectDesign.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectDesign.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/projects/projects.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projects.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/slider/slider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/blog.module.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/building.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/menu-about.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/menu-about.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/menu-building.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/menu-building.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/menu-contacts.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/menu-contacts.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/menu-design.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/menu-design.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/building.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/building.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/building.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +44,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -136,7 +105,10 @@
       <workItem from="1571483320633" duration="12668000" />
       <workItem from="1571568827818" duration="8111000" />
       <workItem from="1571726960761" duration="623000" />
-      <workItem from="1572094736772" duration="25481000" />
+      <workItem from="1572094736772" duration="37107000" />
+      <workItem from="1572336116384" duration="249000" />
+      <workItem from="1572336391728" duration="130000" />
+      <workItem from="1572689193145" duration="10917000" />
     </task>
     <servers />
   </component>

@@ -2,11 +2,12 @@
 .container {
     position: relative;
     display: flex;
+    height: 100%;
 }
 
 .image {
     width: 100%;
-    height: 774px;
+    height: 100%;
     opacity: 0.4;
 }
 
@@ -110,7 +111,7 @@
     .about,
     .contacts {
         width: 100%;
-        height: 200px;
+        height: 100%;
     }
 
     .title {
@@ -120,12 +121,7 @@
     }
 
     .text {
-        height: 600px;
-        top: -270%;
-        left: 5%;
-        transform: rotate(90deg);
-        transform-origin: 0% 100%;
-
+        visibility: hidden !important;
     }
 
     .image {
@@ -135,4 +131,25 @@
 
 
 
+}
+
+
+@media (max-width: 420px) {
+
+    .container {
+        max-height:520px;
+    }
+
+
+    .image {
+        max-height: 130px;
+    }
+
+    .building,
+    .design,
+    .about,
+    .contacts {
+        max-height: 130px;
+
+    }
 }

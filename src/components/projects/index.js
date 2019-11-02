@@ -24,8 +24,6 @@ class ProjectsComponent extends React.Component {
 
     render() {
 
-        console.log('th', this.props)
-
         return (
             <div style={{ width: '100%',  margin: '0 auto'}}>
                 <div className={styles.projectsWrapper}>

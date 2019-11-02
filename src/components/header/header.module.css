@@ -32,3 +32,15 @@
   cursor: pointer;
   margin-bottom: 20px;
 }
+
+
+@media (max-width: 1800px) {
+
+  .logo {
+    padding-left: 30px;
+  }
+
+  .menu {
+    padding-right: 30px;
+  }
+}

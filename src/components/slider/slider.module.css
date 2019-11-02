@@ -136,3 +136,15 @@
     }
 
 }
+
+@media (max-width: 420px) {
+
+    .sliderItem .title {
+        top: 3%;
+    }
+
+    .sliderItem .name {
+        top: 20%;
+        font-size: 15px;
+    }
+}

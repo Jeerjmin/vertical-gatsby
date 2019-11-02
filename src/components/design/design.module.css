@@ -355,6 +355,13 @@
         font-size: 20px;
     }
 
+    .geotechnicalSubstantiation,
+    .сonstructiveDecisions,
+    .generalDesign {
+        margin-left: 0;
+    }
+
+
     .geotechnicalSubstantiation h6,
     .сonstructiveDecisions h6,
     .generalDesign h6 {
@@ -374,6 +381,40 @@
         font-size: 12px;
         width: 150px;
 
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .wrapper .title {
+        top: 0%;
+        font-size: 30px;
+
+    }
+
+    .wrapper .description {
+        top: 40%;
+        font-size: 15px;
+
+    }
+
+    .info h5 {
+        font-size: 30px;
+    }
+
+    .geotechnicalSubstantiation h6,
+    .generalDesign h6,
+    .сonstructiveDecisions h6 {
+        top: 5%;
+        font-size: 30px
+    }
+
+    .сonstructiveDecisions p,
+    .geotechnicalSubstantiation p,
+    .generalDesign p {
+        top: 20%;
+        font-size: 15px
     }
 
 }

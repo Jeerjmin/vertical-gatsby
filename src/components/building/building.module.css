@@ -61,7 +61,7 @@
     letter-spacing: 2px;
     text-transform: uppercase;
     right: 0;
-    bottom: 0;
+    bottom: 4px;
 
     cursor: pointer;
 }
@@ -323,3 +323,36 @@
     }
 
     }
+
+
+@media (max-width: 420px) {
+
+    .wrapper .title {
+        top: 0%;
+        font-size: 30px;
+
+    }
+
+    .wrapper .description {
+        top: 40%;
+        font-size: 15px;
+
+    }
+
+    .info h5 {
+        font-size: 30px;
+    }
+
+    .generalContract h6,
+    .zeroCycle h6 {
+        top: 5%;
+        font-size: 30px
+    }
+
+    .generalContract p,
+    .zeroCycle p {
+        top: 20%;
+        font-size: 15px
+    }
+
+}

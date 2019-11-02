@@ -35,8 +35,8 @@ export default ({showReal}) => {
             <div className={styles.container}>
                 <div className={styles.showReal}>
                     <Img className={styles.showRealImage} alt={showReal.title.title} fluid={showReal.image.fluid}/>
-                    <div>{ShowRealTitle}</div>
-                    <div>{ShowRealDescription}</div>
+                    <div className={styles.titleContainer}>{ShowRealTitle}</div>
+                    <div className={styles.descriptionContainer}>{ShowRealDescription}</div>
                     <div className={styles.buttonContainer}>
                         <Link to={`/projects`}>
                             <button className={styles.showRealButton}>К ПРОЕКТАМ</button>
@@ -53,12 +53,14 @@ export default ({showReal}) => {
                     <div className={styles.design}>
                         <img src="assets\home-design.jpg" alt="Проектирование" />
                         <p className={styles.designTitle}>ПРОЕКТИРОВАНИЕ </p>
-                        <p className={styles.designDescription}>
-                            Проектирование зданий и сооружений – это, пожалуй,
-                            основополагающий этап строительства объекта. Именно
-                            на этой стадии закладывается базис всех последующих
-                            этапов строительных или реконструкционных работ
-                        </p>
+                        <div className={styles.designDescriptionContainer}>
+                            <p className={styles.designDescription}>
+                                Проектирование зданий и сооружений – это, пожалуй,
+                                основополагающий этап строительства объекта. Именно
+                                на этой стадии закладывается базис всех последующих
+                                этапов строительных или реконструкционных работ
+                            </p>
+                        </div>
                         <div className={styles.buttonContainer}>
                             <Link to={`/design`}>
                                 <button className={styles.designButton}>ПЕРЕЙТИ</button>
@@ -68,12 +70,14 @@ export default ({showReal}) => {
                     <div className={styles.building}>
                         <img src="assets\home-building.jpg" alt="Строительство" />
                         <p className={styles.buildingTitle}>СТРОИТЕЛЬСТВО </p>
-                        <p className={styles.buildingDescription}>
-                            Строительство жилых домов – востребованное
-                            направление в сфере недвижимости, и компания «ООО
-                            Вертикаль» уже несколько лет успешно развивается в
-                            этой области.
-                        </p>
+                        <div className={styles.buildingDescriptionContainer}>
+                            <p className={styles.buildingDescription}>
+                                Строительство жилых домов – востребованное
+                                направление в сфере недвижимости, и компания «ООО
+                                Вертикаль» уже несколько лет успешно развивается в
+                                этой области.
+                            </p>
+                        </div>
                         <div className={styles.buttonContainer}>
                             <Link to={`/building`}>
                                 <button className={styles.buildingButton}>ПЕРЕЙТИ</button>

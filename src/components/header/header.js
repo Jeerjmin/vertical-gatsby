@@ -28,7 +28,7 @@ export default class Header extends React.Component {
         const menuUrl = template ? prefix + 'assets/menu-white.svg' : prefix + 'assets/menu.svg';
 
         return (
-            <div style={{ maxWidth: 1720,  margin: '0 auto'}}>
+            <div style={{ maxWidth: 1720}}>
                 <section className={styles.container}>
                     <Link to={`/`}>
                         <img className={styles.logo} src={logoUrl} />
@@ -38,7 +38,7 @@ export default class Header extends React.Component {
                         <img className={styles.burger} src={menuUrl} onClick={() => this.openModal()}  />
                     </div>
                 </section>
-                <Modal visible={this.state.visible} width="1724" height="774" effect="fadeInUp" onClickAway={() => this.closeModal()}>
+                <Modal visible={this.state.visible} width="1724" height="520" effect="fadeInUp" onClickAway={() => this.closeModal()}>
                     <Menu prefix={prefix}/>
                 </Modal>
             </div>
