@@ -38,7 +38,6 @@ export const pageQuery = graphql`
             id
             fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
               base64
-              tracedSVG
               aspectRatio
               src
               srcSet

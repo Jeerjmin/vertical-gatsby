@@ -34,7 +34,6 @@ export const buildingItemQuery = graphql`
                     image {
                         fluid(quality: 100, sizes: "") {
                             base64
-                            tracedSVG
                             aspectRatio
                             src
                             srcSet
@@ -56,7 +55,6 @@ export const buildingItemQuery = graphql`
                     image {
                         fluid(quality: 100, sizes: "") {
                             base64
-                            tracedSVG
                             aspectRatio
                             src
                             srcSet
