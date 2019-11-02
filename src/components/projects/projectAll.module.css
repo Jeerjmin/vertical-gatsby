@@ -8,6 +8,8 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -80,3 +82,9 @@
 }
 
 
+@media (max-width: 450px) {
+
+    .projectAll .container .item {
+        width: 320px;
+    }
+}

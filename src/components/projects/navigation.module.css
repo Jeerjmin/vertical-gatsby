@@ -75,3 +75,24 @@
     height: 2px;
     background: #B9261A;
 }
+
+
+@media (max-width: 420px) {
+
+   a {
+        font-size: 8px !important;
+    }
+
+    .navigation .deactive:last-child:after {
+
+        width: 100px;
+
+    }
+
+    .navigation .active:last-child:after {
+
+        width: 100px;
+
+    }
+
+}

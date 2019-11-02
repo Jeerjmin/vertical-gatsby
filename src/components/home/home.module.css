@@ -12,27 +12,38 @@
     margin: 0 auto;
 }
 
-.showRealTitle {
+
+.showReal .titleContainer {
+    width: 100%;
     position: absolute;
     top: 15%;
     left: 5%;
+
+}
+
+.showRealTitle {
+    position: relative;
     font-size: 55px;
     font-weight: bold;
     line-height: 55px;
     text-transform: uppercase;
     color: #2B2A29;
+}
 
-
+.showReal .descriptionContainer {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    display: flex;
+    justify-content: center;
 }
 
 .showRealDescription {
-    position: absolute;
-    top: 45%;
-    left: 5%;
+    width: 90%;
+    position: relative;
     font-size: 18px;
     line-height: 28px;
     color: #2B2A29;
-    width: 953px;
 }
 
 .showReal .buttonContainer {
@@ -133,16 +144,23 @@
     color: #2B2A29;
 }
 
+.buildingDescriptionContainer,
+.designDescriptionContainer {
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 35%;
+
+}
 
 .buildingDescription,
 .designDescription {
-    position: absolute;
+    width: 90%;
+    position: relative;
     text-align: center;
-    top: 35%;
-    left: 21%;
     font-size: 18px;
     line-height: 28px;
-    width: 504px;
     opacity: 0.7;
     color: #2B2A29;
 }
@@ -212,7 +230,6 @@
     .buildingDescription,
     .designDescription {
         font-size: 15px;
-        left: 20%;
         max-width: 400px;
     }
 
@@ -234,8 +251,6 @@
     .showRealDescription {
         font-size: 14px;
         line-height: 18px;
-        top: 27%;
-        max-width: 550px;
     }
 
     .showRealButton {
@@ -256,7 +271,6 @@
     .designDescription {
         font-size: 13px;
         line-height: 18px;
-        left: 23%;
         max-width: 300px;
     }
 
@@ -270,6 +284,19 @@
 }
 
 @media (max-width: 1000px) {
+
+    .showReal .descriptionContainer {
+        top: 23%;
+
+    }
+
+    .showReal .titleContainer {
+        top: 3%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
 
     .showReal .buttonContainerPlay {
 
@@ -297,10 +324,11 @@
 
     .showRealDescription {
         text-align: center;
-        width: 100%;
+        width: 90%;
         left: 0;
         max-width: 100%;
-        font-size: 15px;
+        font-size: 20px;
+        line-height: 22px;
     }
 
 
@@ -341,7 +369,7 @@
 
     .buildingDescription,
     .designDescription {
-        width: 100%;
+        width: 90%;
         max-width: 100%;
         left: 0%;
         font-size: 18px;
@@ -361,8 +389,26 @@
 
 @media (max-width: 800px) {
 
+
+    .showReal .descriptionContainer {
+        top: 23%;
+    }
+
+    .showReal .titleContainer {
+        top: 3%;
+        left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+
     .showRealTitle {
         font-size: 35px;
+    }
+
+    .showRealDescription {
+        line-height: 18px;
+
     }
 
 
@@ -371,7 +417,6 @@
         font-size: 35px;
         line-height: 25px;
     }
-
 
     .buildingDescription,
     .designDescription {
@@ -388,6 +433,81 @@
         width: 160px;
         padding: 10px 34px;
 
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    .showReal {
+        margin: 0;
+    }
+
+    .showRealTitle {
+        font-size: 30px;
+    }
+
+
+    .showRealDescription {
+        font-size: 15px;
+    }
+
+
+    .mouse {
+        visibility: hidden;
+        margin: 0;
+    }
+
+    .showRealDescription {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .buildingDescriptionContainer,
+    .designDescriptionContainer {
+        top: 25%;
+    }
+
+    .showReal .buttonContainer {
+        top: 70%;
+    }
+
+    .showRealPlay {
+        top: 100%;
+        width: 124px;
+        height: 124px;
+    }
+
+    .designTitle,
+    .buildingTitle {
+        font-size: 30px;
+        top: 0%;
+    }
+
+}
+
+@media (max-width: 330px) {
+
+    .showRealTitle {
+        font-size: 25px;
+    }
+
+    .designTitle,
+    .buildingTitle {
+        font-size: 25px;
+        top: -2%;
+    }
+
+    .design .buttonContainer,
+    .building .buttonContainer {
+        top: 77%;
+    }
+
+    .buildingButton,
+    .designButton {
+        width: 140px;
+        padding: 5px 20px;
     }
 
 }

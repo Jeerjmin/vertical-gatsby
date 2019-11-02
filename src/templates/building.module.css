@@ -3,6 +3,7 @@
     background: black;
 }
 .header {
+    margin-top:10px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -15,10 +16,14 @@
 
 }
 
-.buttonBack {
+.linkBack {
     position: absolute;
     top: 175px;
     left: 100px;
+}
+
+.buttonBack {
+
     width: 50px;
     height: 50px;
     border: 1px solid #F2F2F2;
@@ -33,7 +38,7 @@
 
 .box {
     position: absolute;
-    bottom: 43px;
+    top: 150px;
     left: 193px;
     width: 1558px;
     height: 674px;
@@ -148,4 +153,137 @@
 
 .box .galleryLink img {
     margin-left: 20px;
+}
+
+
+@media (max-width: 1800px) {
+
+    .box {
+        width: 100%;
+        position: absolute;
+        border: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .galleryLink {
+        position: relative;
+        right: 200px !important;
+        left: auto !important;
+    }
+}
+
+
+@media (max-width: 1200px) {
+
+    .galleryLink {
+        width: 150px !important;
+        font-size: 10px !important;
+        padding: 0 !important;
+    }
+
+    .galleryLink span {
+        margin-right: 0px !important;
+    }
+
+    .galleryLink img {
+        margin-left: 5px !important;
+        margin-right: 0px !important;
+    }
+
+    .box {
+        left: 50px;
+    }
+
+    .linkBack {
+        position: absolute;
+        top: auto;
+        bottom: 0px;
+        left: 0px;
+    }
+
+
+    .box .name {
+        font-size: 30px;
+    }
+
+    .box .description2,
+    .box .description {
+        font-size: 15px;
+    }
+
+    .box .customerName {
+        font-size: 20px;
+    }
+
+    .box .locationName {
+        font-size: 20px;
+        max-width: 500px;
+    }
+
+    .box .square2,
+    .box .square {
+        font-size: 20px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+
+    .wrapper {
+        height: 100%;
+    }
+
+    .box {
+        height: 100%;
+        position: relative;
+        top: 13%;
+        left: 5%;
+    }
+
+    .box .name {
+        width: 90%
+    }
+
+    .box .description {
+        width: 90%;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .box .customerName {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .box .locationName {
+        width:90%;
+    }
+
+    .box .description2 {
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .box .square {
+        margin-top: 0;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+
+    .linkBack {
+        position: relative !important;
+    }
+
+    .galleryLink {
+        position: relative !important;
+        left: auto !important;
+        right: auto !important;
+    }
 }
