@@ -31,7 +31,7 @@ class AboutComponent extends React.Component {
     render() {
 
         return (
-            <div style={{ maxWidth: 1720,  margin: '0 auto'}}>
+            <div className={styles.container} style={{ maxWidth: 1720,  margin: '0 auto'}}>
                 <div className={styles.wrapper}>
                     <img src="assets/about-wrapper.png" alt="О компании" />
                     <h4 className={styles.title}>О компании</h4>

@@ -139,11 +139,15 @@
 
 @media (max-width: 420px) {
 
+
+
     .sliderItem .title {
         top: 3%;
     }
 
     .sliderItem .name {
+        max-width:180px;
+        word-wrap: break-word;
         top: 20%;
         font-size: 15px;
     }

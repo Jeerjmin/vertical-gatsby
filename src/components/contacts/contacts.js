@@ -32,7 +32,7 @@ export default class Contacts extends React.Component {
                 </div>
                 <Link to={`/`}>
                     <button className={styles.buttonLink}>
-                            На главную <img className={styles.arrowLink} src="assets/arrow-right.svg" alt="На главную" />
+                            На главную
                     </button>
                 </Link>
             </div>

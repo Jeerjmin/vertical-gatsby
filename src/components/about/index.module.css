@@ -1,3 +1,10 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .wrapper {
     position: relative;
     margin-bottom: 70px;
@@ -26,16 +33,16 @@
 
 .wrapper .description {
     margin: 0;
-    padding: 0;
     position: absolute;
     left: 110px;
     top: 241px;
     max-width: 952px;
-    font-family: Muller, sans-serif;
+    font-family: MullerRegular, sans-serif;
     font-size: 18px;
     line-height: 28px;
     opacity: 0.7;
     color: #2B2A29;
+    padding: 0 10px;
 }
 
 @media (max-width: 420px) {

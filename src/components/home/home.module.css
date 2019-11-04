@@ -1,6 +1,12 @@
+/*@font-face {*/
+/*    font-family: "MullerLightItalic";*/
+/*    src: url("../../fonts/Fontfabric - MullerLightItalic.otf");*/
+/*}*/
+
+@import "../../components/base.css";
+
 .container {
     position: relative;
-    font-family: "Muller", sans-serif;
 }
 .types {
     display: flex;
@@ -22,6 +28,7 @@
 }
 
 .showRealTitle {
+    font-family: "Muller", sans-serif;
     position: relative;
     font-size: 55px;
     font-weight: bold;
@@ -39,6 +46,8 @@
 }
 
 .showRealDescription {
+    font-family: "MullerRegular", sans-serif !important;
+    opacity: 0.7;
     width: 90%;
     position: relative;
     font-size: 18px;
@@ -132,6 +141,7 @@
 
 .buildingTitle,
 .designTitle {
+    font-family: Muller, sans-serif;
     position: absolute;
     text-align: center;
     top: 15%;

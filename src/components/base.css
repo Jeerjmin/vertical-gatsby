@@ -1,29 +1,20 @@
-@font-face {
-  font-family: "Avenir";
-  font-weight: 400;
-  font-style: normal;
-  src: url("/avenir-400.woff2") format("woff2");
-  font-display: swap;
-}
 
 @font-face {
   font-family: "Muller";
-  font-weight: 400;
-  font-style: normal;
-  src: url("/fonts/Fontfabric - MullerMedium.otf") format("otf");
-  font-display: swap;
+
+
+  src: url("/fonts/Fontfabric - MullerMedium.otf");
+
 }
 
 @font-face {
-  font-family: "MullerRegular";
-  font-weight: 400;
-  font-style: normal;
-  src: url("/fonts/Fontfabric - MullerRegular.otf") format("otf");
-  font-display: swap;
+    font-family: "MullerRegular";
+    src: url("../fonts/Fontfabric - MullerRegular.otf");
 }
 
+
 body {
-  font-family: "Muller", sans-serif;
+  font-family: "MullerRegular", sans-serif;
   font-size: 1em;
   line-height: 1.65;
   color: #373F49;
@@ -46,6 +37,11 @@ h3 {
 
 a {
   color: currentColor;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {

@@ -8,26 +8,27 @@
 }
 
 .descriptions div {
-    font-family: "Muller", sans-serif;
+    font-family: "MullerRegular", sans-serif;
     font-size: 18px;
     line-height: 28px;
     max-width: 800px;
     opacity: 0.7;
     color: #2B2A29;
-    padding: 0 10px;
+    padding: 0 40px;
 }
 
 .description2 {
     margin-top: 40px;
     width: 100%;
     background: #B9261A;
-    padding: 52px 59px 52px 0;
-
+    padding: 52px 0;
     text-align: center;
 
 }
 
 .description2 span {
+    display: inline-block;
+    padding: 0 100px;
     font-family: Muller, sans-serif;
     font-size: 25px;
     line-height: 130%;
@@ -62,7 +63,7 @@
     max-width: 818px;
     display: flex;
     flex-direction: column;
-    font-family: Muller, sans-serif;
+    font-family: MullerRegular, sans-serif;
     font-size: 18px;
     padding-left: 50px;
     line-height: 28px;
@@ -87,9 +88,17 @@
     }
 
     .container .text {
-        padding: 50px 0 0;
+        padding: 20px 10px 0 10px;
     }
 
+    .descriptions div {
+        padding: 0 100px;
+        margin-bottom: 20px;
+    }
+
+    .descriptions {
+        flex-direction: column;
+    }
 
 
 
@@ -103,17 +112,14 @@
 
     .container .text {
         text-align: center;
+        padding: 20px 10px 0 10px;
+
     }
 
-    .descriptions {
-        flex-direction: column;
-    }
 
 
 
-    .descriptions div {
-        margin-bottom: 20px;
-    }
+
 
     .description2 {
         padding-left: 0 ;
@@ -122,7 +128,8 @@
     .description2 span {
         font-size: 18px;
         display: inline-block;
-        padding: 20px;
+        padding: 20px !important;
     }
+
 
 }

@@ -10,6 +10,7 @@
 
 
 .navigation .deactive {
+    font-weight: bold;
     padding: 0 10px;
     font-family: Muller, sans-serif;
     font-size: 12px;
@@ -23,6 +24,7 @@
 }
 
 .navigation .active {
+    font-weight: bold;
     padding: 0 10px;
     font-family: Muller, sans-serif;
     font-size: 12px;
