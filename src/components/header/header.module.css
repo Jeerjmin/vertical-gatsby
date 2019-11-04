@@ -47,13 +47,13 @@
 
 
 
-@media (max-width: 350px) {
+@media (max-width: 400px) {
 
   .logo {
-    padding-left: 0;
+    padding-left: 10px;
   }
 
   .menu {
-    padding-right: 0;
+    padding-right: 10px;
   }
 }

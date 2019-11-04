@@ -475,7 +475,8 @@
     }
 
     .showRealTitle {
-        font-size: 30px;
+        font-size: 25px;
+        max-width: 280px;
     }
 
 
@@ -494,9 +495,19 @@
         line-height: 24px;
     }
 
+    .building .buildingTitle,
+    .design .designTitle {
+        top: 10%;
+    }
+
     .buildingDescriptionContainer,
     .designDescriptionContainer {
         top: 25%;
+    }
+
+    .buildingDescriptionContainer p,
+    .designDescriptionContainer p {
+        line-height: 18px;
     }
 
     .showReal .buttonContainer:hover,
@@ -531,14 +542,16 @@
     .designTitle,
     .buildingTitle {
         font-size: 25px;
-        top: -2%;
+        top: 7%;
     }
 
 
     .buildingDescriptionContainer,
     .designDescriptionContainer {
-        top: 20%;
+        top: 25%;
     }
+
+
 
     .design .buttonContainer:hover,
     .building .buttonContainer:hover,
