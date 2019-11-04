@@ -5,6 +5,8 @@ import Img from "gatsby-image";
 import {Link} from "gatsby";
 import Header from "../components/header/header";
 import Container from "../components/container";
+import Modal from "react-awesome-modal";
+import Gallery from "../components/gallery";
 
 class BuildingTemplate extends React.Component {
 
@@ -14,6 +16,17 @@ class BuildingTemplate extends React.Component {
         this.state = {
             width : 0
         }
+    }
+
+    openModal() {
+        this.setState({
+            visible : true
+        });
+    }
+    closeModal() {
+        this.setState({
+            visible : false
+        });
     }
 
     componentDidMount() {
@@ -73,12 +86,15 @@ class BuildingTemplate extends React.Component {
                    }
                     {this.state.width > 1200 &&
 
-                    <button className={styles.galleryLink}>
+                    <button onClick={() => this.openModal()} className={styles.galleryLink}>
                         <span>Фото объекта</span>
                         <img src="../assets/arrow-right.svg"/>
                     </button>
                     }
                 </div>
+                <Modal visible={this.state.visible} width="1724" height="520" effect="fadeInUp" onClickAway={() => this.closeModal()}>
+                    <Gallery/>
+                </Modal>
             </div>
         )
     }

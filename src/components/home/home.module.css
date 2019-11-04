@@ -104,7 +104,6 @@
     width: 184px;
     height: 184px;
     position: absolute;
-    top: 15%;
     right: 10%;
 }
 
@@ -191,6 +190,15 @@
     cursor: pointer;
 }
 
+.buildingButton:hover,
+.designButton:hover {
+
+    border: 1px solid white;
+    background: inherit;
+    color: white;
+
+}
+
 .building {
     position: relative;
 }
@@ -211,10 +219,12 @@
         line-height: 21px;
     }
 
+    .showRealButton:hover,
     .showRealButton {
         top: 80%;
     }
 
+    .showRealPlay:hover,
     .showRealPlay {
         width: 100px;
         height: 100px;
@@ -233,6 +243,8 @@
         max-width: 400px;
     }
 
+    .buildingButton:hover,
+    .designButton:hover,
     .buildingButton,
     .designButton {
         width: 160px;
@@ -253,6 +265,7 @@
         line-height: 18px;
     }
 
+    .showRealButton:hover,
     .showRealButton {
         font-size: 10px;
         width: 160px;
@@ -274,6 +287,8 @@
         max-width: 300px;
     }
 
+    .buildingButton:hover,
+    .designButton:hover,
     .buildingButton,
     .designButton {
         width: 160px;
@@ -297,16 +312,22 @@
         justify-content: center;
     }
 
-
     .showReal .buttonContainerPlay {
-
-        top: 60%;
+        top: 75%;
     }
+
+    .showReal .buttonContainer:hover,
+    .showReal .buttonContainer {
+        top: 50%;
+    }
+
+
 
     .showRealImage {
         height: 800px;
     }
 
+    .showRealContainer:hover,
     .showRealContainer {
         display: flex;
         flex-direction: column;
@@ -332,22 +353,18 @@
     }
 
 
-
+    .showRealButton:hover,
     .showRealButton {
         position: relative;
         left: 0%;
-        top: 50%;
         width: 219px;
         padding: 20px 34px;
-        margin-bottom:100px;
-
     }
 
+    .showRealPlay:hover,
     .showRealPlay {
-        margin-top:100px;
         position: relative;
         left: 0%;
-        top: 70%;
         width: 184px;
         height: 184px;
     }
@@ -376,10 +393,11 @@
         line-height: 28px;
     }
 
+    .buildingButton:hover,
+    .designButton:hover,
     .buildingButton,
     .designButton {
         width: 219px;
-        top: 60%;
         font-size: 12px;
         line-height: 12px;
         padding: 20px 34px;
@@ -425,6 +443,8 @@
     }
 
 
+    .buildingButton:hover,
+    .designButton:hover,
     .buildingButton,
     .designButton {
         position: relative;
@@ -469,12 +489,17 @@
         top: 25%;
     }
 
+    .showReal .buttonContainer:hover,
     .showReal .buttonContainer {
-        top: 70%;
+        top: 65%;
     }
 
+    .showReal .buttonContainerPlay {
+        top: 80%;
+    }
+
+    .showRealPlay:hover,
     .showRealPlay {
-        top: 100%;
         width: 124px;
         height: 124px;
     }
@@ -499,11 +524,21 @@
         top: -2%;
     }
 
+
+    .buildingDescriptionContainer,
+    .designDescriptionContainer {
+        top: 20%;
+    }
+
+    .design .buttonContainer:hover,
+    .building .buttonContainer:hover,
     .design .buttonContainer,
     .building .buttonContainer {
         top: 77%;
     }
 
+    .buildingButton:hover,
+    .designButton:hover,
     .buildingButton,
     .designButton {
         width: 140px;

@@ -72,3 +72,11 @@
     }
 
 }
+
+
+@media (max-width: 450px) {
+
+    .projectDesign .container .item {
+        width: 320px;
+    }
+}
