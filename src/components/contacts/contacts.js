@@ -27,7 +27,7 @@ export default class Contacts extends React.Component {
                     </div>
                     <div className={styles.address}>
                         <p className={styles.addressTitle}>194044 г. Санкт-Петербург, ул. Выборгская, д.5, лит.А, пом. 23-Н</p>
-                        <p className={styles.addressNumber}>Смотреть на карте</p>
+                        <a href="https://yandex.ru/maps/-/CGHPjHi~" className={styles.addressNumber}>Смотреть на карте</a>
                     </div>
                 </div>
                 <Link to={`/`}>
