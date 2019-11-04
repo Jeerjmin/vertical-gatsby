@@ -78,7 +78,7 @@ class BuildingTemplate extends React.Component {
                                     <img src="../assets/arrow-left-white.svg"/>
                                 </button>
                             </Link>
-                            <button className={styles.galleryLink}>
+                            <button  onClick={() => this.openModal()} className={styles.galleryLink}>
                                 <span>Фото объекта</span>
                                 <img src="../assets/arrow-right.svg"/>
                             </button>
