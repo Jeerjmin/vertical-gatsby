@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d11bcfd6-a9e7-457b-9bb6-2fb02ece65d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gallery/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +91,7 @@
       <workItem from="1572336116384" duration="249000" />
       <workItem from="1572336391728" duration="130000" />
       <workItem from="1572689193145" duration="10917000" />
-      <workItem from="1572866100783" duration="8272000" />
+      <workItem from="1572866100783" duration="9109000" />
     </task>
     <servers />
   </component>
