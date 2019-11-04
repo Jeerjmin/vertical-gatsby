@@ -27,6 +27,8 @@ export default class Slider extends React.Component {
 
     render() {
 
+        console.log('items', this.props.items)
+
         return (
             <div className={styles.container} >
                 <div ref={this.containerRef} className={styles.slider}>

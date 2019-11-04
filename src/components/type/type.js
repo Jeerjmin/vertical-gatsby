@@ -150,7 +150,7 @@ export default ({data, type}) => {
             </div>
 
 
-            <Slider type="Design" items={data} />
+            <Slider type='building' items={data} />
 
         </div>
 
