@@ -1,6 +1,6 @@
 import React from 'react'
 import './gallery.module.css'
-import "../../../../vertical-gatsby/node_modules/react-image-gallery/styles/css/image-gallery.css";
+
 
 import ImageGallery from 'react-image-gallery';
 
