@@ -1,8 +1,10 @@
 .container {
+  max-width: 1718px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  margin-left: 100px;
   margin-bottom: 32px;
   font-family: "MullerRegular", sans-serif;
 }
@@ -37,6 +39,13 @@
 
 
 @media (max-width: 1800px) {
+
+
+  .container {
+
+    margin-left: 0px;
+
+  }
 
   .logo {
     padding-left: 30px;
