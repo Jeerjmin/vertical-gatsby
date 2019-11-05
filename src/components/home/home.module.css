@@ -20,7 +20,6 @@
 
 
 .showReal .titleContainer {
-    width: 100%;
     position: absolute;
     top: 15%;
     left: 5%;
@@ -316,6 +315,7 @@
     }
 
     .showReal .titleContainer {
+        width: 100%;
         top: 3%;
         left: 0;
         display: flex;
@@ -488,6 +488,7 @@
     .mouse {
         visibility: hidden;
         margin: 0;
+        height: 20px;
     }
 
     .showRealDescription {
@@ -495,8 +496,13 @@
         line-height: 24px;
     }
 
+    .design {
+        margin-bottom: 20px;
+    }
+
     .building .buildingTitle,
     .design .designTitle {
+        font-size: 23px;
         top: 10%;
     }
 

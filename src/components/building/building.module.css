@@ -55,6 +55,7 @@
     border: 0;
     background: #ECECEC;
 
+    font-family: Muller, sans-serif;
     font-size: 12px;
     line-height: 12px;
     text-align: center;
@@ -338,7 +339,7 @@
 
     .wrapper .title {
         top: 0%;
-        font-size: 30px;
+        font-size: 23px;
 
     }
 
@@ -349,13 +350,21 @@
     }
 
     .info h5 {
-        font-size: 30px;
+        font-size: 23px;
+    }
+
+    .types {
+        margin-bottom: 20px;
+    }
+
+    .generalContract {
+        margin-bottom: 20px;
     }
 
     .generalContract h6,
     .zeroCycle h6 {
         top: 5%;
-        font-size: 28px
+        font-size: 23px
     }
 
     .generalContract p,

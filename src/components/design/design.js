@@ -6,7 +6,7 @@ import {Link} from "gatsby";
 export default ({data}) => {
 
         return (
-            <div className={styles.design} style={{ maxWidth: 1980, margin: '0 auto', marginTop: '40px'}}>
+            <div className={styles.design} style={{ maxWidth: 1718, margin: '0 auto', marginTop: '40px'}}>
                 <div className={styles.wrapper}>
                     <img src="assets/design.jpg" alt="Архитектурно-строительное проектирование" />
                     <p className={styles.title}>Архитектурно-строительстное проектирование</p>

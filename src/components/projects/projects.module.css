@@ -3,6 +3,13 @@
     margin-bottom: 70px;
 }
 
+
+.projectsWrapper img {
+    width: 100%;
+    min-height: 100px;
+    max-width: 1720px;
+}
+
 .projectsWrapper p {
     position: absolute;
     margin: 0;

@@ -37,7 +37,7 @@ export default class Gallery extends React.Component {
             },
         ];
         return (
-            <div style={{ maxWidth: 1720}}>
+            <div>
                 <ImageGallery ref={f => this._imageGallery = f} items={images} showFullscreenButton={false} useBrowserFullscreen={false} />
             </div>
 

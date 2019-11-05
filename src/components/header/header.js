@@ -28,14 +28,14 @@ export default class Header extends React.Component {
         const menuUrl = template ? prefix + 'assets/menu-white.svg' : prefix + 'assets/menu.svg';
 
         return (
-            <div style={{ maxWidth: 1720}}>
+            <div>
                 <section className={styles.container}>
                     <Link to={`/`}>
                         <img className={styles.logo} src={logoUrl} />
                     </Link>
-                    <div className={styles.menu}>
+                    <div onClick={() => this.openModal()} className={styles.menu}>
                         <p  style={template && {color: 'white'}} className={styles.menuTitle}>МЕНЮ</p>
-                        <img className={styles.burger} src={menuUrl} onClick={() => this.openModal()}  />
+                        <img className={styles.burger} src={menuUrl}   />
                     </div>
                 </section>
                 <Modal visible={this.state.visible} width="1724" height="520" effect="fadeInUp" onClickAway={() => this.closeModal()}>

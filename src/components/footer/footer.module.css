@@ -2,7 +2,8 @@
     width: 100%;
     position: absolute;
     font-family: "MullerRegular", sans-serif;
-    min-height: 40px;
+    min-height: 70px;
+    margin-top: 40px;
 }
 
 .container img {
@@ -52,9 +53,12 @@
 @media (max-width: 500px) {
 
     .contacts {
-        top:10%;
-        font-size: 12px;
+        font-size: 20px;
+    }
 
+    .container {
+        margin-top: 20px;
+        height: 150px;
     }
 
 }

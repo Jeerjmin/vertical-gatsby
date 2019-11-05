@@ -2,7 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d11bcfd6-a9e7-457b-9bb6-2fb02ece65d8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/building/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/building/building.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/building/building.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/building/building.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/contacts/contacts.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/contacts.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/container.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/design/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/design/design.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/design/design.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/design/design.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gallery/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projectAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectAll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projectAll.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectAll.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projectBuilding.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectBuilding.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projectBuilding.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectBuilding.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projectDesign.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectDesign.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projectDesign.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectDesign.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projects.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projects.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/type/type.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/type/type.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,18 +62,18 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\vertical-gatsby\src\fonts" />
+      <recent name="C:\Projects\vertical-gatsby\src" />
+      <recent name="C:\Projects\vertical-gatsby\static\assets" />
+      <recent name="C:\Projects\vertical-gatsby\static\fonts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\vertical-gatsby\src\fonts" />
       <recent name="C:\Projects\vertical-gatsby\src\pages\projects" />
       <recent name="C:\Projects\vertical-gatsby\static\fonts" />
       <recent name="C:\Projects\vertical-gatsby\static\contacts-wrapper.jpg" />
       <recent name="C:\Projects\vertical-gatsby\static\assets\home1" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projects\vertical-gatsby\src\fonts" />
-      <recent name="C:\Projects\vertical-gatsby\src" />
-      <recent name="C:\Projects\vertical-gatsby\static\assets" />
-      <recent name="C:\Projects\vertical-gatsby\static\fonts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -92,7 +115,8 @@
       <workItem from="1572336116384" duration="249000" />
       <workItem from="1572336391728" duration="130000" />
       <workItem from="1572689193145" duration="10917000" />
-      <workItem from="1572866100783" duration="23713000" />
+      <workItem from="1572866100783" duration="24315000" />
+      <workItem from="1572973043898" duration="9326000" />
     </task>
     <servers />
   </component>

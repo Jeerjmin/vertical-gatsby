@@ -10,11 +10,13 @@
 .logo {
   width: 170.75px;
   height: 88px;
+
 }
 
 .menu {
   display: flex;
   align-items: flex-end;
+  cursor: pointer;
 }
 
 .menuTitle {

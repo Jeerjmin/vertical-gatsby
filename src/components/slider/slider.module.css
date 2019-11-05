@@ -13,10 +13,67 @@
     border: 1px solid grey;
     width: 607px;
     height: 525px;
+    margin-right: 20px;
+}
+
+.sliderImage:last-child {
+    margin-right: 0;
 }
 
 .sliderItem {
     position: relative;
+
+}
+
+.sliderItem .hover {
+    visibility: hidden;
+}
+
+.sliderItem:hover .hover {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: calc(50% - 10px);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(38,38,38,0.6);
+    margin: 0;
+    padding: 0;
+}
+
+
+.sliderItem .hover .title {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-right: 80px;
+    font-size: 12px;
+    line-height: 12px;
+    color: #ECECEC;
+    opacity: 0.7;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.sliderItem  .hover .name {
+    position: relative;
+    font-family: Muller, sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    padding-right: 80px;
+    padding-bottom: 80px;
+
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 1;
+
+    color: #FFFFFF;
 }
 
 .arrows {
@@ -120,6 +177,60 @@
         width: 100%;
     }
 
+    .sliderItem .hover {
+        visibility: visible;
+    }
+
+    .sliderItem:hover .hover,
+    .sliderItem .hover {
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: calc(50%);
+        transform: translate(-50%, -50%);
+        top: 50%;
+        width: 90%;
+        height: 90%;
+        background-color: rgba(38,38,38,0.6);
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
+    .sliderItem .hover .title {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        padding-right: 80px;
+        font-size: 12px;
+        line-height: 12px;
+        color: #ECECEC;
+        opacity: 0.7;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    .sliderItem  .hover .name {
+        position: relative;
+        font-family: Muller, sans-serif;
+        font-size: 16px;
+        line-height: 34px;
+        padding-right: 80px;
+        padding-bottom: 80px;
+        word-wrap: break-spaces;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        opacity: 1;
+        min-width: 250px;
+        color: #FFFFFF;
+    }
+
     .sliderImage {
         width: 100%;
         height: 100%;
@@ -137,6 +248,11 @@
 }
 
 @media (max-width: 420px) {
+
+    .sliderItem {
+        margin-bottom: 20px;
+    }
+
 
 
 

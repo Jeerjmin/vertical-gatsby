@@ -13,13 +13,17 @@ export default ({building, design}) => {
                         <Link className={styles.link} to={`/building/${item.node.id}`}>
                             <div className={styles.item}>
                                 <Img className={styles.itemImage} alt={item.node.name} fluid={item.node.image.fluid} />
-                                <div className={styles.info}>
-                                    <div className={styles.title}>
-                                        Строительство
-                                    </div>
-                                    <div className={styles.name}>
-                                        {item.node.name}
-                                    </div>
+                                {/*<div className={styles.info}>*/}
+                                {/*    <div className={styles.title}>*/}
+                                {/*        Строительство*/}
+                                {/*    </div>*/}
+                                {/*    <div className={styles.name}>*/}
+                                {/*        {item.node.name}*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
+                                <div className={styles.hover}>
+                                    <p className={styles.title}>Строительство</p>
+                                    <p className={styles.name}>{item.node.name}</p>
                                 </div>
                             </div>
                         </Link>
@@ -31,13 +35,17 @@ export default ({building, design}) => {
                         <Link to={`/design/${item.node.id}`}>
                             <div className={styles.item}>
                                 <Img className={styles.itemImage} alt={item.node.name} fluid={item.node.image.fluid} />
-                                <div className={styles.info}>
-                                    <div className={styles.title}>
-                                        Проектирование
-                                    </div>
-                                    <div className={styles.name}>
-                                        {item.node.name}
-                                    </div>
+                                {/*<div className={styles.info}>*/}
+                                {/*    <div className={styles.title}>*/}
+                                {/*        Строительство*/}
+                                {/*    </div>*/}
+                                {/*    <div className={styles.name}>*/}
+                                {/*        {item.node.name}*/}
+                                {/*    </div>*/}
+                                {/*</div>*/}
+                                <div className={styles.hover}>
+                                    <p className={styles.title}>Строительство</p>
+                                    <p className={styles.name}>{item.node.name}</p>
                                 </div>
                             </div>
                         </Link>

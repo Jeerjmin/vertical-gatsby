@@ -53,6 +53,7 @@
     border: 0;
     background: #ECECEC;
 
+    font-family: Muller, sans-serif;
     font-size: 12px;
     line-height: 12px;
     text-align: center;
@@ -119,7 +120,7 @@
 @media (max-width: 1200px) {
     .wrapper .title {
         top: 6%;
-        font-size: 35px;
+        font-size: 23px;
     }
 }
 

@@ -38,7 +38,11 @@ export default class Slider extends React.Component {
                             <Link key={item.node.id} to={`/${this.props.type.toLowerCase()}/${item.node.id}`}>
                                 <div className={styles.sliderItem}>
                                     <Img  className={styles.sliderImage} alt={item.node.name} fluid={item.node.image.fluid} />
-                                    <div className={styles.info}>
+                                    {/*<div className={styles.info}>*/}
+                                    {/*    <p className={styles.title}>{this.props.type=== 'Building' ? 'Строительство' : 'Проектирование'}</p>*/}
+                                    {/*    <p className={styles.name}>{item.node.name}</p>*/}
+                                    {/*</div>*/}
+                                    <div className={styles.hover}>
                                         <p className={styles.title}>{this.props.type=== 'Building' ? 'Строительство' : 'Проектирование'}</p>
                                         <p className={styles.name}>{item.node.name}</p>
                                     </div>

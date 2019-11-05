@@ -30,11 +30,32 @@ class AboutComponent extends React.Component {
 
     render() {
 
+        let title;
+
+        switch (this.props.param.type) {
+            case 'about': {
+                title = 'О компании';
+                break;
+            }
+            case 'team': {
+                title = 'Наша команда';
+                break;
+            }
+            case 'work': {
+                title = 'Как мы работаем';
+                break;
+            }
+            case 'object': {
+                title = 'Объекты';
+                break;
+            }
+        }
+
         return (
-            <div className={styles.container} style={{ maxWidth: 1720,  margin: '0 auto'}}>
+            <div className={styles.container} style={{ margin: '0 auto'}}>
                 <div className={styles.wrapper}>
                     <img src="assets/about-wrapper.png" alt="О компании" />
-                    <h4 className={styles.title}>О компании</h4>
+                    <h4 className={styles.title}>{title}</h4>
                     <p className={styles.description}>
                         Мы рады приветствовать Вас на сайте «Вертикаль».
                         Мы - сплоченная команда профессиональных инженеров.
