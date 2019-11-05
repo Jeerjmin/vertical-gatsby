@@ -29,6 +29,13 @@
     visibility: hidden;
 }
 
+.sliderItem .hover .hoverContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .sliderItem:hover .hover {
     visibility: visible;
     display: flex;
