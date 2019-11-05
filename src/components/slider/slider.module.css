@@ -228,7 +228,7 @@
         font-size: 16px;
         line-height: 34px;
         padding-right: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 0px;
         word-wrap: break-spaces;
         text-align: center;
         letter-spacing: 2px;
