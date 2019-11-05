@@ -27,7 +27,9 @@ export default ({data}) => {
                     <Link to={`/type?type=generalDesign`}>
                         <div className={styles.generalDesign}>
                             <img src="assets/building-1.jpg" alt="Генеральное проектирование" />
-                            <h6>Генеральное проектирование</h6>
+                            <div className={styles.titleContainer}>
+                                <h6>Генеральное проектирование</h6>
+                            </div>
                             <div className={styles.descriptionContainer}>
                                 <p>Проектирование является профильной деятельностью,
                                 где мы зарекомендовали себя как профессионалы своего дела.
@@ -44,7 +46,9 @@ export default ({data}) => {
                     <Link to={`/type?type=сonstructiveDecisions`}>
                         <div className={styles.сonstructiveDecisions}>
                             <img src="assets/building-2.png" alt="Конструктивные решение" />
-                            <h6>Конструктивные решения</h6>
+                            <div className={styles.titleContainer}>
+                                <h6>Конструктивные решения</h6>
+                            </div>
                             <div className={styles.descriptionContainer}>
                                 <p>Конструктивные решения – это неотъемлемая
                                 составляющая проекта. Согласно действующим
@@ -61,7 +65,9 @@ export default ({data}) => {
                     <Link to={`/type?type=geotechnicalSubstantiation`}>
                         <div className={styles.geotechnicalSubstantiation}>
                             <img src="assets/building-3.png" alt="Геотехническое обоснование" />
-                            <h6>Геотехническое обоснование</h6>
+                            <div className={styles.titleContainer}>
+                                <h6>Геотехническое обоснование</h6>
+                            </div>
                             <div className={styles.descriptionContainer}>
                                 <p>
                                 Геотехника объединяет инженерную геологию,

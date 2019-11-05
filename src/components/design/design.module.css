@@ -186,28 +186,35 @@
 
 }
 
+.geotechnicalSubstantiation .titleContainer,
+.сonstructiveDecisions .titleContainer,
+.generalDesign .titleContainer {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 .geotechnicalSubstantiation h6,
 .сonstructiveDecisions h6,
 .generalDesign h6 {
+    position: relative;
     font-family: Muller, sans-serif;
-    width: 100%;
+    width: 90%;
     margin: 0;
     padding: 0;
-    position: absolute;
-    top: 70px;
-    left: 0;
-
     font-size: 35px;
     line-height: 45px;
-
-
     text-align: center;
     text-transform: uppercase;
-
     color: #2B2A29;
     opacity: 1;
 }
+
+
 
 .geotechnicalSubstantiation .descriptionContainer,
 .сonstructiveDecisions .descriptionContainer,
@@ -284,10 +291,15 @@
         top: 25%;
     }
 
+    .geotechnicalSubstantiation .titleContainer,
+    .сonstructiveDecisions .titleContainer,
+    .generalDesign .titleContainer {
+        top: 5%;
+    }
+
     .geotechnicalSubstantiation h6,
     .сonstructiveDecisions h6,
     .generalDesign h6 {
-        top: 5%;
         font-size: 30px;
     }
 
@@ -430,10 +442,15 @@
         margin-bottom: 20px;
     }
 
+    .geotechnicalSubstantiation .titleContainer,
+    .generalDesign .titleContainer,
+    .сonstructiveDecisions .titleContainer {
+        top: 5%;
+    }
+
     .geotechnicalSubstantiation h6,
     .generalDesign h6,
     .сonstructiveDecisions h6 {
-        top: 5%;
         font-size: 23px
     }
 
