@@ -8,6 +8,10 @@
   font-family: "MullerRegular", sans-serif;
 }
 
+.templateHeader .container {
+  max-width: 1695px;
+}
+
 .logo {
   width: 170.75px;
   height: 88px;

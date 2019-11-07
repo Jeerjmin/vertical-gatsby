@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './menu.module.css';
 import Link from "gatsby-link";
+import Header from "../header/header";
 
 export default class Menu extends React.Component {
 

@@ -31,7 +31,7 @@ export default class Header extends React.Component {
         const closeUrl = template ? prefix + 'assets/close-menu.svg' : prefix + 'assets/close-menu.svg';
 
         return (
-            <div className={styles.header}>
+            <div className={!template ? styles.header : styles.templateHeader}>
                 <section className={styles.container}>
                     <Link to={`/`}>
                         <img className={styles.logo} src={logoUrl} />
