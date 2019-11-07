@@ -6,7 +6,9 @@ import Header from "../header/header";
 export default class Menu extends React.Component {
 
 
-
+    closeMenu() {
+        document.body.style.overflow = 'unset';
+    }
 
     render() {
 
@@ -14,7 +16,7 @@ export default class Menu extends React.Component {
 
         return (
             <div className={styles.container}>
-                <div className={styles.building}>
+                <div onClick={() => this.closeMenu()} className={styles.building}>
                     <Link to={`/building`}>
                         <img className={styles.image} src={prefix + "assets/menu-building.jpg"} alt="Строительство"/>
                         <span className={styles.title}>Строительство</span>
@@ -30,7 +32,7 @@ export default class Menu extends React.Component {
                         </div>
                     </Link>
                 </div>
-                <div className={styles.design}>
+                <div onClick={() => this.closeMenu()} className={styles.design}>
                     <Link to={`/design`}>
                         <img className={styles.image} src={prefix + "assets/menu-design.jpg"} alt="Проектирование"/>
                         <span className={styles.title}>Проектирование</span>
@@ -50,7 +52,7 @@ export default class Menu extends React.Component {
                         </div>
                     </Link>
                 </div>
-                <div className={styles.about}>
+                <div onClick={() => this.closeMenu()} className={styles.about}>
                     <Link to={`/about`}>
                         <img className={styles.image} src={prefix + "assets/menu-about.jpg"} alt="О нас"/>
                         <span className={styles.title}>О Нас</span>
@@ -61,7 +63,7 @@ export default class Menu extends React.Component {
                         </div>
                     </Link>
                 </div>
-                <div className={styles.contacts}>
+                <div onClick={() => this.closeMenu()} className={styles.contacts}>
                     <Link to={`/contacts`}>
                         <img className={styles.image} src={prefix + "assets/menu-contacts.jpg"} alt="Контакты"/>
                         <span className={styles.title}>Контакты</span>
