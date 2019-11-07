@@ -1,7 +1,11 @@
 .image-gallery-slide {
-    max-height: 800px !important;
+    max-height: 600px !important;
 }
 
+body {
+    overflow-x: hidden;
+
+}
 
 
 /*@font-face {*/

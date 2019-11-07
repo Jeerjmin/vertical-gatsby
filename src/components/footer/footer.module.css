@@ -1,5 +1,6 @@
 .container {
     width: 100%;
+    height: 119px;
     position: absolute;
     font-family: "MullerRegular", sans-serif;
     min-height: 70px;
@@ -16,7 +17,7 @@
 .contacts {
     width: 100%;
     position: absolute;
-    top:30%;
+    top:35%;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.2em;

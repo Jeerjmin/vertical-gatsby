@@ -1,6 +1,7 @@
 
 .container {
     width: 100%;
+    margin-left: 128px;
 }
 
 .container .slider {
@@ -10,10 +11,10 @@
 }
 
 .sliderImage {
+    position: relative;
     border: 1px solid grey;
-    width: 607px;
-    height: 525px;
-    margin-right: 20px;
+    width: 450px;
+    height: 400px;
 }
 
 .sliderImage:last-child {
@@ -22,6 +23,9 @@
 
 .sliderItem {
     position: relative;
+    width: 450px;
+    height: 400px;
+    margin-right: 98px;
 
 }
 
@@ -43,7 +47,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    left: calc(50% - 10px);
+    left: calc(50%);
     transform: translate(-50%, -50%);
     top: 50%;
     width: 90%;
@@ -146,6 +150,7 @@
 .sliderFooter {
     display: flex;
     justify-content: space-between;
+    margin-top: 55px;
 }
 
 
@@ -161,27 +166,37 @@
     letter-spacing: 2px;
     color: #B9261A;
     border: 1px solid #B9261A;
-    padding: 0 34px;
     cursor: pointer;
+    margin-right: 170px;
 }
 
 
 
 
-@media (max-width: 1500px) {
+@media (max-width: 800px) {
 
     .container {
         width: 100%;
+        margin-left: 0;
     }
 
     .slider {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         width: 100%;
     }
 
+    .sliderItem,
+    .sliderImage {
+        width: 550px;
+        height: 500px;
+    }
+
     .sliderItem {
-        width: 100%;
+        margin-right: 0;
+        margin-top: 30px;
     }
 
     .sliderItem .hover {
@@ -205,9 +220,6 @@
         margin: 0;
         padding: 0;
     }
-
-
-
 
     .sliderItem .hover .title {
         position: relative;
@@ -239,29 +251,33 @@
         color: #FFFFFF;
     }
 
-    .sliderImage {
-        width: 100%;
-        height: 100%;
+    .arrows {
+        width: 0;
     }
-
     .buttonArrow {
         visibility: hidden;
     }
 
     .sliderFooter {
-        margin-top: 30px;
+        margin-top: 55px;
         justify-content: center;
+    }
+    .allProjects {
+        margin-right: 0;
     }
 
 }
 
 @media (max-width: 420px) {
 
-    .sliderItem {
-        margin-bottom: 20px;
+
+
+
+    .sliderItem,
+    .sliderImage {
+        width: 350px;
+        height: 300px;
     }
-
-
 
 
     .sliderItem .title {

@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-left: 100px;
   margin-bottom: 32px;
   font-family: "MullerRegular", sans-serif;
 }
@@ -35,6 +34,17 @@
   height: 14px;
   cursor: pointer;
   margin-bottom: 20px;
+}
+
+.modal {
+  font-size:45px;
+  align-items: flex-end;
+}
+
+.header > div > div >div:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0) !important;
+  background: linear-gradient(transparent 100px, white 100px);
+  cursor: pointer;
 }
 
 

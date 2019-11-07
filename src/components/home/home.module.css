@@ -77,6 +77,7 @@
 }
 
 .showRealButton {
+    font-family: "Muller", sans-serif;
     width: 219px;
     position: absolute;
     top: 75%;
@@ -185,6 +186,7 @@
 
 .buildingButton,
 .designButton {
+    font-family: Muller, sans-serif;
     position: relative;
     width: 219px;
     border: 1px solid #B9261A;
@@ -225,7 +227,7 @@
 
     .showRealDescription {
         font-size: 15px;
-        line-height: 21px;
+        line-height: 28px;
     }
 
     .showRealButton:hover,

@@ -74,10 +74,26 @@
 .text {
     display: flex;
     position: absolute;
-    bottom: 60px;
-    left: 120px;
+    bottom: 50px;
+    left: 100px;
     visibility: hidden;
+}
 
+.line {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 2px;
+    height: 200px;
+    background: #000000;
+    visibility: hidden;
+}
+
+.contacts:hover .line,
+.about:hover .line,
+.design:hover .line,
+.building:hover .line {
+    visibility: visible;
 }
 
 .text span {
@@ -86,8 +102,8 @@
 
     font-family: MullerRegular, sans-serif;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 45px;
+    font-size: 12px;
+    line-height: 35px;
 
     display: flex;
     align-items: center;
@@ -97,6 +113,8 @@
     color: #222222;
     opacity: 0.7;
 }
+
+
 
 @media (max-width: 1000px) {
     .container {
@@ -120,9 +138,12 @@
         transform: rotate(0deg);
     }
 
+    .line,
     .text {
         visibility: hidden !important;
     }
+
+
 
     .image {
         position: relative;

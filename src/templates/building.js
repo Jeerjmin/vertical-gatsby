@@ -64,9 +64,9 @@ class BuildingTemplate extends React.Component {
                 <div className={styles.box}>
                     <p className={styles.name}>{item.name}</p>
                     <p className={styles.description}>со встроенно-пристроенными помещениями, объектами дошкольного образования и подземным гаражом</p>
-                    <p className={styles.customer} >Заказчик</p>
+                    <p className={styles.customer} >Заказчик:</p>
                     <p className={styles.customerName}>«NCC — Жилищное строительство»</p>
-                    <p className={styles.location}>Местоположение</p>
+                    <p className={styles.location}>Местоположение:</p>
                     <p className={styles.locationName}>Санкт-Петербург, Аптекарский проспект, д. 16, литера Б</p>
                     <p className={styles.description2}>Разработка конструктивных решений стадии «Проект» и «Рабочая документация»; полный комплекс расчетов</p>
                     <p className={styles.square}>Площадь проектирования</p>
@@ -80,18 +80,17 @@ class BuildingTemplate extends React.Component {
                             </Link>
                             <button  onClick={() => this.openModal()} className={styles.galleryLink}>
                                 <span>Фото объекта</span>
-                                <img src="../assets/arrow-right.svg"/>
                             </button>
                         </div>
                    }
-                    {this.state.width > 1200 &&
 
-                    <button onClick={() => this.openModal()} className={styles.galleryLink}>
-                        <span>Фото объекта</span>
-                        <img src="../assets/arrow-right.svg"/>
-                    </button>
-                    }
                 </div>
+                {this.state.width > 1200 &&
+
+                <button onClick={() => this.openModal()} className={styles.galleryLink}>
+                    <span>Фото объекта</span>
+                </button>
+                }
                 <Modal visible={this.state.visible} width="1724" height="520" effect="fadeInUp" onClickAway={() => this.closeModal()}>
                     <Gallery/>
                 </Modal>

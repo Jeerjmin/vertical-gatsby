@@ -34,7 +34,7 @@
 .wrapper .description {
     margin: 0;
     position: absolute;
-    left: 110px;
+    left: 107px;
     top: 241px;
     max-width: 952px;
     font-family: MullerRegular, sans-serif;
@@ -42,7 +42,6 @@
     line-height: 28px;
     opacity: 0.7;
     color: #2B2A29;
-    padding: 0 10px;
 }
 
 @media (max-width: 420px) {

@@ -49,6 +49,9 @@ class AboutComponent extends React.Component {
                 title = 'Объекты';
                 break;
             }
+            default: {
+                title = 'О компании'
+            }
         }
 
         return (

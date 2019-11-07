@@ -5,6 +5,8 @@ import Link from "gatsby-link";
 export default class Menu extends React.Component {
 
 
+
+
     render() {
 
         const {prefix} = this.props
@@ -22,6 +24,8 @@ export default class Menu extends React.Component {
                             <span>
                                 Нулевой цикл
                             </span>
+                        </div>
+                        <div className={styles.line}>
                         </div>
                     </Link>
                 </div>
@@ -41,6 +45,8 @@ export default class Menu extends React.Component {
                                 Геотехническое обоснование
                             </span>
                         </div>
+                        <div className={styles.line}>
+                        </div>
                     </Link>
                 </div>
                 <div className={styles.about}>
@@ -49,7 +55,8 @@ export default class Menu extends React.Component {
                         <span className={styles.title}>О Нас</span>
 
                         <div className={styles.text}>
-
+                        </div>
+                        <div className={styles.line}>
                         </div>
                     </Link>
                 </div>
@@ -60,6 +67,8 @@ export default class Menu extends React.Component {
 
                         <div className={styles.text}>
 
+                        </div>
+                        <div className={styles.line}>
                         </div>
                     </Link>
                 </div>
