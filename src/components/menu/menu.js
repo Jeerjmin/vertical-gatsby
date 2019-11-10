@@ -8,6 +8,7 @@ export default class Menu extends React.Component {
 
     closeMenu() {
         document.body.style.overflow = 'unset';
+        this.props.closeModal()
     }
 
     render() {

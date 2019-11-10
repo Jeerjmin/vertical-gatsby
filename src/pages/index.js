@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 import Helmet from 'react-helmet'
-import Layout from '../components/layout'
+import Layout from '../components/layouts'
 import Home from "../components/home/home";
 
 class RootIndex extends React.Component {
@@ -13,9 +13,7 @@ class RootIndex extends React.Component {
     console.log('posts', )
 
     return (
-      <Layout footer location={this.props.location} >
         <Home showReal={showReal && showReal.edges[0].node}/>
-      </Layout>
     )
   }
 }

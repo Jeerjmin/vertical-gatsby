@@ -1,9 +1,8 @@
 import React from 'react'
 import styles from './about.module.css'
-
+import './styles.css';
 
 class About extends React.Component {
-
 
 
     render() {
@@ -11,6 +10,7 @@ class About extends React.Component {
 
         return (
             <div className={styles.about}>
+
                 <div className={styles.descriptions}>
                    <div>
                        Наше призвание-изучать, придумывать, проектировать, строить, осуществлять строительный контроль,
@@ -58,8 +58,6 @@ class About extends React.Component {
                     </div>
                 </div>
             </div>
-
-
         );
     }
 }

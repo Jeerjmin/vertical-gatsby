@@ -1,0 +1,21 @@
+.slide-back-enter {
+    transform: translate(100%);
+}
+
+.slide-back-leave.slide-back-leave-active,
+.slide-back-exit.slide-back-exit-active {
+    transform: translate(-100%);
+}
+
+.slide-back-enter.slide-back-enter-active,
+.slide-back-leave,
+.slide-back-exit {
+    transform: translate(0%);
+}
+
+.slide-back-enter.slide-back-enter-active,
+.slide-back-exit.slide-back-exit-active,
+.slide-back-leave.slide-back-leave-active {
+    transition: transform 500ms ease-in-out;
+    transition-timing-function: cubic-bezier(0, 0, 1, 1);
+}

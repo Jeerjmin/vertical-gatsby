@@ -11,13 +11,13 @@ export default class Header extends React.Component {
             visible : false
         }
     }
-    openModal() {
+    openModal = () => {
         document.body.style.overflow = 'hidden';
         this.setState({
             visible : true
         });
     }
-    closeModal() {
+    closeModal = () => {
         this.setState({
             visible : false
         });
@@ -50,7 +50,7 @@ export default class Header extends React.Component {
                     )}
                 </section>
                 <Modal className={styles.modal} visible={this.state.visible} width="1724" height="520" effect="fadeInUp" onClickAway={() => this.closeModal()}>
-                    <Menu visible={this.state.visible} prefix={prefix}/>
+                    <Menu closeModal={this.closeModal} visible={this.state.visible} prefix={prefix}/>
                 </Modal>
             </div>
 

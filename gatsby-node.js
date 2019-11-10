@@ -71,6 +71,7 @@ exports.createPages = ({ graphql, actions }) => {
             path: `/building/${building.node.id}/`,
             component: buildingPage,
             context: {
+              type: 'template',
               item: building.node
             }
           })
@@ -80,6 +81,7 @@ exports.createPages = ({ graphql, actions }) => {
             path: `/design/${design.node.id}/`,
             component: designPage,
             context: {
+              type: 'template',
               item: design.node
             }
           })

@@ -1,4 +1,7 @@
 import React from 'react'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+
 import withLocation from "../../modules/withLocation";
 
 import styles from './index.module.css'
@@ -7,9 +10,14 @@ import Team from "./team";
 import Objects from "./objects";
 import Work from "./work";
 import AboutNavigation from "./navigation";
+import './styles.css';
+
 
 class AboutComponent extends React.Component {
 
+    componentDidMount () {
+        document.body.style.overflow = 'auto'
+    }
 
     renderSwitch(type) {
 
@@ -66,7 +74,15 @@ class AboutComponent extends React.Component {
                     </p>
                 </div>
                 <AboutNavigation />
-                {this.props.param && this.renderSwitch(this.props.param.type)}
+                <TransitionGroup>
+                    <CSSTransition
+                        key={this.props.param.type}
+                        classNames={"slide-back"}
+                        timeout={{ enter: 500, exit: 500 }}
+                    >
+                        {this.props.param && this.renderSwitch(this.props.param.type)}
+                    </CSSTransition>
+                </TransitionGroup>
             </div>
 
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/layouts'
 import Building from "../components/building/building";
 import {graphql} from "gatsby";
 import get from "lodash/get";
@@ -12,9 +12,7 @@ class BuildingContainer extends React.Component {
         console.log('buildingItems', buildingItems)
 
         return (
-            <Layout footer location={this.props.location} >
                 <Building data={buildingItems}/>
-            </Layout>
         )
     }
 }

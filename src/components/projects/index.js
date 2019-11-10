@@ -5,6 +5,9 @@ import Design from './projectDesign';
 import Building from './projectBuilding'
 import All from './projectAll'
 import styles from './projects.module.css'
+import {CSSTransition, TransitionGroup} from "react-transition-group";
+import './styles.css';
+
 
 class ProjectsComponent extends React.Component {
 
@@ -31,7 +34,15 @@ class ProjectsComponent extends React.Component {
                     <p>Наши проекты</p>
                 </div>
                 <ProjectsNavigation />
-                {this.props.param && this.renderSwitch(this.props.param.type)}
+                <TransitionGroup>
+                    <CSSTransition
+                        key={this.props.param.type}
+                        classNames={"slide-back"}
+                        timeout={{ enter: 500, exit: 500 }}
+                    >
+                    {this.props.param && this.renderSwitch(this.props.param.type)}
+                    </CSSTransition>
+                </TransitionGroup>
             </div>
 
 
