@@ -9,7 +9,7 @@ class DesignContainer extends React.Component {
 
         const designItems = get(this, 'props.data.allContentfulDesignItem.edges');
 
-        console.log('designItems', designItems)
+        console.log('designItems', this.props)
 
         return (
                 <Design data={designItems}/>
