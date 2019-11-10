@@ -2,44 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d11bcfd6-a9e7-457b-9bb6-2fb02ece65d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/about/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/projects/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/assets/pause-button.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/objects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/objects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/team.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/work.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/work.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layout.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/projectAll.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectAll.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/projectBuilding.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectBuilding.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/projectDesign.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectDesign.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/type/type.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/type/type.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/building.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/design.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/type.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/type.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/building.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/design.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
