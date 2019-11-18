@@ -476,6 +476,20 @@
 
 @media (max-width: 800px) {
 
+    .playerClose {
+        width: 25px;
+        height: 25px;
+    }
+
+    .playerPlay {
+        width: 55px;
+        height: 55px;
+    }
+
+    .playerPause {
+        width:35px;
+        height:35px;
+    }
 
     .showReal .descriptionContainer {
         top: 23%;
@@ -528,6 +542,8 @@
 
 
 @media (max-width: 420px) {
+
+
 
     .showReal {
         margin: 0;
