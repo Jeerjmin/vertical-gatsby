@@ -2,56 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d11bcfd6-a9e7-457b-9bb6-2fb02ece65d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/design/building-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/design/building-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/type/arrow-right.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/type/design.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/close-menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/home/pause-button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/close-menu.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/assets/showReal-play.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/objects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/objects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/team.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/work.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/work.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/building/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/building/building.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contacts/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/design/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/design/design.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/type/type.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/type/type.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/building.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/design.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/about-wrapper.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about-wrapper.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/arrow-left-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/arrow-left-white.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/arrow-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/arrow-right.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/building-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/building/building-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/building-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/building/building-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/building-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/design/building-3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/building.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/building/building.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/close-menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/close-menu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/contacts-wrapper.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/contacts-wrapper.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/design.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/design/design.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/footer.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/home-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/home-building.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home-building.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/home-design.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home-design.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/logo-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/logo-white.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/logo.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/menu-about.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu-about.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/menu-building.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu-building.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/menu-contacts.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu-contacts.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/menu-design.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu-design.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/menu-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/menu-white.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/menu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/mouse.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/mouse.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/projects-wrapper.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projects-wrapper.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/showReal-play.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/showReal-play.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/showreal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/toCustomers.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/toCustomers.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/assets/type-wrapper.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/type/type-wrapper.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +30,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/home" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -89,11 +45,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\vertical-gatsby\src\components\home" />
       <recent name="C:\Projects\vertical-gatsby\src\templates" />
       <recent name="C:\Projects\vertical-gatsby\src\components\header" />
       <recent name="C:\Projects\vertical-gatsby\src\components\projects" />
       <recent name="C:\Projects\vertical-gatsby\src\components\contacts" />
-      <recent name="C:\Projects\vertical-gatsby\src\components\type" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\vertical-gatsby\src\fonts" />
@@ -145,7 +101,7 @@
       <workItem from="1572866100783" duration="24315000" />
       <workItem from="1572973043898" duration="13146000" />
       <workItem from="1573059512418" duration="26337000" />
-      <workItem from="1574100210400" duration="1555000" />
+      <workItem from="1574100210400" duration="2224000" />
     </task>
     <servers />
   </component>

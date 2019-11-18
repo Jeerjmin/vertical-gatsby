@@ -8,6 +8,8 @@ import mouse from './mouse.svg';
 import showRealPlay from './showReal-play.svg';
 import homeDesign from './home-design.jpg';
 import homeBuilding from './home-building.jpg';
+import closeMenu from './close-menu.svg';
+import pauseButton from './pause-button.svg';
 
 import ReactPlayer from "react-player";
 import "animate.css/animate.min.css";
@@ -68,9 +70,9 @@ export default ({showReal}) => {
                         playing={play} />
                         <img onClick={() => setPlay(!play)}
                              className={!play ? styles.playerPlay : styles.playerPause}
-                             src={play ? `assets\\pause-button.svg` : "assets\\showReal-play.svg"} alt="Плэй"/>
+                             src={play ? pauseButton : showRealPlay} alt="Плэй"/>
                         <img onClick={() => setVideo(false)} className={styles.playerClose}
-                         src="assets\close-menu.svg" alt="Close"/>
+                         src={closeMenu} alt="Close"/>
                 </div>
                 }
                 <div className={styles.mouse}>
