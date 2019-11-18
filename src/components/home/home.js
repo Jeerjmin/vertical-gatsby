@@ -4,6 +4,11 @@ import Img from "gatsby-image";
 import { BLOCKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import {Link} from "gatsby";
+import mouse from './mouse.svg';
+import showRealPlay from './showReal-play.svg';
+import homeDesign from './home-design.jpg';
+import homeBuilding from './home-building.jpg';
+
 
 export default ({showReal}) => {
     console.log('showReal', showReal)
@@ -43,15 +48,15 @@ export default ({showReal}) => {
                         </Link>
                     </div>
                     <div className={styles.buttonContainerPlay}>
-                        <img className={styles.showRealPlay} src="assets\showReal-play.svg" alt="Плэй" />
+                        <img className={styles.showRealPlay} src={showRealPlay} alt="Плэй" />
                     </div>
                 </div>
                 <div className={styles.mouse}>
-                    <img  src="assets\mouse.svg" alt="Скролл" />
+                    <img  src={mouse} alt="Скролл" />
                 </div>
                 <div className={styles.types}>
                     <div className={styles.design}>
-                        <img src="assets\home-design.jpg" alt="Проектирование" />
+                        <img src={homeDesign} alt="Проектирование" />
                         <p className={styles.designTitle}>ПРОЕКТИРОВАНИЕ </p>
                         <div className={styles.designDescriptionContainer}>
                             <p className={styles.designDescription}>
@@ -68,7 +73,7 @@ export default ({showReal}) => {
                         </div>
                     </div>
                     <div className={styles.building}>
-                        <img src="assets\home-building.jpg" alt="Строительство" />
+                        <img src={homeBuilding} alt="Строительство" />
                         <p className={styles.buildingTitle}>СТРОИТЕЛЬСТВО </p>
                         <div className={styles.buildingDescriptionContainer}>
                             <p className={styles.buildingDescription}>

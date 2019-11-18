@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './about.module.css'
-
+import toCustomers from './toCustomers.jpg';
 
 class About extends React.Component {
 
@@ -38,7 +38,7 @@ class About extends React.Component {
                 <div className={styles.toCustomers}>
                     <h4>Заказчикам</h4>
                     <div className={styles.container}>
-                        <img src="assets/toCustomers.jpg" alt="Заказчикам" />
+                        <img src={toCustomers} alt="Заказчикам" />
                         <div className={styles.text}>
                             <div>
                                 В течение последних 7 лет мы оказываем помощь своим клиентам, выступая в качестве генерального подрядчика,

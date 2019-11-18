@@ -2,6 +2,9 @@ import React from 'react'
 import styles from './type.module.css'
 import {Link} from "gatsby";
 import Slider from "../slider/slider";
+import designImage from './design.jpg';
+import typeWrapper from './type-wrapper.png';
+import arrowRight from './arrow-right.svg';
 
 export default ({data, type}) => {
 
@@ -10,8 +13,6 @@ export default ({data, type}) => {
     let description;
     let link;
     let linkTitle;
-
-    console.log('type', type)
 
     switch (type) {
         case 'generalContract': {
@@ -131,12 +132,12 @@ export default ({data, type}) => {
     return (
         <div className={styles.type} style={{ width: '100%', margin: '0 auto', marginTop: '40px'}}>
             <div className={styles.wrapper}>
-                <img src="assets/design.jpg" alt={wrapperTitle} />
+                <img src={designImage} alt={wrapperTitle} />
                 <p className={styles.title}>{wrapperTitle}</p>
                 <p className={styles.description}>{wrapperDescription}</p>
                 <Link to={`/${linkTitle}`}>
                     <button className={styles.link} >
-                        {link} <img className={styles.arrowLink} src="assets/arrow-right.svg" alt={link} />
+                        {link} <img className={styles.arrowLink} src={arrowRight} alt={link} />
                     </button>
                 </Link>
             </div>
@@ -145,7 +146,7 @@ export default ({data, type}) => {
                     {description}
                 </p>
                 <div className={styles.image}>
-                    <img src="assets/type-wrapper.png" alt={wrapperTitle} />
+                    <img src={typeWrapper} alt={wrapperTitle} />
                 </div>
             </div>
 

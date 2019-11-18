@@ -7,6 +7,8 @@ import Header from "../components/header/header";
 import Container from "../components/container";
 import Modal from "react-awesome-modal";
 import Gallery from "../components/gallery";
+import arrowLeftWhite from './arrow-left-white.svg';
+
 
 class DesignTemplate extends React.Component {
 
@@ -58,7 +60,7 @@ class DesignTemplate extends React.Component {
                 (<>
                     <Link class={styles.linkBack} to={`/projects?type=building`}>
                     <button className={styles.buttonBack}>
-                        <img src="../assets/arrow-left-white.svg"/>
+                        <img src={arrowLeftWhite}/>
                     </button>
                 </Link>
                 <button  onClick={() => this.openModal()} className={styles.galleryLink}>
@@ -79,7 +81,7 @@ class DesignTemplate extends React.Component {
                     <div className={styles.actions}>
                         <Link class={styles.linkBack} to={`/projects?type=building`}>
                             <button className={styles.buttonBack}>
-                                <img src="../assets/arrow-left-white.svg"/>
+                                <img src={arrowLeftWhite}/>
                             </button>
                         </Link>
                         <button  onClick={() => this.openModal()} className={styles.galleryLink}>

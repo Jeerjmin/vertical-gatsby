@@ -7,6 +7,7 @@ import Team from "./team";
 import Objects from "./objects";
 import Work from "./work";
 import AboutNavigation from "./navigation";
+import aboutWrapper from "./about-wrapper.png"
 
 class AboutComponent extends React.Component {
 
@@ -57,7 +58,7 @@ class AboutComponent extends React.Component {
         return (
             <div className={styles.container} style={{ margin: '0 auto'}}>
                 <div className={styles.wrapper}>
-                    <img src="assets/about-wrapper.png" alt="О компании" />
+                    <img src={aboutWrapper} alt="О компании" />
                     <h4 className={styles.title}>{title}</h4>
                     <p className={styles.description}>
                         Мы рады приветствовать Вас на сайте «Вертикаль».

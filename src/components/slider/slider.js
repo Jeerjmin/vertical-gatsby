@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './slider.module.css'
 import Img from "gatsby-image";
 import {Link} from "gatsby";
+import arrowRight from './arrow-right.svg';
 
 export default class Slider extends React.Component {
 
@@ -57,10 +58,10 @@ export default class Slider extends React.Component {
                 <div className={styles.sliderFooter}>
                     <div class={styles.arrows}>
                         <button className={styles.buttonArrow}>
-                            <img src="assets/arrow-right.svg" style={{transform: 'rotate(180deg)'}} className={styles.imageArrow} onClick={this.toScrollLeft} />
+                            <img src={arrowRight} style={{transform: 'rotate(180deg)'}} className={styles.imageArrow} onClick={this.toScrollLeft} />
                         </button>
                         <button className={styles.buttonArrow}>
-                            <img src="assets/arrow-right.svg"  className={styles.imageArrowRight} onClick={this.toScrollRight} />
+                            <img src={arrowRight}  className={styles.imageArrowRight} onClick={this.toScrollRight} />
                         </button>
                     </div>
                     <Link to={`/projects?type=${this.props.type.toLowerCase()}`}>

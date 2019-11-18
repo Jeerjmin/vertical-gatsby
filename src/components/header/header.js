@@ -3,6 +3,12 @@ import Link from 'gatsby-link'
 import styles from './header.module.css'
 import Modal from 'react-awesome-modal';
 import Menu from "../menu/menu";
+import logo from './logo.svg';
+import logoWhite from './logo-white.svg';
+import menu from './menu.svg';
+import menuWhite from './menu-white.svg';
+import close from './close-menu.svg';
+
 
 export default class Header extends React.Component {
     constructor(props) {
@@ -26,9 +32,8 @@ export default class Header extends React.Component {
     render() {
         const {template} = this.props
         const prefix = template ? '../' : '';
-        const logoUrl = template ? prefix + 'assets/logo-white.svg' : prefix + 'assets/logo.svg';
-        const menuUrl = template ? prefix + 'assets/menu-white.svg' : prefix + 'assets/menu.svg';
-        const closeUrl = template ? prefix + 'assets/close-menu.svg' : prefix + 'assets/close-menu.svg';
+        const logoUrl = template ? logoWhite : logo;
+        const menuUrl = template ? menuWhite : menu;
 
         return (
             <div className={!template ? styles.header : styles.templateHeader}>
@@ -45,7 +50,7 @@ export default class Header extends React.Component {
                     {this.state.visible && (
                         <div onClick={() => this.closeModal()} className={styles.menu}>
                             <p  style={template && {color: 'white'}} className={styles.menuTitle}>ЗАКРЫТЬ</p>
-                            <img className={styles.burger} src={closeUrl}   />
+                            <img className={styles.burger} src={close}   />
                         </div>
                     )}
                 </section>

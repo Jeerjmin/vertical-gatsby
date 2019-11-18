@@ -5,6 +5,7 @@ import Design from './projectDesign';
 import Building from './projectBuilding'
 import All from './projectAll'
 import styles from './projects.module.css'
+import projectsWrapper from './projects-wrapper.jpg';
 
 class ProjectsComponent extends React.Component {
 
@@ -27,7 +28,7 @@ class ProjectsComponent extends React.Component {
         return (
             <div style={{ width: '100%',  margin: '0 auto'}}>
                 <div className={styles.projectsWrapper}>
-                    <img src="assets/projects-wrapper.jpg" alt="Наши проекты"/>
+                    <img src={projectsWrapper} alt="Наши проекты"/>
                     <p>Наши проекты</p>
                 </div>
                 <ProjectsNavigation />

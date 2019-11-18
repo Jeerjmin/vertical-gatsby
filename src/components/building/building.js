@@ -2,13 +2,16 @@ import React from 'react'
 import styles from './building.module.css'
 import Slider from "../slider/slider";
 import {Link} from "gatsby";
+import building from './building.jpg';
+import building1 from './building-1.jpg';
+import building2 from './building-2.png';
 
 export default ({data}) => {
 
     return (
         <div className={styles.building} style={{ maxWidth: 1718, margin: '0 auto', marginTop: '40px'}}>
             <div className={styles.wrapper}>
-                <img src="assets/building.jpg" alt="Архитектурно-строительное проектирование" />
+                <img src={building} alt="Архитектурно-строительное проектирование" />
                 <p className={styles.title}>Строительство коммерческой недвижимости</p>
                 <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -27,7 +30,7 @@ export default ({data}) => {
             <div className={styles.types}>
                 <Link to={'/type?type=generalContract'}>
                     <div className={styles.generalContract}>
-                        <img src="assets/building-1.jpg" alt="Генеральный подряд" />
+                        <img src={building1} alt="Генеральный подряд" />
                         <h6>Генеральный подряд</h6>
                         <p>«Вертикаль» выступает в качестве генерального
                                 подрядчика при строительстве объектов различной сложности.
@@ -42,7 +45,7 @@ export default ({data}) => {
                 </Link>
                 <Link to={`/type?type=zeroCycle`}>
                     <div className={styles.zeroCycle}>
-                        <img src="assets/building-2.png" alt="Нулевой цикл" />
+                        <img src={building2} alt="Нулевой цикл" />
                         <h6>Нулевой цикл</h6>
                         <p>Важной возможностью нашего коллектива является ведение
                                 строительства на основе разработанного нами оптимального проекта.

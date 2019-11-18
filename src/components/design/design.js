@@ -2,13 +2,17 @@ import React from 'react'
 import styles from './design.module.css'
 import Slider from "../slider/slider";
 import {Link} from "gatsby";
+import design from './design.jpg'
+import building1 from './building-1.jpg';
+import building2 from './building-2.png';
+import building3 from './building-3.png';
 
 export default ({data}) => {
 
         return (
             <div className={styles.design} style={{ maxWidth: 1718, margin: '0 auto', marginTop: '40px'}}>
                 <div className={styles.wrapper}>
-                    <img src="assets/design.jpg" alt="Архитектурно-строительное проектирование" />
+                    <img src={design} alt="Архитектурно-строительное проектирование" />
                     <p className={styles.title}>Архитектурно-строительстное проектирование</p>
                     <p className={styles.description}>Проектирование зданий и сооружений – это, пожалуй, основополагающий этап строительства объекта.
                         Именно на этой стадии закладывается базис всех последующих этапов строительных или реконструкционных работ</p>
@@ -26,7 +30,7 @@ export default ({data}) => {
                 <div className={styles.types}>
                     <Link to={`/type?type=generalDesign`}>
                         <div className={styles.generalDesign}>
-                            <img src="assets/building-1.jpg" alt="Генеральное проектирование" />
+                            <img src={building1} alt="Генеральное проектирование" />
                                     <h6>Генеральное проектирование</h6>
                                     <p>Проектирование является профильной деятельностью,
                                     где мы зарекомендовали себя как профессионалы своего дела.
@@ -41,7 +45,7 @@ export default ({data}) => {
                     </Link>
                     <Link to={`/type?type=сonstructiveDecisions`}>
                         <div className={styles.сonstructiveDecisions}>
-                            <img src="assets/building-2.png" alt="Конструктивные решение" />
+                            <img src={building2} alt="Конструктивные решение" />
                                     <h6>Конструктивные решения</h6>
                                     <p>Конструктивные решения – это неотъемлемая
                                     составляющая проекта. Согласно действующим
@@ -56,7 +60,7 @@ export default ({data}) => {
                     </Link>
                     <Link to={`/type?type=geotechnicalSubstantiation`}>
                         <div className={styles.geotechnicalSubstantiation}>
-                            <img src="assets/building-3.png" alt="Геотехническое обоснование" />
+                            <img src={building3} alt="Геотехническое обоснование" />
                                 <h6>Геотехническое обоснование</h6>
                                 <p>
                                 Геотехника объединяет инженерную геологию,

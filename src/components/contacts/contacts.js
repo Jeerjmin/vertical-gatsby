@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './contacts.module.css';
 import Link from "gatsby-link";
+import contactsWrapper from './contacts-wrapper.jpg';
 
 export default class Contacts extends React.Component {
 
@@ -10,7 +11,7 @@ export default class Contacts extends React.Component {
 
         return (
             <div className={styles.container}>
-                <img className={styles.imageWrapper} src="assets/contacts-wrapper.jpg" alt="Контакты"/>
+                <img className={styles.imageWrapper} src={contactsWrapper} alt="Контакты"/>
                 <h1 className={styles.title}>Контакты</h1>
                 <div className={styles.contacts}>
                     <div className={styles.phone}>
