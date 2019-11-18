@@ -43,11 +43,27 @@ class BuildingTemplate extends React.Component {
         this.setState({ width: window.innerWidth });
     }
 
+
+
     render() {
+
+        const images = [
+            {
+                original: 'https://picsum.photos/id/1018/1000/600/',
+                thumbnail: 'https://picsum.photos/id/1018/250/150/',
+            },
+            {
+                original: 'https://picsum.photos/id/1015/1000/600/',
+                thumbnail: 'https://picsum.photos/id/1015/250/150/',
+            },
+            {
+                original: 'https://picsum.photos/id/1019/1000/600/',
+                thumbnail: 'https://picsum.photos/id/1019/250/150/',
+            },
+        ];
 
         const {item} = this.props.pageContext
 
-        console.log('this', this.state.width)
         return (
             <div className={styles.container}>
                 <Img className={styles.wrapper} alt={item.name} fluid={item.image.fluid} />
@@ -88,9 +104,11 @@ class BuildingTemplate extends React.Component {
                 </div>
                 {this.state.width > 1200 &&
 
-                <button onClick={() => this.openModal()} className={styles.galleryLink}>
-                    <span>Фото объекта</span>
-                </button>
+                <div onClick={() => this.openModal()} className={styles.gallery}>
+                    {images.map(el => <Img className={styles.galleryItem} alt={item.name} fluid={item.image.fluid} /> )}
+                </div>
+
+
                 }
                 <Modal visible={this.state.visible} width="1724" height="520" effect="fadeInUp" onClickAway={() => this.closeModal()}>
                     <Gallery/>

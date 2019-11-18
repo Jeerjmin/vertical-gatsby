@@ -43,7 +43,7 @@ class Template extends React.Component {
       return (
           <TransitionProvider location={location}>
 
-              {childrenWithLocation }
+              {children}
 
           </TransitionProvider>
       )

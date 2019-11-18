@@ -180,8 +180,37 @@ p {
     margin-left: 20px;
 }
 
+ .gallery {
+     position: absolute;
+     left: 900px;
+     top: 170px;
+     flex-wrap: wrap;
+     display: flex;
+ }
+
+
+ .galleryItem {
+     margin-bottom: 35px;
+     margin-left: 40px;
+     width: 327px;
+     height: 199px;
+ }
 
 @media (max-width: 1800px) {
+
+
+    .gallery {
+        left: 800px;
+    }
+
+
+
+    .galleryItem {
+        margin-bottom: 35px;
+        margin-left: 40px;
+        width: 250px;
+        height: 160px;
+    }
 
     .header {
         left: 0;
@@ -212,6 +241,13 @@ p {
 
 
 @media (max-width: 1280px) {
+
+    .galleryItem {
+        margin-bottom: 35px;
+        margin-left: 40px;
+        width: 250px;
+        height: 160px;
+    }
 
     .linkBack {
         top: 18%;

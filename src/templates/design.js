@@ -46,9 +46,24 @@ class DesignTemplate extends React.Component {
 
     render() {
 
+        const images = [
+            {
+                original: 'https://picsum.photos/id/1018/1000/600/',
+                thumbnail: 'https://picsum.photos/id/1018/250/150/',
+            },
+            {
+                original: 'https://picsum.photos/id/1015/1000/600/',
+                thumbnail: 'https://picsum.photos/id/1015/250/150/',
+            },
+            {
+                original: 'https://picsum.photos/id/1019/1000/600/',
+                thumbnail: 'https://picsum.photos/id/1019/250/150/',
+            },
+        ];
+
+
         const {item} = this.props.pageContext
 
-        console.log('this', this.state.width)
         return (
             <div className={styles.container}>
                 <Img className={styles.wrapper} alt={item.name} fluid={item.image.fluid} />
@@ -63,9 +78,7 @@ class DesignTemplate extends React.Component {
                         <img src={arrowLeftWhite}/>
                     </button>
                 </Link>
-                <button  onClick={() => this.openModal()} className={styles.galleryLink}>
-                    <span>Фото объекта</span>
-                    </button>
+
                     </>
                 )}
                     <p className={styles.name}>{item.name}</p>
@@ -79,16 +92,29 @@ class DesignTemplate extends React.Component {
                     <p className={styles.square2}> S=113 000 м²</p>
                     {this.state.width < 1200 &&
                     <div className={styles.actions}>
+
+
                         <Link class={styles.linkBack} to={`/projects?type=building`}>
                             <button className={styles.buttonBack}>
                                 <img src={arrowLeftWhite}/>
                             </button>
                         </Link>
+
+
                         <button  onClick={() => this.openModal()} className={styles.galleryLink}>
                             <span>Фото объекта</span>
                         </button>
                     </div>
                     }
+
+                {this.state.width > 1200 &&
+
+                <div onClick={() => this.openModal()} className={styles.gallery}>
+                    {images.map(el => <Img className={styles.galleryItem} alt={item.name} fluid={item.image.fluid} /> )}
+                </div>
+
+
+                }
 
 
                 <Modal visible={this.state.visible} width="1724" height="320" effect="fadeInUp" onClickAway={() => this.closeModal()}>
