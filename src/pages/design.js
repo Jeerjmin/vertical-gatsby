@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/layouts'
 import Design from "../components/design/design";
 import {graphql} from "gatsby";
 import get from "lodash/get";
@@ -9,12 +9,10 @@ class DesignContainer extends React.Component {
 
         const designItems = get(this, 'props.data.allContentfulDesignItem.edges');
 
-        console.log('designItems', designItems)
+        console.log('designItems', this.props)
 
         return (
-            <Layout footer location={this.props.location} >
                 <Design data={designItems}/>
-            </Layout>
         )
     }
 }

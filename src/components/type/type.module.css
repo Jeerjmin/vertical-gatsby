@@ -4,7 +4,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 200px;
 }
 
 .wrapper {
@@ -21,8 +20,8 @@
 
 .wrapper .title {
     position: absolute;
-    left: 171px;
-    top: 80px;
+    left: 78px;
+    top: 156px;
     max-width: 924px;
     font-family: Muller, sans-serif;
     font-weight: bold;
@@ -34,8 +33,8 @@
 
 .wrapper .description {
     position: absolute;
-    left: 171px;
-    top: 260px;
+    left: 78px;
+    top: 241px;
     max-width: 952px;
     font-size: 18px;
     line-height: 28px;
@@ -91,20 +90,17 @@
 
 }
 
-@media (max-width: 1500px) {
 
-
+@media (max-width: 1600px) {
     .wrapper .title {
-        top: 10%;
-        left: 5%;
-    }
-
-    .wrapper .description {
-        top: 35%;
-        left: 5%;
+        font-size: 40px;
     }
 
 
+
+}
+
+@media (max-width: 1500px) {
     .info {
         flex-direction: column-reverse;
     }
@@ -117,10 +113,64 @@
 }
 
 
-@media (max-width: 1200px) {
+
+
+@media (max-width: 1050px) {
     .wrapper .title {
-        top: 6%;
-        font-size: 23px;
+        width: 90%;
+        text-align: center;
+        font-size: 25px;
+        line-height: 40px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+    .wrapper .description {
+        text-align: center;
+        font-size: 16px;
+        width: 90%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+
+}
+
+@media (max-width: 420px) {
+
+    .wrapper {
+        margin-bottom: 0;
+    }
+
+    .wrapper .title {
+        top: 40px;
+        font-size: 25px;
+
+    }
+
+    .wrapper .description {
+        top: 38%;
+        font-size: 16px;
+    }
+
+    .wrapper .link {
+        top: 80%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
     }
 }
 
+
+@media (max-width: 320px) {
+    .wrapper .description {
+        font-size: 14px;
+
+    }
+
+    .сonstructiveDecisions p {
+        top: 25%;
+    }
+
+}

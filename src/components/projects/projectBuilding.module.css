@@ -68,6 +68,7 @@
 }
 
 .item:hover .hover {
+    transition: background-color 0.5s;
     visibility: visible;
     display: flex;
     flex-direction: column;
@@ -84,8 +85,16 @@
     padding: 0;
 }
 
-
 .item .hover .title {
+    opacity: 0;
+}
+
+.item .hover .name {
+    opacity: 0;
+}
+
+.item:hover .hover .title {
+    transition: opacity 1.5s;
     position: relative;
     margin: 0;
     padding: 0;
@@ -98,7 +107,8 @@
     text-transform: uppercase;
 }
 
-.item  .hover .name {
+.item:hover  .hover .name {
+    transition: opacity 1.5s;
     position: relative;
     font-family: Muller, sans-serif;
     font-size: 24px;

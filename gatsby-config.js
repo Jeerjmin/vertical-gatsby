@@ -27,6 +27,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     {
+      resolve: 'gatsby-plugin-layout',
+      options: {
+        component: require.resolve('./src/components/layouts/index.js')
+      }
+    },
+    {
       resolve: 'gatsby-source-contentful',
       options: contentfulConfig,
     }

@@ -22,6 +22,7 @@ body {
   margin: 0;
   min-height: calc(100vh - 32px);
   position: relative;
+  overflow-x: hidden;
 }
 
 img {
@@ -84,3 +85,4 @@ p {
 .list-inline li {
   display: inline-block;
 }
+

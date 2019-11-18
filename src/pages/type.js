@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../components/layout'
+import Layout from '../components/layouts'
 import TypeComponent from '../components/type/type';
 import withLocation from "../modules/withLocation";
 import get from "lodash/get";
@@ -15,9 +15,7 @@ class TypeContainer extends React.Component {
         const {type} = this.props.param
 
         return (
-            <Layout footer location={this.props.location} >
                 <TypeComponent data={buildingItems} type={type}/>
-            </Layout>
         )
     }
 }

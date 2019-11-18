@@ -41,6 +41,7 @@
 }
 
 .sliderItem:hover .hover {
+    transition: background-color 0.5s;
     visibility: visible;
     display: flex;
     flex-direction: column;
@@ -57,8 +58,17 @@
     padding: 0;
 }
 
-
 .sliderItem .hover .title {
+    opacity: 0;
+}
+
+.sliderItem .hover .name {
+    opacity: 0;
+}
+
+
+.sliderItem:hover .hover .title {
+    transition: opacity 1.5s;
     position: relative;
     margin: 0;
     padding: 0;
@@ -71,7 +81,8 @@
     text-transform: uppercase;
 }
 
-.sliderItem  .hover .name {
+.sliderItem:hover  .hover .name {
+    transition: opacity 1.5s;
     position: relative;
     font-family: Muller, sans-serif;
     font-size: 24px;
