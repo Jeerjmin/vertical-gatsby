@@ -3,14 +3,15 @@ import styles from './projectBuilding.module.css'
 import Img from "gatsby-image";
 import {Link} from "gatsby";
 
-export default ({data}) => {
+export default ({data, location}) => {
+    console.log('location', location)
 
     return (
         <div className={styles.projectBuilding} style={{ maxWidth: 1718, margin: '0 auto', marginTop: '40px'}}>
             <div className={styles.container}>
-                {data && data.map(item => {
+                {data && data.map((item, id) => {
                     return (
-                        <Link to={`/building/${item.node.id}`}>
+                        <Link key={id} state={{ prevPath: location.pathname + location.search }} to={`/building/${item.node.id}`}>
                             <div className={styles.item}>
                                 <Img className={styles.itemImage} alt={item.node.name} fluid={item.node.image.fluid} />
                                 {/*<div className={styles.info}>*/}

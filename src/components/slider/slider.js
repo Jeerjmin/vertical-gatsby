@@ -3,8 +3,9 @@ import styles from './slider.module.css'
 import Img from "gatsby-image";
 import {Link} from "gatsby";
 import arrowRight from './arrow-right.svg';
+import withLocation from "../../modules/withLocation";
 
-export default class Slider extends React.Component {
+class Slider extends React.Component {
 
     constructor(props) {
         super(props);
@@ -28,15 +29,18 @@ export default class Slider extends React.Component {
 
     render() {
 
-        console.log('items', this.props.items)
+        const {location} = this.props
 
         return (
             <div className={styles.container} >
                 <div ref={this.containerRef} className={styles.slider}>
 
-                    {this.props.items && this.props.items.map(item => {
+                    {this.props.items && this.props.items.map(item => {``
                         return (
-                            <Link key={item.node.id} to={`/${this.props.type.toLowerCase()}/${item.node.id}`}>
+                            <Link key={item.node.id}
+                                  state={{ prevPath: location.pathname + location.search }}
+                                  to={`/${this.props.type.toLowerCase()}/${item.node.id}`}
+                            >
                                 <div className={styles.sliderItem}>
                                     <Img  className={styles.sliderImage} alt={item.node.name} fluid={item.node.image.fluid} />
                                     {/*<div className={styles.info}>*/}
@@ -74,3 +78,6 @@ export default class Slider extends React.Component {
         )
     }
 }
+
+
+export default withLocation(Slider)

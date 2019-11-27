@@ -26,10 +26,10 @@ export default class Menu extends React.Component {
                         <span className={styles.title}>Строительство</span>
                         <div className={styles.text}>
                             <span>
-                                Генеральный подряд
+                                <Link to={`/type?type=generalContract`}>Генеральный подряд</Link>
                             </span>
                             <span>
-                                Нулевой цикл
+                                <Link to={`/type?type=zeroCycle`}>Нулевой цикл</Link>
                             </span>
                         </div>
                         <div className={styles.line}>
@@ -43,13 +43,13 @@ export default class Menu extends React.Component {
 
                         <div className={styles.text}>
                             <span>
-                                Генеральное проектирование
+                                <Link to={`/type?type=generalDesign`}>Генеральное проектирование</Link>
                             </span>
                             <span>
-                                Конструктивные решения
+                                <Link to={`/type?type=сonstructiveDecisions`}>Конструктивные решения</Link>
                             </span>
                             <span>
-                                Геотехническое обоснование
+                                <Link to={`/type?type=geotechnicalSubstantiation`}>Геотехническое обоснование</Link>
                             </span>
                         </div>
                         <div className={styles.line}>

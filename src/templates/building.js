@@ -44,7 +44,6 @@ class BuildingTemplate extends React.Component {
     }
 
 
-
     render() {
 
         const images = [
@@ -72,7 +71,7 @@ class BuildingTemplate extends React.Component {
                     <Header template />
                 </div>
                 {this.state.width > 1200 &&
-                <Link class={styles.linkBack} to={`/projects?type=building`}>
+                <Link class={styles.linkBack} to={this.props.location.state.prevPath}>
                     <button className={styles.buttonBack}>
                         <img src={arrowLeftWhite}/>
                     </button>
@@ -90,7 +89,7 @@ class BuildingTemplate extends React.Component {
                     <p className={styles.square2}> S=113 000 м²</p>
                     {this.state.width < 1200 &&
                         <div className={styles.actions}>
-                            <Link class={styles.linkBack} to={`/projects?type=building`}>
+                            <Link class={styles.linkBack} to={this.props.location.state.prevPath}>
                                 <button className={styles.buttonBack}>
                                     <img src={arrowLeftWhite}/>
                                 </button>

@@ -3,9 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="d11bcfd6-a9e7-457b-9bb6-2fb02ece65d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/menu-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/menu-white.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/menu.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projectAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectAll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projectBuilding.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectBuilding.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/projectDesign.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectDesign.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/type/type.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/type/type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/building.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/building.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/building.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/design.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +38,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/home" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/header" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,19 +52,19 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Projects\vertical-gatsby\src\components\home" />
-      <recent name="C:\Projects\vertical-gatsby\src\templates" />
-      <recent name="C:\Projects\vertical-gatsby\src\components\header" />
-      <recent name="C:\Projects\vertical-gatsby\src\components\projects" />
-      <recent name="C:\Projects\vertical-gatsby\src\components\contacts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\vertical-gatsby\src\fonts" />
       <recent name="C:\Projects\vertical-gatsby\src\pages\projects" />
       <recent name="C:\Projects\vertical-gatsby\static\fonts" />
       <recent name="C:\Projects\vertical-gatsby\static\contacts-wrapper.jpg" />
       <recent name="C:\Projects\vertical-gatsby\static\assets\home1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\vertical-gatsby\src\components\header" />
+      <recent name="C:\Projects\vertical-gatsby\src\components\home" />
+      <recent name="C:\Projects\vertical-gatsby\src\templates" />
+      <recent name="C:\Projects\vertical-gatsby\src\components\header" />
+      <recent name="C:\Projects\vertical-gatsby\src\components\projects" />
     </key>
   </component>
   <component name="RunDashboard">

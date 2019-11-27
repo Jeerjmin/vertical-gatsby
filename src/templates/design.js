@@ -46,6 +46,9 @@ class DesignTemplate extends React.Component {
 
     render() {
 
+        console.log('asdfg', this.props.location.state.prevPath)
+
+
         const images = [
             {
                 original: 'https://picsum.photos/id/1018/1000/600/',
@@ -73,7 +76,7 @@ class DesignTemplate extends React.Component {
                 </div>
                 {this.state.width > 1200 &&
                 (<>
-                    <Link class={styles.linkBack} to={`/projects?type=building`}>
+                    <Link class={styles.linkBack} to={this.props.location.state.prevPath}>
                     <button className={styles.buttonBack}>
                         <img src={arrowLeftWhite}/>
                     </button>
@@ -94,7 +97,7 @@ class DesignTemplate extends React.Component {
                     <div className={styles.actions}>
 
 
-                        <Link class={styles.linkBack} to={`/projects?type=building`}>
+                        <Link class={styles.linkBack} to={this.props.location.state.prevPath}>
                             <button className={styles.buttonBack}>
                                 <img src={arrowLeftWhite}/>
                             </button>
