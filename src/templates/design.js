@@ -111,7 +111,7 @@ class DesignTemplate extends React.Component {
                     <div className={styles.actions}>
 
 
-                        <Link class={styles.linkBack} to={(this.props.location.state && this.props.location.state.prevPath) || '/building'}>
+                        <Link class={styles.linkBack} to={(this.props.location.state && this.props.location.state.prevPath) || '/design'}>
                             <button className={styles.buttonBack}>
                                 <img src={arrowLeftWhite}/>
                             </button>
