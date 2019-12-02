@@ -8,7 +8,8 @@ import Container from "../components/container";
 import Modal from "react-awesome-modal";
 import Gallery from "../components/gallery";
 import arrowLeftWhite from './arrow-left-white.svg';
-
+import closeImage from './close-menu.svg';
+import closeImageBlack from './close-menu-black.svg';
 
 class DesignTemplate extends React.Component {
 
@@ -31,6 +32,17 @@ class DesignTemplate extends React.Component {
         });
     }
 
+    openMoreDetail() {
+        this.setState({
+            visibleDetail : true
+        });
+    }
+    closeMoreDetail() {
+        this.setState({
+            visibleDetail : false
+        });
+    }
+
     componentDidMount() {
         this.updatePredicate();
         window.addEventListener("resize", this.updatePredicate);
@@ -45,9 +57,6 @@ class DesignTemplate extends React.Component {
     }
 
     render() {
-
-        console.log('asdfg', this.props.location.state.prevPath)
-
 
         const images = [
             {
@@ -76,7 +85,7 @@ class DesignTemplate extends React.Component {
                 </div>
                 {this.state.width > 1200 &&
                 (<>
-                    <Link class={styles.linkBack} to={this.props.location.state.prevPath}>
+                    <Link class={styles.linkBack} to={(this.props.location.state && this.props.location.state.prevPath) || '/design'}>
                     <button className={styles.buttonBack}>
                         <img src={arrowLeftWhite}/>
                     </button>
@@ -85,19 +94,24 @@ class DesignTemplate extends React.Component {
                     </>
                 )}
                     <p className={styles.name}>{item.name}</p>
-                    <p className={styles.description}>со встроенно-пристроенными помещениями, объектами дошкольного образования и подземным гаражом</p>
                     <p className={styles.customer} >Заказчик:</p>
                     <p className={styles.customerName}>«NCC — Жилищное строительство»</p>
                     <p className={styles.location}>Местоположение:</p>
                     <p className={styles.locationName}>Санкт-Петербург, Аптекарский проспект, д. 16, литера Б</p>
-                    <p className={styles.description2}>Разработка конструктивных решений стадии «Проект» и «Рабочая документация»; полный комплекс расчетов</p>
-                    <p className={styles.square}>Площадь проектирования</p>
-                    <p className={styles.square2}> S=113 000 м²</p>
-                    {this.state.width < 1200 &&
+                    <p className={styles.square}>S=113 000 м²</p>
+                    <ul className={styles.description2}>
+                        <li>Разработка конструктивных решений стадии «Проект»</li>
+                        <li>Разработка конструктивных решений стадии «Проект»</li>
+                        <li>Разработка конструктивных решений стадии «Проект»</li>
+                        <li>Разработка конструктивных решений стадии «Проект»</li>
+                    </ul>
+                    <p onClick={() => this.openMoreDetail()} className={styles.moreDetails}>Подробнее о проекте</p>
+
+                {this.state.width < 1200 &&
                     <div className={styles.actions}>
 
 
-                        <Link class={styles.linkBack} to={this.props.location.state.prevPath}>
+                        <Link class={styles.linkBack} to={(this.props.location.state && this.props.location.state.prevPath) || '/building'}>
                             <button className={styles.buttonBack}>
                                 <img src={arrowLeftWhite}/>
                             </button>
@@ -120,8 +134,31 @@ class DesignTemplate extends React.Component {
                 }
 
 
-                <Modal visible={this.state.visible} width="1724" height="320" effect="fadeInUp" onClickAway={() => this.closeModal()}>
+                <Modal visible={this.state.visible} width="1724" height="100%" effect="fadeInUp" onClickAway={() => this.closeModal()}>
+                    <img onClick={() => this.closeModal()} src={closeImage} className={styles.close}/>
                     <Gallery/>
+                </Modal>
+
+                <Modal visible={this.state.visibleDetail} width="80%" height="60%" effect="fadeInUp" onClickAway={() => this.closeMoreDetail()}>
+                    <img onClick={() => this.closeMoreDetail()} src={closeImage} className={styles.detailsClose}/>
+                    <div className={styles.modalDetails}>
+                        <div className={styles.customerTitle}>Заказчикам</div>
+                        <p>
+                            Наше призвание-изучать, придумывать, проектировать, строить, осуществлять строительный
+                            контроль, осуществлять экспертизу проектов, консультировать, искать и применять новейшие
+                            технологии, выбирать наилучшие варианты решения стоящих перед Вами задач.
+                            <br/> <br/>
+                            Мы живем в период времени, когда отточенная и яркая мысль двигает экономику вперед, больше
+                            чем деньги, а
+                            знания приобретают ключевое значение для успеха всего дела в целом. Именно поэтому мы
+                            сосредоточили свое внимание на инженерном деле, специальных знаниях и технологиях.
+                            <br/><br/>
+                            Наше главное конкурентное преимущество – это четкое видение перспективы и комплексное ведение
+                            проектов: от замысла до завершения проекта и сдачи его в эксплуатацию. Фундаментальные
+                            знания, полученные нашими сотрудниками в учебных заведениях, в совокупности с опытом
+                            работы и интеграцией в одной компании, создают объединенный.
+                        </p>
+                    </div>
                 </Modal>
             </div>
         )

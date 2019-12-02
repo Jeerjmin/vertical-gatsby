@@ -116,19 +116,56 @@ p {
  .description2 {
      font-family: MullerRegular, sans-serif;
      position: absolute;
-     left: 180px;
-     top:500px;
+     left: 150px;
+     top:550px;
     font-size: 18px;
     max-width: 600px;
     line-height: 28px;
-    opacity: 0.7;
+     opacity: 0.7;
+     color: #F2F2F2;
+     columns: 2;
+     -webkit-columns: 2;
+     -moz-columns: 2;
+     -webkit-column-break-inside: avoid; /* Chrome, Safari */
+     padding-inline-start: 40px !important;
+}
+
+ .description2 li {
+     float: left;
+     break-inside: avoid-column;
+     margin-top: 10px;
+     min-width: 350px;
+ }
+
+.description2 li:nth-child(4),
+.description2 li:nth-child(3) {
+     margin-left: 60px;
+ }
+
+.moreDetails {
+    font-family: Muller, sans-serif;
+    font-weight: bold;
+    position: absolute;
+    left: 180px;
+    top:730px;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 15px;
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.moreDetails:hover {
+    opacity: 0.5
 }
 
  .square {
      font-family: MullerRegular, sans-serif;
      position: absolute;
      left: 180px;
-     top:580px;
+     top:520px;
     font-size: 25px;
     line-height: 130%;
     /* or 39px */
@@ -137,18 +174,7 @@ p {
     text-transform: uppercase;
 }
 
- .square2 {
-     font-family: MullerRegular, sans-serif;
-     position: absolute;
-     left: 180px;
-     top:615px;
-    font-size: 30px;
-    line-height: 130%;
-    font-weight: bold;
 
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-}
 
 
  .galleryLink {
@@ -190,14 +216,76 @@ p {
 
 
  .galleryItem {
+     cursor: pointer;
      margin-bottom: 35px;
      margin-left: 40px;
      width: 327px;
      height: 199px;
  }
 
+
+ .close {
+     position: absolute;
+     top: 5%;
+     right: 30px;
+     opacity: 1 !important;
+     z-index: 1000000;
+     cursor: pointer;
+ }
+
+
+ .modalDetails {
+     height: 75%;
+     padding: 60px;
+     overflow:auto;
+ }
+
+ .customerTitle {
+     font-family: Muller, sans-serif;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 24px;
+     line-height: 34px;
+     /* identical to box height, or 142% */
+
+     text-align: left;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+
+     /* 2 */
+
+     color: #2B2A29;
+
+     padding-bottom: 30px;
+ }
+
+ .modalDetails p {
+     font-style: normal;
+     font-weight: normal;
+     font-size: 18px;
+     line-height: 28px;
+     /* or 156% */
+
+
+     /* 2 */
+
+     color: #2B2A29;
+     opacity: 0.7;
+ }
+
+ .detailsClose {
+     position: absolute;
+     top: -35px;
+     right:-35px;
+     cursor: pointer;
+ }
+
 @media (max-width: 1800px) {
 
+
+    .moreDetails {
+        left: 100px;
+    }
 
     .gallery {
         left: 800px;
@@ -221,15 +309,17 @@ p {
     }
 
     .description,
-    .description2,
     .customerName,
     .customer,
     .locationName,
     .location,
     .square,
-    .square2,
     .name {
         left: 100px;
+    }
+
+    .description2 {
+        left: 80px;
     }
 
     .galleryLink {
@@ -241,6 +331,10 @@ p {
 
 
 @media (max-width: 1280px) {
+
+    .modalDetails {
+        padding: 25px;
+    }
 
     .galleryItem {
         margin-bottom: 35px;
@@ -278,16 +372,22 @@ p {
     }
 
     .description2 {
-        top: 65%;
+        top: 70%;
+    }
+
+    .description2 li {
+        min-width: 200px;
+        font-size: 14px;
     }
 
     .square {
-        top: 75%;
+        top: 65%;
     }
 
-    .square2 {
-        top: 80%;
+    .moreDetails {
+        top: 92%;
     }
+
 
 }
 
@@ -356,27 +456,30 @@ p {
         text-align: center;
     }
 
-    .description2 {
-        top: 58%;
-    }
 
     .square {
         width: 400px;
-        top: 66%;
+        top: 58%;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
         font-size: 16px;
         text-align: center;
     }
-    .square2 {
-        width: 400px;
-        top: 70%;
-        left: 50%;
+
+    .description2 {
+        top: 61%;
+        left: calc(50% - 50px);
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
-        font-size: 16px;
-        text-align: center;
+    }
+
+
+    .moreDetails {
+        top: 80%;
+        left: calc(50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
     }
 
     .linkBack {
@@ -394,6 +497,20 @@ p {
 
 @media (max-width: 420px) {
 
+    .detailsClose {
+        top: -35px;
+        right:-10px;
+    }
+
+    .customerTitle {
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+
+    .modalDetails p {
+        font-size: 12px;
+    }
+
 
     .name,
     .description,
@@ -402,7 +519,6 @@ p {
     .locationName,
     .customer,
     .customerName,
-    .square2,
     .square {
         width: 300px;
     }
@@ -412,37 +528,54 @@ p {
     }
 
     .customer {
-        top: 36%;
+        top: 28%;
     }
 
     .customerName {
-        top: 39%;
+        top: 30%;
     }
 
     .location {
-        top: 46%;
+        top: 38%;
         text-align: center;
     }
 
     .locationName {
-        top: 49%;
+        top: 40%;
     }
 
     .description2 {
-        top: 60%;
+        top: 52%;
+        columns: 1;
+        padding-inline-start: 0 !important;
+        list-style-type: none;
+        left: calc(50%);
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        text-align: center;
+
+    }
+
+    .description2 li {
+        margin-left: 0 !important;
+        margin-top: 5px;
+        min-width: unset;
+        float: unset;
     }
 
     .square {
-        top: 70%;
+        top: 50%;
     }
 
-    .square2 {
-        top: 76%;
-    }
 
     .galleryLink {
         left: 45%;
         width: 160px;
+    }
+
+    .moreDetails {
+        top: 84%;
+        font-size: 12px;
     }
 
 }
@@ -455,59 +588,106 @@ p {
     .locationName,
     .customer,
     .customerName,
-    .square2,
     .square {
         width: 300px;
     }
 
     .name {
-        top: 20%;
+        top: 17%;
         font-size: 14px;
     }
 
-    .description {
-        font-size: 12px;
-        top: 26%;
-    }
 
     .customer {
-        top: 40%;
+        top: 22%;
         font-size: 8px;
     }
 
     .customerName {
-        top: 43%;
+        top: 24%;
         font-size: 12px;
     }
 
     .location {
-        top: 51%;
+        top: 31%;
         text-align: center;
         font-size: 8px;
     }
 
     .locationName {
-        top: 54%;
+        top: 33%;
         font-size: 12px;
     }
 
     .description2 {
-        top: 63%;
-        font-size: 12px;
+        top: 45%;
+    }
+
+    .description2 li {
+        font-size: 10px;
     }
 
     .square {
-        top: 78%;
+        top: 40%;
         font-size: 12px;
     }
 
-    .square2 {
-        top: 82%;
-        font-size: 12px;
-    }
 
     .galleryLink {
         left: 45%;
         width: 160px;
     }
+
+    .moreDetails {
+        top: 80%;
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width: 380px) {
+
+    .name {
+        top: 20%;
+    }
+
+
+    .customer {
+        top: 25%;
+    }
+
+    .customerName {
+        top: 29%;
+        font-size: 12px;
+    }
+
+    .location {
+        top: 37%;
+        text-align: center;
+        font-size: 8px;
+    }
+
+    .locationName {
+        top: 42%;
+        font-size: 12px;
+    }
+
+    .square {
+        top: 50%;
+    }
+
+    .description2 {
+        top: 55%;
+    }
+
+
+    .moreDetails {
+        font-size: 9px;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
 }

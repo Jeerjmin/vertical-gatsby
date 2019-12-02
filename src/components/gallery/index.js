@@ -1,6 +1,6 @@
 import React from 'react'
 import './gallery.module.css'
-
+import styles from "./gallery.module.css"
 
 import ImageGallery from 'react-image-gallery';
 

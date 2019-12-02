@@ -64,6 +64,10 @@
     cursor: pointer;
 }
 
+.wrapper .link:hover {
+    background-color: #d3d3d3;
+}
+
 .wrapper .link .arrowLink {
     width: 23px;
     height: 29px;
@@ -254,6 +258,13 @@
     cursor: pointer;
 }
 
+.geotechnicalSubstantiation button:hover,
+.сonstructiveDecisions button:hover,
+.generalDesign button:hover {
+    color: white;
+    background-color:#B9261A;
+}
+
 
 @media (max-width: 1600px) {
     .wrapper .title {
@@ -402,6 +413,10 @@
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
+    }
+
+    .wrapper .link:hover {
+        background-color: #d3d3d3;
     }
 
     .info h5 {

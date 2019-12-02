@@ -43,6 +43,16 @@
     letter-spacing: 7px;
 }
 
+.contacts:hover .title,
+.about:hover .title,
+.design:hover .title,
+.building:hover .title {
+    opacity: 0.5;
+}
+
+.title:hover {
+    opacity: 0.5;
+}
 
 .building:hover .text {
     visibility: visible;
@@ -58,6 +68,10 @@
 
 .contacts:hover .text {
     visibility: visible;
+}
+
+.text span:hover {
+    opacity: 0.5;
 }
 
 .name {

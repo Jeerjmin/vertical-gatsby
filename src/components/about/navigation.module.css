@@ -7,6 +7,9 @@
     align-content: center;
 }
 
+.navigation a:hover {
+    color: #b9261a;
+}
 
 
 .navigation .deactive {
@@ -45,6 +48,8 @@
     width: 200px;
     height: 2px;
     background: #C4C4C4;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
 
 .navigation .active:after {
@@ -55,6 +60,8 @@
     width: 200px;
     height: 2px;
     background: #B9261A;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
 
 .navigation .deactive:last-child:after {
@@ -65,6 +72,8 @@
     width: 100px;
     height: 2px;
     background: #C4C4C4;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
 
 .navigation .active:last-child:after {
@@ -75,4 +84,6 @@
     width: 100px;
     height: 2px;
     background: #B9261A;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }

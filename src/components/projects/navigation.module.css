@@ -7,7 +7,9 @@
     align-content: center;
 }
 
-
+.navigation a:hover {
+    color: #b9261a;
+}
 
 .navigation .deactive {
     font-weight: bold;
@@ -21,6 +23,8 @@
     text-decoration: none;
     color: #C4C4C4;
     position: relative;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
 
 .navigation .active {
@@ -35,7 +39,8 @@
     text-decoration: none;
     color: #2B2A29;
     position: relative;
-
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
 
 .navigation .deactive:after {
@@ -46,6 +51,8 @@
     width: 200px;
     height: 2px;
     background: #C4C4C4;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
 
 .navigation .active:after {
@@ -56,6 +63,8 @@
     width: 200px;
     height: 2px;
     background: #B9261A;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
 
 .navigation .deactive:last-child:after {
@@ -66,6 +75,8 @@
     width: 135px;
     height: 2px;
     background: #C4C4C4;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
 
 .navigation .active:last-child:after {
@@ -76,6 +87,8 @@
     width: 135px;
     height: 2px;
     background: #B9261A;
+    transition-property: background-color;
+    transition-duration: 1.5s;
 }
 
 

@@ -150,6 +150,10 @@
     background: white;
 }
 
+.container .buttonArrow:hover {
+    opacity: 0.5;
+}
+
 .container .buttonArrow:last-child {
     margin-left: 20px;
 }
@@ -181,6 +185,10 @@
     margin-right: 170px;
 }
 
+.allProjects:hover {
+    color: white;
+    background-color:#B9261A;
+}
 
 
 
