@@ -195,6 +195,7 @@
 
 .design img {
     width: 100%;
+    min-height: 350px;
 }
 
 .buildingTitle,
@@ -280,6 +281,7 @@
 
 .building img {
     width: 100%;
+    min-height: 350px;
 }
 
 
@@ -589,16 +591,22 @@
         margin-bottom: 20px;
     }
 
+    .design .buttonContainer,
+    .building .buttonContainer {
+        top: 70%;
+    }
+
+    .designDescriptionContainer,
+    .buildingDescriptionContainer {
+        top: 30%;
+    }
+
     .building .buildingTitle,
     .design .designTitle {
         font-size: 23px;
-        top: 10%;
+        top: 20%;
     }
 
-    .buildingDescriptionContainer,
-    .designDescriptionContainer {
-        top: 25%;
-    }
 
     .buildingDescriptionContainer p,
     .designDescriptionContainer p {
@@ -643,7 +651,7 @@
 
     .buildingDescriptionContainer,
     .designDescriptionContainer {
-        top: 25%;
+        top: 30%;
     }
 
 
@@ -652,15 +660,9 @@
     .building .buttonContainer:hover,
     .design .buttonContainer,
     .building .buttonContainer {
-        top: 77%;
+        top: 70%;
     }
 
-    .buildingButton:hover,
-    .designButton:hover,
-    .buildingButton,
-    .designButton {
-        width: 140px;
-        padding: 5px 20px;
-    }
+
 
 }
