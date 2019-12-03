@@ -8,20 +8,65 @@ import logoWhite from './logo-white.svg';
 import menu from './menu.svg';
 import menuWhite from './menu-white.svg';
 import close from './close-menu.svg';
+import closeWhite from './close-menu-white.svg';
 
 
 export default class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            visible : false
+            visible: false,
+            menuHeight: String(window.innerHeight - 250),
+            menuWidth: String(window.innerWidth - 200)
         }
     }
     openModal = () => {
         document.body.style.overflow = 'hidden';
-        this.setState({
-            visible : true
-        });
+
+        if (window.innerHeight < 500 && window.innerWidth > 1000) {
+            this.setState({
+                menuHeight: String(400),
+                menuWidth: String(window.innerWidth - 200)
+            }, () => {
+                this.setState({
+                    visible : true
+                });
+            })
+        } else {
+            if (window.innerWidth > 1000) {
+                this.setState({
+                    menuHeight: String(window.innerHeight - 250),
+                    menuWidth: String(window.innerWidth - 200)
+                }, () => {
+                    this.setState({
+                        visible : true
+                    });
+                })
+            } else if (window.innerWidth > 600) {
+                this.setState({
+                    menuHeight: String( window.innerHeight / 6.5),
+                    menuWidth: String(700)
+                }, () => {
+                    this.setState({
+                        visible : true
+                    });
+                })
+            } else {
+                this.setState({
+                    menuHeight: String(window.innerHeight / 7),
+                    menuWidth: String(400)
+                }, () => {
+                    this.setState({
+                        visible : true
+                    });
+                })
+            }
+        }
+
+
+
+
+
     }
     closeModal = () => {
         this.setState({
@@ -50,11 +95,11 @@ export default class Header extends React.Component {
                     {this.state.visible && (
                         <div onClick={() => this.closeModal()} className={styles.menu}>
                             <p  style={template && {color: 'white'}} className={styles.menuTitle}>ЗАКРЫТЬ</p>
-                            <img className={styles.burger} src={close}   />
+                            <img className={styles.burger} src={template ? closeWhite : close}   />
                         </div>
                     )}
                 </section>
-                <Modal className={styles.modal} visible={this.state.visible} width="1724" height="520" effect="fadeInUp" onClickAway={() => this.closeModal()}>
+                <Modal className={styles.modal} visible={this.state.visible} width={this.state.menuWidth} height={this.state.menuHeight} effect="fadeInUp" onClickAway={() => this.closeModal()}>
                     <Menu closeModal={this.closeModal} visible={this.state.visible} prefix={prefix}/>
                 </Modal>
             </div>

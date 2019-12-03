@@ -9,6 +9,8 @@
 
 .navigation a:hover {
     color: #b9261a;
+    transition: color 1s, background-color 1.5s;
+
 }
 
 
@@ -23,6 +25,8 @@
     text-decoration: none;
     color: #C4C4C4;
     position: relative;
+    transition: color 1s, background-color 1.5s;
+
 }
 
 .navigation .active {
@@ -37,6 +41,7 @@
     text-decoration: none;
     color: #2B2A29;
     position: relative;
+    transition: color 1s, background-color 1.5s;
 
 }
 
@@ -50,6 +55,7 @@
     background: #C4C4C4;
     transition-property: background-color;
     transition-duration: 1.5s;
+    transition: color 1s, background-color 1.5s;
 }
 
 .navigation .active:after {
@@ -62,6 +68,7 @@
     background: #B9261A;
     transition-property: background-color;
     transition-duration: 1.5s;
+    transition: color 1s, background-color 1.5s;
 }
 
 .navigation .deactive:last-child:after {
@@ -74,6 +81,8 @@
     background: #C4C4C4;
     transition-property: background-color;
     transition-duration: 1.5s;
+    transition: color 1s, background-color 1.5s;
+
 }
 
 .navigation .active:last-child:after {
@@ -86,4 +95,6 @@
     background: #B9261A;
     transition-property: background-color;
     transition-duration: 1.5s;
+    transition: color 1s, background-color 1.5s;
+
 }

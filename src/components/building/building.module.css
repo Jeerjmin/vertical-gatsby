@@ -61,12 +61,13 @@
     text-transform: uppercase;
     right: 0;
     bottom: 0px;
-
     cursor: pointer;
+    transition: background 0.8s, color 0.8s;
 }
 
 .wrapper .link:hover {
     background-color: #d3d3d3;
+    transition: background 0.8s, color 0.8s;
 }
 
 .wrapper .link .arrowLink {
@@ -256,10 +257,13 @@
     text-transform: uppercase;
     color: #B9261A;
     cursor: pointer;
+    transition: background 0.8s, color 0.8s;
+
 }
 
 .generalContract button:hover,
 .zeroCycle button:hover {
+    transition: background 0.8s, color 0.8s;
     color: white;
     background-color:#B9261A;
 }

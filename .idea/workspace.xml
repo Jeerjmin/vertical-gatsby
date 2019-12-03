@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d11bcfd6-a9e7-457b-9bb6-2fb02ece65d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/header/close-menu-white.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/about/navigation.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/navigation.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/building/building.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/building/building.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/design/design.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/design/design.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/projects/navigation.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/navigation.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/building.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/building.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/building.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,7 +36,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/header" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -41,19 +50,19 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\WebstormProjects\vertical-gatsby\src\components\header" />
+      <recent name="C:\Users\User\WebstormProjects\vertical-gatsby\src\templates" />
+      <recent name="C:\Users\User\WebstormProjects\vertical-gatsby\src\components\type" />
+      <recent name="C:\Projects\vertical-gatsby\src\components\home" />
+      <recent name="C:\Projects\vertical-gatsby\src\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\vertical-gatsby\src\fonts" />
       <recent name="C:\Projects\vertical-gatsby\src\pages\projects" />
       <recent name="C:\Projects\vertical-gatsby\static\fonts" />
       <recent name="C:\Projects\vertical-gatsby\static\contacts-wrapper.jpg" />
       <recent name="C:\Projects\vertical-gatsby\static\assets\home1" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\User\WebstormProjects\vertical-gatsby\src\templates" />
-      <recent name="C:\Users\User\WebstormProjects\vertical-gatsby\src\components\type" />
-      <recent name="C:\Users\User\WebstormProjects\vertical-gatsby\src\components\header" />
-      <recent name="C:\Projects\vertical-gatsby\src\components\home" />
-      <recent name="C:\Projects\vertical-gatsby\src\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -101,6 +110,7 @@
       <workItem from="1574100210400" duration="6009000" />
       <workItem from="1575201528207" duration="26079000" />
       <workItem from="1575306880052" duration="16121000" />
+      <workItem from="1575361595291" duration="8128000" />
     </task>
     <servers />
   </component>

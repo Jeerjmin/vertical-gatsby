@@ -125,7 +125,8 @@ class BuildingTemplate extends React.Component {
 
 
                 }
-                <Modal visible={this.state.visible} width="1724" height="520" effect="fadeInUp" onClickAway={() => this.closeModal()}>
+                <Modal visible={this.state.visible} width="1724" height="100%" effect="fadeInUp" onClickAway={() => this.closeModal()}>
+                    <img onClick={() => this.closeModal()} src={closeImage} className={styles.close}/>
                     <Gallery/>
                 </Modal>
 

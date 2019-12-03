@@ -688,6 +688,40 @@ p {
 }
 
 
-@media (max-width: 400px) {
+@media (max-height: 450px) {
 
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description,
+    .description2,
+    .location,
+    .locationName,
+    .square {
+        position: relative;
+    }
+
+
+    .location {
+        text-align: center;
+    }
+
+
+    .linkBack {
+        top: 50%;
+    }
+
+    .galleryLink {
+        left: 80%;
+        top: 50%;
+        font-size: 8px;
+        line-height: 8px;
+        width: 70px;
+    }
+
+    .moreDetails {
+        top: 50%;
+    }
 }

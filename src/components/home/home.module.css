@@ -148,9 +148,11 @@
     text-transform: uppercase;
     padding: 20px 34px;
     cursor: pointer;
+    transition: background 0.8s, color 0.8s;
 }
 
 .showRealButton:hover {
+    transition: background 0.8s, color 0.8s;
     width: 219px;
     position: absolute;
     top: 75%;
@@ -264,12 +266,13 @@
     text-transform: uppercase;
     padding: 20px 34px;
     cursor: pointer;
+    transition: background 0.8s, color 0.8s;
+
 }
 
 .buildingButton:hover,
 .designButton:hover {
-
-    border: 1px solid white;
+    transition: background 0.8s, color 0.8s;
     background: #B9261A;
     color: white;
 
