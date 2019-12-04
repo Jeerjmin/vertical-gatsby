@@ -31,7 +31,7 @@ export default class Header extends React.Component {
     }
 
     updatePredicate = () => {
-        this.setState({ menuWidth: window.innerWidth, menuHeight: window.innerHeight });
+        this.setState({ menuWidth: String(window.innerWidth), menuHeight: String(window.innerHeight) });
     }
 
 
