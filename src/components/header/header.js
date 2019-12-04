@@ -16,17 +16,32 @@ export default class Header extends React.Component {
         super(props);
         this.state = {
             visible: false,
-            menuHeight: String(window.innerHeight - 250),
-            menuWidth: String(window.innerWidth - 200)
+            menuHeight: String(650),
+            menuWidth: String(1200)
         }
     }
+
+    componentDidMount() {
+        this.updatePredicate();
+        window.addEventListener("resize", this.updatePredicate);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener("resize", this.updatePredicate);
+    }
+
+    updatePredicate = () => {
+        this.setState({ menuWidth: window.innerWidth, menuHeight: window.innerHeight });
+    }
+
+
     openModal = () => {
         document.body.style.overflow = 'hidden';
 
         if (window.innerHeight < 500 && window.innerWidth > 1000) {
             this.setState({
                 menuHeight: String(400),
-                menuWidth: String(window.innerWidth - 200)
+                menuWidth: String(600)
             }, () => {
                 this.setState({
                     visible : true
@@ -35,8 +50,8 @@ export default class Header extends React.Component {
         } else {
             if (window.innerWidth > 1000) {
                 this.setState({
-                    menuHeight: String(window.innerHeight - 250),
-                    menuWidth: String(window.innerWidth - 200)
+                    menuHeight: String(500),
+                    menuWidth: String(1200)
                 }, () => {
                     this.setState({
                         visible : true
@@ -44,7 +59,7 @@ export default class Header extends React.Component {
                 })
             } else if (window.innerWidth > 600) {
                 this.setState({
-                    menuHeight: String( window.innerHeight / 6.5),
+                    menuHeight: String( 120),
                     menuWidth: String(700)
                 }, () => {
                     this.setState({
@@ -53,7 +68,7 @@ export default class Header extends React.Component {
                 })
             } else {
                 this.setState({
-                    menuHeight: String(window.innerHeight / 7),
+                    menuHeight: String(100),
                     menuWidth: String(400)
                 }, () => {
                     this.setState({
