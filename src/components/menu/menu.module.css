@@ -41,20 +41,19 @@
     line-height: 70px;
     color: #222222;
     letter-spacing: 7px;
-    transition: opacity 0.5s;
+    transition: color 0.5s;
 }
 
 .contacts:hover .title,
 .about:hover .title,
 .design:hover .title,
 .building:hover .title {
-    transition: opacity 0.5s;
-    opacity: 0.5;
+    transition: color 0.5s;
+    color: #b9261a;
 }
 
 .title:hover {
     transition: opacity 0.5s;
-    opacity: 0.5;
 }
 
 .building:hover .text {
@@ -74,7 +73,7 @@
 }
 
 .text span:hover {
-    color: gray;
+    color: #b9261a;
     transition: color 0.6s;
 }
 

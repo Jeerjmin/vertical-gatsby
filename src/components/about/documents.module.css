@@ -1,0 +1,10 @@
+.documents h4 {
+    cursor: pointer;
+    padding-bottom: 10px;
+    transition: color 0.7s;
+}
+
+.documents h4:hover {
+    color: #b9261a;
+    transition: color 0.7s;
+}

@@ -58,6 +58,18 @@ p {
     text-transform: uppercase;
 }
 
+ .type {
+     position: absolute;
+     left: 180px;
+     top:230px;
+     font-size: 12px;
+     line-height: 12px;
+     text-transform: uppercase;
+     color: #BEBEBE;
+     letter-spacing: 2px;
+     font-weight: bold;
+ }
+
 .description {
     position: absolute;
     left: 180px;
@@ -314,6 +326,7 @@ p {
     .locationName,
     .location,
     .square,
+    .type,
     .name {
         left: 100px;
     }
@@ -349,6 +362,10 @@ p {
 
     .name {
         top: 18%;
+    }
+
+    .type {
+        top: 24%;
     }
 
     .description {
@@ -402,6 +419,14 @@ p {
         width: 400px;
         text-align: center;
 
+    }
+
+    .type {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 400px;
+        text-align: center;
     }
 
     .description {
@@ -511,6 +536,14 @@ p {
         font-size: 12px;
     }
 
+    .name {
+        font-size: 14px;
+    }
+
+    .type {
+        font-size: 8px;
+        top: 22%;
+    }
 
     .name,
     .description,
@@ -519,6 +552,7 @@ p {
     .locationName,
     .customer,
     .customerName,
+    .type,
     .square {
         width: 350px;
     }
@@ -597,6 +631,11 @@ p {
         font-size: 14px;
     }
 
+    .type {
+        font-size: 8px;
+        top: 110px;
+    }
+
 
     .customer {
         top: 22%;
@@ -651,13 +690,17 @@ p {
         top: 20%;
     }
 
+    .type {
+        top: 24%;
+    }
+
 
     .customer {
-        top: 25%;
+        top: 30%;
     }
 
     .customerName {
-        top: 29%;
+        top: 32%;
         font-size: 12px;
     }
 

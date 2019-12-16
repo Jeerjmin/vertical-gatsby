@@ -13,6 +13,7 @@ import AboutNavigation from "./navigation";
 import './styles.css';
 
 import aboutWrapper from "./about-wrapper.png"
+import Documents from "./documents";
 
 class AboutComponent extends React.Component {
 
@@ -32,6 +33,8 @@ class AboutComponent extends React.Component {
                 return <Work />
             case 'object':
                 return <Objects />;
+            case 'documents':
+                return <Documents />;
             default:
                 return <About />;
         }
@@ -56,6 +59,10 @@ class AboutComponent extends React.Component {
             }
             case 'object': {
                 title = 'Объекты';
+                break;
+            }
+            case 'documents': {
+                title = 'Документы';
                 break;
             }
             default: {

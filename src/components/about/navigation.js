@@ -25,9 +25,9 @@ class AboutNavigation extends React.Component {
                        to={`/about?type=team`}>
                     Наша команда
                 </Link>
-                <Link  className={param && param.type === 'work'? styles.active : styles.deactive}
-                       to={`/about?type=work`}>
-                    Как мы работаем
+                <Link  className={param && param.type === 'documents'? styles.active : styles.deactive}
+                       to={`/about?type=documents`}>
+                    Документы
                 </Link>
                 <Link  className={param && param.type === 'object' ? styles.active : styles.deactive}
                        to={`/about?type=object`}>

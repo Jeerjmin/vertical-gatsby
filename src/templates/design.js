@@ -76,6 +76,9 @@ class DesignTemplate extends React.Component {
 
         const {item} = this.props.pageContext
 
+        console.log('this.props.location.state.prevPath', this.props.pageContext)
+
+
         return (
             <div className={styles.container}>
                 <Img className={styles.wrapper} alt={item.name} fluid={item.image.fluid} />
@@ -94,6 +97,7 @@ class DesignTemplate extends React.Component {
                     </>
                 )}
                     <p className={styles.name}>{item.name}</p>
+                    <p className={styles.type}>ПРОЕКТИРОВАНИЕ. КОНСТРУКТИВНЫЕ РЕШЕНИЯ. ПРОЕКТНАЯ И РАБОЧАЯ ДОКУМЕНТАЦИЯ</p>
                     <p className={styles.customer} >Заказчик:</p>
                     <p className={styles.customerName}>«NCC — Жилищное строительство»</p>
                     <p className={styles.location}>Местоположение:</p>
