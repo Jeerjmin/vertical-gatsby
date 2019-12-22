@@ -95,19 +95,19 @@ class BuildingTemplate extends React.Component {
                 }
                 <div className={styles.box}>
                     {item && item.name && <p className={styles.name}>{item.name}</p> }
-                    <p className={styles.type}>ПРОЕКТИРОВАНИЕ. КОНСТРУКТИВНЫЕ РЕШЕНИЯ. ПРОЕКТНАЯ И РАБОЧАЯ ДОКУМЕНТАЦИЯ</p>
-                    <p className={styles.customer} >Заказчик:</p>
-                    <p className={styles.customerName}>«NCC — Жилищное строительство»</p>
-                    <p className={styles.location}>Местоположение:</p>
-                    <p className={styles.locationName}>Санкт-Петербург, Аптекарский проспект, д. 16, литера Б</p>
-                    <p className={styles.square}>S=113 000 м²</p>
+                    {item && item.works && <p className={styles.type}>{item.works}</p> }
+                    {item && item.customer && <p className={styles.customer} >Заказчик:</p> }
+                    {item && item.customer && <p className={styles.customerName}>{item.customer}</p> }
+                    {item && item.address && <p className={styles.location}>Местоположение:</p>}
+                    {item && item.address && <p className={styles.locationName}>item.address</p> }
+                    {item && item.area && <p className={styles.square}>S={item.area} м²</p>}
                     <ul className={styles.description2}>
                         <li>Разработка конструктивных решений стадии «Проект»</li>
                         <li>Разработка конструктивных решений стадии «Проект»</li>
                         <li>Разработка конструктивных решений стадии «Проект»</li>
                         <li>Разработка конструктивных решений стадии «Проект»</li>
                     </ul>
-                    <p onClick={() => this.openMoreDetail()} className={styles.moreDetails}>Подробнее о проекте</p>
+                    {item && item.about && <p onClick={() => this.openMoreDetail()} className={styles.moreDetails}>Подробнее о проекте</p>}
                     {this.state.width < 1200 &&
                         <div className={styles.actions}>
                             <Link class={styles.linkBack} to={(this.props.location.state && this.props.location.state.prevPath) || '/building'}>
@@ -140,19 +140,7 @@ class BuildingTemplate extends React.Component {
                     <div className={styles.modalDetails}>
                         <div className={styles.customerTitle}>Заказчикам</div>
                         <p>
-                            Наше призвание-изучать, придумывать, проектировать, строить, осуществлять строительный
-                            контроль, осуществлять экспертизу проектов, консультировать, искать и применять новейшие
-                            технологии, выбирать наилучшие варианты решения стоящих перед Вами задач.
-                            <br/> <br/>
-                            Мы живем в период времени, когда отточенная и яркая мысль двигает экономику вперед, больше
-                            чем деньги, а
-                            знания приобретают ключевое значение для успеха всего дела в целом. Именно поэтому мы
-                            сосредоточили свое внимание на инженерном деле, специальных знаниях и технологиях.
-                            <br/><br/>
-                            Наше главное конкурентное преимущество – это четкое видение перспективы и комплексное ведение
-                            проектов: от замысла до завершения проекта и сдачи его в эксплуатацию. Фундаментальные
-                            знания, полученные нашими сотрудниками в учебных заведениях, в совокупности с опытом
-                            работы и интеграцией в одной компании, создают объединенный.
+                            {item && item.about}
                         </p>
                     </div>
                 </Modal>

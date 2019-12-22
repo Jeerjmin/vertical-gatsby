@@ -17,6 +17,11 @@ exports.createPages = ({ graphql, actions }) => {
                   node {
                       id
                       name
+                      address
+                      area
+                      works
+                      about
+                      customer
                       avatar {
                           fluid(quality: 100, sizes: "") {
                               base64
@@ -47,6 +52,11 @@ exports.createPages = ({ graphql, actions }) => {
                     node {
                         id
                         name
+                        address
+                        area
+                        works
+                        about
+                        customer
                         avatar {
                             fluid(quality: 100, sizes: "") {
                                 base64
@@ -77,6 +87,11 @@ exports.createPages = ({ graphql, actions }) => {
                     node {
                         id
                         name
+                        address
+                        area
+                        works
+                        about
+                        customer
                         avatar {
                             fluid(quality: 100, sizes: "") {
                                 base64
@@ -106,6 +121,11 @@ exports.createPages = ({ graphql, actions }) => {
                     node {
                         id
                         name
+                        address
+                        area
+                        works
+                        about
+                        customer
                         avatar {
                             fluid(quality: 100, sizes: "") {
                                 base64
@@ -136,6 +156,11 @@ exports.createPages = ({ graphql, actions }) => {
                     node {
                         id
                         name
+                        address
+                        area
+                        works
+                        about
+                        customer
                         avatar {
                             fluid(quality: 100, sizes: "") {
                                 base64
