@@ -30,7 +30,20 @@
 }
 
 
+.itemImage {
+    position: relative;
+    border: 1px solid grey;
+    width: 450px;
+    height: 400px;
+}
 
+.itemNonImage {
+    position: relative;
+    border: 1px solid grey;
+    width: 450px;
+    height: 400px;
+    background: gray;
+}
 
 
 .item .info {
@@ -153,6 +166,11 @@
     }
 
 
+    .itemNonImage,
+    .itemImage {
+        width: 320px;
+        height: 300px;
+    }
 
     .item .hover {
         visibility: visible;

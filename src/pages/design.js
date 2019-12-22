@@ -7,24 +7,26 @@ import get from "lodash/get";
 class DesignContainer extends React.Component {
     render() {
 
-        const designItems = get(this, 'props.data.allContentfulDesignItem.edges');
+        const ConstructiveDecisions = get(this, 'props.data.allContentfulConstructiveDecisions.edges');
+        const GeneralDesign = get(this, 'props.data.allContentfulGeneralDesign.edges');
+        const GeotechnicalSubstantiation = get(this, 'props.data.allContentfulGeotechnicalSubstantiation.edges');
 
         console.log('designItems', this.props)
 
         return (
-                <Design data={designItems}/>
+                <Design data={[...ConstructiveDecisions, ...GeneralDesign, ...GeotechnicalSubstantiation]}/>
         )
     }
 }
 
 export const designItemQuery = graphql`
 query designItemQuery {
-    allContentfulDesignItem {
+    allContentfulConstructiveDecisions {
         edges {
             node {
                 id
                 name
-                image {
+                avatar {
                     fluid(quality: 100, sizes: "") {
                         base64
                         aspectRatio
@@ -38,6 +40,44 @@ query designItemQuery {
             }
         }
     }
+    allContentfulGeneralDesign {
+            edges {
+                node {
+                    id
+                    name
+                    avatar {
+                        fluid(quality: 100, sizes: "") {
+                            base64
+                            aspectRatio
+                            src
+                            srcSet
+                            srcWebp
+                            srcSetWebp
+                            sizes
+                        }
+                    }
+                }
+            }
+        }
+        allContentfulGeotechnicalSubstantiation {
+            edges {
+                node {
+                    id
+                    name
+                    avatar {
+                        fluid(quality: 100, sizes: "") {
+                            base64
+                            aspectRatio
+                            src
+                            srcSet
+                            srcWebp
+                            srcSetWebp
+                            sizes
+                        }
+                    }
+                }
+            }
+        }
 }
 
 `

@@ -7,7 +7,7 @@ import typeWrapper from './type-wrapper.png';
 import arrowRight from './arrow-right.svg';
 import designImage2 from './design2.jpg';
 
-export default ({data, type}) => {
+export default ({ConstructiveDecisions, GeneralContract, GeneralDesign, GeotechnicalSubstantation, ZeroCycle, type}) => {
 
     let wrapperTitle;
     let wrapperDescription;
@@ -16,9 +16,11 @@ export default ({data, type}) => {
     let linkTitle;
     let list;
     let content;
+    let data;
 
     switch (type) {
         case 'generalContract': {
+            data = GeneralContract
             wrapperTitle = 'Генеральный подряд';
             wrapperDescription =
                 'Проектирование зданий и сооружений – это, ' +
@@ -41,6 +43,7 @@ export default ({data, type}) => {
             break;
         }
         case 'generalDesign': {
+            data=GeneralDesign
             wrapperTitle = 'Генеральное проектирование';
             wrapperDescription =
                 'Разработка проекта – важнейший этап жизненного цикла объекта капитального строительства. ' +
@@ -125,6 +128,7 @@ export default ({data, type}) => {
 
         }
         case 'geotechnicalSubstantiation': {
+            data = GeotechnicalSubstantation;
             wrapperTitle = 'Геотехническое обоснование';
             wrapperDescription =
                 'Проектирование зданий и сооружений – это, ' +
@@ -235,6 +239,7 @@ export default ({data, type}) => {
             break;
         }
         case 'zeroCycle': {
+            data = ZeroCycle
             wrapperTitle = 'Нулевой цикл';
             wrapperDescription =
                 'Проектирование зданий и сооружений – это, ' +
@@ -257,6 +262,7 @@ export default ({data, type}) => {
             break;
         }
         case 'сonstructiveDecisions': {
+            data = ConstructiveDecisions
             wrapperTitle = 'Конструктивные решения';
             wrapperDescription =
                 'Проектирование зданий и сооружений – это, ' +

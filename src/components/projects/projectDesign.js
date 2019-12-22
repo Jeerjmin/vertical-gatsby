@@ -14,7 +14,8 @@ export default ({data, location}) => {
                     return (
                         <Link  key={id} state={{ prevPath: location.pathname + location.search }} to={`/design/${item.node.id}`}>
                             <div className={styles.item}>
-                                <Img className={styles.itemImage} alt={item.node.name} fluid={item.node.image.fluid} />
+                                {item.node && !item.node.avatar && <div  className={styles.itemNonImage}   />}
+                                {item.node && item.node.avatar && <Img  className={styles.itemImage} alt={item.node.name} fluid={item.node.avatar.fluid} />}
                                 {/*<div className={styles.info}>*/}
                                 {/*    <div className={styles.title}>*/}
                                 {/*        Строительство*/}

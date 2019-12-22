@@ -81,7 +81,8 @@ class DesignTemplate extends React.Component {
 
         return (
             <div className={styles.container}>
-                <Img className={styles.wrapper} alt={item.name} fluid={item.image.fluid} />
+                {item.node && !item.node.avatar && <div  style={{background: "grey"}} className={styles.wrapper}   />}
+                {item.node && item.node.avatar && <Img  className={styles.wrapper} alt={item.node.name} fluid={item.node.avatar.fluid} />}
 
                 <div className={styles.header}>
                     <Header template />

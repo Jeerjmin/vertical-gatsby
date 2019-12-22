@@ -9,14 +9,20 @@ class ProjectsContainer extends React.Component {
 
         console.log('this', this);
 
-        const buildingItems = get(this, 'props.data.allContentfulBuildingItem.edges');
-        const designItems = get(this, 'props.data.allContentfulDesignItem.edges');
+        const ConstructiveDecisions = get(this, 'props.data.allContentfulConstructiveDecisions.edges');
+        const GeneralContract = get(this, 'props.data.allContentfulGeneralContract.edges');
+        const GeneralDesign = get(this, 'props.data.allContentfulGeneralDesign.edges');
+        const GeotechnicalSubstantiation = get(this, 'props.data.allContentfulGeotechnicalSubstantiation.edges');
+        const ZeroCycle = get(this, 'props.data.allContentfulZeroCycle.edges');
 
 
         return (
                 <ProjectsComponent
-                    buildingItems={buildingItems}
-                    designItems={designItems}
+                    ConstructiveDecisions={ConstructiveDecisions}
+                    GeneralContract={GeneralContract}
+                    GeneralDesign={GeneralDesign}
+                    GeotechnicalSubstantiation={GeotechnicalSubstantiation}
+                    ZeroCycle={ZeroCycle}
                 />
         )
     }
@@ -24,12 +30,12 @@ class ProjectsContainer extends React.Component {
 
 export const buildingItemQuery = graphql`
     query projectsBuildingItemQuery {
-        allContentfulBuildingItem {
+        allContentfulConstructiveDecisions {
             edges {
                 node {
                     id
                     name
-                    image {
+                    avatar {
                         fluid(quality: 100, sizes: "") {
                             base64
                             aspectRatio
@@ -43,14 +49,69 @@ export const buildingItemQuery = graphql`
                 }
             }
         }
-
-
-        allContentfulDesignItem {
+        allContentfulGeneralContract {
             edges {
                 node {
                     id
                     name
-                    image {
+                    avatar {
+                        fluid(quality: 100, sizes: "") {
+                            base64
+                            aspectRatio
+                            src
+                            srcSet
+                            srcWebp
+                            srcSetWebp
+                            sizes
+                        }
+                    }
+                }
+            }
+        }
+        allContentfulGeneralDesign {
+            edges {
+                node {
+                    id
+                    name
+                    avatar {
+                        fluid(quality: 100, sizes: "") {
+                            base64
+                            aspectRatio
+                            src
+                            srcSet
+                            srcWebp
+                            srcSetWebp
+                            sizes
+                        }
+                    }
+                }
+            }
+        }
+        allContentfulGeotechnicalSubstantiation {
+            edges {
+                node {
+                    id
+                    name
+                    avatar {
+                        fluid(quality: 100, sizes: "") {
+                            base64
+                            aspectRatio
+                            src
+                            srcSet
+                            srcWebp
+                            srcSetWebp
+                            sizes
+                        }
+                    }
+                }
+            }
+        }
+        allContentfulZeroCycle {
+            edges {
+                node {
+                    id
+                    name
+                    avatar {
                         fluid(quality: 100, sizes: "") {
                             base64
                             aspectRatio

@@ -12,15 +12,44 @@ exports.createPages = ({ graphql, actions }) => {
       graphql(
         `
           {
-            allContentfulBuildingItem {
+            allContentfulConstructiveDecisions {
+              edges {
+                  node {
+                      id
+                      name
+                      avatar {
+                          fluid(quality: 100, sizes: "") {
+                              base64
+                              aspectRatio
+                              src
+                              srcSet
+                              srcWebp
+                              srcSetWebp
+                              sizes
+                          }
+                      }
+                      photos {
+                          fluid(quality: 100, sizes: "") {
+                              base64
+                              aspectRatio
+                              src
+                              srcSet
+                              srcWebp
+                              srcSetWebp
+                              sizes
+                          }
+                      }
+                  }
+              }
+            }
+            allContentfulGeneralContract {
                 edges {
                     node {
                         id
                         name
-                        image {
+                        avatar {
                             fluid(quality: 100, sizes: "") {
                                 base64
-                                tracedSVG
                                 aspectRatio
                                 src
                                 srcSet
@@ -28,33 +57,110 @@ exports.createPages = ({ graphql, actions }) => {
                                 srcSetWebp
                                 sizes
                             }
-                    }
+                        }
+                        photos {
+                            fluid(quality: 100, sizes: "") {
+                                base64
+                                aspectRatio
+                                src
+                                srcSet
+                                srcWebp
+                                srcSetWebp
+                                sizes
+                            }
+                        }
                     }
                 }
             }
-            
-         
-            allContentfulDesignItem {
-              edges {
-                  node {
-                     id
-                    name
-                    image {
-                        fluid(quality: 100, sizes: "") {
-                            base64
-                            tracedSVG
-                            aspectRatio
-                            src
-                            srcSet
-                            srcWebp
-                            srcSetWebp
-                            sizes
+            allContentfulGeneralDesign {
+                edges {
+                    node {
+                        id
+                        name
+                        avatar {
+                            fluid(quality: 100, sizes: "") {
+                                base64
+                                aspectRatio
+                                src
+                                srcSet
+                                srcWebp
+                                srcSetWebp
+                                sizes
+                            }
                         }
-                    }
-                  }
-              }
+                        photos {
+                            fluid(quality: 100, sizes: "") {
+                                base64
+                                aspectRatio
+                                src
+                                srcSet
+                                srcWebp
+                                srcSetWebp
+                                sizes
+                            }
+                        }                }
+                }
             }
-            
+            allContentfulGeotechnicalSubstantiation {
+                edges {
+                    node {
+                        id
+                        name
+                        avatar {
+                            fluid(quality: 100, sizes: "") {
+                                base64
+                                aspectRatio
+                                src
+                                srcSet
+                                srcWebp
+                                srcSetWebp
+                                sizes
+                            }
+                        }
+                        photos {
+                            fluid(quality: 100, sizes: "") {
+                                base64
+                                aspectRatio
+                                src
+                                srcSet
+                                srcWebp
+                                srcSetWebp
+                                sizes
+                            }
+                        }
+                    }   
+                }
+            }
+            allContentfulZeroCycle {
+                edges {
+                    node {
+                        id
+                        name
+                        avatar {
+                            fluid(quality: 100, sizes: "") {
+                                base64
+                                aspectRatio
+                                src
+                                srcSet
+                                srcWebp
+                                srcSetWebp
+                                sizes
+                            }
+                        }
+                        photos {
+                            fluid(quality: 100, sizes: "") {
+                                base64
+                                aspectRatio
+                                src
+                                srcSet
+                                srcWebp
+                                srcSetWebp
+                                sizes
+                            }
+                        }                
+                    }
+                }
+            }
           }
           `
       ).then(result => {
@@ -63,8 +169,9 @@ exports.createPages = ({ graphql, actions }) => {
           reject(result.errors)
         }
 
-        const buildings = result.data.allContentfulBuildingItem.edges
-        const designs = result.data.allContentfulDesignItem.edges
+
+        const buildings = [...result.data.allContentfulGeneralContract.edges, ...result.data.allContentfulZeroCycle.edges ]
+        const designs = [...result.data.allContentfulGeotechnicalSubstantiation.edges, ...result.data.allContentfulGeneralDesign.edges, ...result.data.allContentfulConstructiveDecisions.edges ]
 
         buildings.forEach((building, index) => {
           createPage({

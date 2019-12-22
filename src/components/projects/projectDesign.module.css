@@ -22,6 +22,22 @@
     cursor: pointer;
 }
 
+.itemImage {
+    position: relative;
+    border: 1px solid grey;
+    width: 450px;
+    height: 400px;
+}
+
+.itemNonImage {
+    position: relative;
+    border: 1px solid grey;
+    width: 450px;
+    height: 400px;
+    background: gray;
+}
+
+
 
 
 .item .info {
@@ -140,6 +156,12 @@
 
     .projectDesign .container .item {
         width: 320px;
+    }
+
+    .itemNonImage,
+    .itemImage {
+        width: 320px;
+        height: 300px;
     }
 
 

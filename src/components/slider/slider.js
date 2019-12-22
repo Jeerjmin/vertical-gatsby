@@ -42,7 +42,8 @@ class Slider extends React.Component {
                                   to={`/${this.props.type.toLowerCase()}/${item.node.id}`}
                             >
                                 <div className={styles.sliderItem}>
-                                    <Img  className={styles.sliderImage} alt={item.node.name} fluid={item.node.image.fluid} />
+                                    {item.node && !item.node.avatar && <div  className={styles.sliderNonImage}   />}
+                                    {item.node && item.node.avatar && <Img  className={styles.sliderImage} alt={item.node.name} fluid={item.node.avatar.fluid} />}
                                     {/*<div className={styles.info}>*/}
                                     {/*    <p className={styles.title}>{this.props.type=== 'Building' ? 'Строительство' : 'Проектирование'}</p>*/}
                                     {/*    <p className={styles.name}>{item.node.name}</p>*/}

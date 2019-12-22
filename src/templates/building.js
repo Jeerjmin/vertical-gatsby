@@ -80,7 +80,8 @@ class BuildingTemplate extends React.Component {
 
         return (
             <div className={styles.container}>
-                <Img className={styles.wrapper} alt={item.name} fluid={item.image.fluid} />
+                {item && !item.avatar && <div  style={{background: "grey"}} className={styles.wrapper}   />}
+                {item && item.avatar && <Img  className={styles.wrapper} alt={item.name} fluid={item.avatar.fluid} />}
 
                 <div className={styles.header}>
                     <Header template />
@@ -93,7 +94,7 @@ class BuildingTemplate extends React.Component {
                 </Link>
                 }
                 <div className={styles.box}>
-                    <p className={styles.name}>{item.name}</p>
+                    {item && item.name && <p className={styles.name}>{item.name}</p> }
                     <p className={styles.type}>ПРОЕКТИРОВАНИЕ. КОНСТРУКТИВНЫЕ РЕШЕНИЯ. ПРОЕКТНАЯ И РАБОЧАЯ ДОКУМЕНТАЦИЯ</p>
                     <p className={styles.customer} >Заказчик:</p>
                     <p className={styles.customerName}>«NCC — Жилищное строительство»</p>
@@ -124,7 +125,7 @@ class BuildingTemplate extends React.Component {
                 {this.state.width > 1200 &&
 
                 <div onClick={() => this.openModal()} className={styles.gallery}>
-                    {images.map(el => <Img className={styles.galleryItem} alt={item.name} fluid={item.image.fluid} /> )}
+                    {item.avatar && images.map(el => <Img className={styles.galleryItem} key={el.id} alt={item.name} fluid={item.avatar.fluid} /> )}
                 </div>
 
 

@@ -18,11 +18,13 @@ class ProjectsComponent extends React.Component {
 
         switch(type) {
         case 'building':
-            return <Building location={this.props.location} data ={this.props.buildingItems}/>;
+            return <Building location={this.props.location} data ={[...this.props.GeneralContract, ...this.props.ZeroCycle]}/>;
         case 'design':
-            return <Design location={this.props.location} data = {this.props.designItems} />;
+            return <Design location={this.props.location} data = {[...this.props.ConstructiveDecisions, ...this.props.GeneralDesign, ...this.props.GeotechnicalSubstantiation]} />;
         default:
-            return <All location={this.props.location} building = {this.props.buildingItems} design = {this.props.designItems} />;
+            return <All location={this.props.location}
+                        building = {[...this.props.GeneralContract, ...this.props.ZeroCycle]}
+                        design = {[...this.props.ConstructiveDecisions, ...this.props.GeneralDesign, ...this.props.GeotechnicalSubstantiation]} />;
         }
     }
 

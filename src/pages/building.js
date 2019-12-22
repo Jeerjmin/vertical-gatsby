@@ -7,24 +7,43 @@ import get from "lodash/get";
 class BuildingContainer extends React.Component {
     render() {
 
-        const buildingItems = get(this, 'props.data.allContentfulBuildingItem.edges');
+        const GeneralContract = get(this, 'props.data.allContentfulGeneralContract.edges');
+        const ZeroCycle = get(this, 'props.data.allContentfulZeroCycle.edges');
 
-        console.log('buildingItems', buildingItems)
 
         return (
-                <Building data={buildingItems}/>
+                <Building data={[...GeneralContract, ...ZeroCycle ]}/>
         )
     }
 }
 
 export const buildingItemQuery2 = graphql`
     query buildingItemQuery2 {
-        allContentfulBuildingItem {
+        allContentfulZeroCycle {
             edges {
                 node {
                     id
                     name
-                    image {
+                    avatar {
+                        fluid(quality: 100, sizes: "") {
+                            base64
+                            aspectRatio
+                            src
+                            srcSet
+                            srcWebp
+                            srcSetWebp
+                            sizes
+                        }
+                    }
+                }
+            }
+        }
+        allContentfulGeneralContract {
+            edges {
+                node {
+                    id
+                    name
+                    avatar {
                         fluid(quality: 100, sizes: "") {
                             base64
                             aspectRatio
