@@ -42,6 +42,8 @@ export default ({showReal}) => {
     const ShowRealTitle = documentToReactComponents(showReal.title.json, TitleOptions)
     const ShowRealDescription = documentToReactComponents(showReal.descr.json, DescriptionOptions)
 
+    console.log('showReal', showReal)
+
         return (
             <div className={styles.container}>
                 {!video &&
@@ -64,7 +66,7 @@ export default ({showReal}) => {
                 <div className={styles.playerContainer}>
                     <ReactPlayer
                         className={styles.player}
-                        onEnded={() => setVideo(false)} url='https://vimeo.com/282340616'
+                        onEnded={() => setVideo(false)} url={showReal.url}
                         width='100%'
                         height='100%'
                         playing={play} />

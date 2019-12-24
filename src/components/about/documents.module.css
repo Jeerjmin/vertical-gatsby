@@ -8,3 +8,12 @@
     color: #b9261a;
     transition: color 0.7s;
 }
+
+
+
+@media (max-width: 450px) {
+
+    .documents {
+        padding: 0 20px;
+    }
+}

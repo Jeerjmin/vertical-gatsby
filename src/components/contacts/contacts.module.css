@@ -159,6 +159,10 @@
 @media (max-width: 900px) {
 
 
+    .buttonLink {
+        padding-right: 0;
+    }
+
     .imageWrapper {
         height: 650px;
     }
