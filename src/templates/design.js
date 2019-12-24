@@ -127,9 +127,9 @@ class DesignTemplate extends React.Component {
                         </Link>
 
 
-                        <button  onClick={() => this.openModal()} className={styles.galleryLink}>
+                        {item.photos && item.photos.length > 0 && <button  onClick={() => this.openModal()} className={styles.galleryLink}>
                             <span>Фото объекта</span>
-                        </button>
+                        </button>}
                     </div>
                     }
 

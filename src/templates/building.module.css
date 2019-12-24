@@ -731,12 +731,16 @@ p {
 
 }
 
+@media (min-height: 450px) {
+    .close {
+        top: 10% !important;
+    }
+}
+
 
 @media (max-height: 450px) {
 
-    .close {
-        top: 10%;
-    }
+
 
     .box {
         display: flex;
