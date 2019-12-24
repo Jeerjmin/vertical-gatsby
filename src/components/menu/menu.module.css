@@ -194,3 +194,24 @@
 
     }
 }
+
+
+@media (max-width: 400px) {
+
+    .container {
+        max-height:360px;
+    }
+
+
+    .image {
+        max-height: 90px;
+    }
+
+    .building,
+    .design,
+    .about,
+    .contacts {
+        max-height: 90px;
+
+    }
+}

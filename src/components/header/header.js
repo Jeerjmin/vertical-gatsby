@@ -59,8 +59,17 @@ export default class Header extends React.Component {
                 })
             } else if (window.innerWidth > 600) {
                 this.setState({
-                    menuHeight: String( 120),
+                    menuHeight: String( "80%"),
                     menuWidth: String(700)
+                }, () => {
+                    this.setState({
+                        visible : true
+                    });
+                })
+            } else if (window.innerWidth > 400) {
+                this.setState({
+                    menuHeight: String("520px"),
+                    menuWidth: String(400)
                 }, () => {
                     this.setState({
                         visible : true
@@ -68,7 +77,7 @@ export default class Header extends React.Component {
                 })
             } else {
                 this.setState({
-                    menuHeight: String(100),
+                    menuHeight: String("360px"),
                     menuWidth: String(400)
                 }, () => {
                     this.setState({

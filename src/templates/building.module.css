@@ -734,6 +734,10 @@ p {
 
 @media (max-height: 450px) {
 
+    .close {
+        top: 10%;
+    }
+
     .box {
         display: flex;
         flex-direction: column;
