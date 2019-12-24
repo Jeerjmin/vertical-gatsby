@@ -68,6 +68,7 @@ p {
      color: #BEBEBE;
      letter-spacing: 2px;
      font-weight: bold;
+     max-width: 700px;
  }
 
 .description {
@@ -146,7 +147,7 @@ p {
      float: left;
      break-inside: avoid-column;
      margin-top: 10px;
-     min-width: 350px;
+     min-width: 300px;
  }
 
 .description2 li:nth-child(4),

@@ -75,7 +75,7 @@ class BuildingTemplate extends React.Component {
 
         const {item} = this.props.pageContext
 
-        console.log('this.props.location.state.prevPath', this.props.pageContext)
+        console.log('this.props.item', item)
 
 
         return (
@@ -86,7 +86,7 @@ class BuildingTemplate extends React.Component {
                 <div className={styles.header}>
                     <Header template />
                 </div>
-                {this.state.width > 1200 &&
+                {this.state.width > 1400 &&
                 <Link class={styles.linkBack} to={(this.props.location.state && this.props.location.state.prevPath) || '/building'}>
                     <button className={styles.buttonBack}>
                         <img src={arrowLeftWhite}/>
@@ -95,20 +95,23 @@ class BuildingTemplate extends React.Component {
                 }
                 <div className={styles.box}>
                     {item && item.name && <p className={styles.name}>{item.name}</p> }
-                    {item && item.works && <p className={styles.type}>{item.works}</p> }
+                    {item && item.works && <p className={styles.type}>{item.works.map((el, i) => {
+                        if (i + 1 === item.works.length) {
+                            return el
+                        } else {
+                            return el + ", "
+                        }
+                    })}</p> }
                     {item && item.customer && <p className={styles.customer} >Заказчик:</p> }
                     {item && item.customer && <p className={styles.customerName}>{item.customer}</p> }
-                    {item && item.address && <p className={styles.location}>Местоположение:</p>}
-                    {item && item.address && <p className={styles.locationName}>item.address</p> }
-                    {item && item.area && <p className={styles.square}>S={item.area} м²</p>}
-                    <ul className={styles.description2}>
-                        <li>Разработка конструктивных решений стадии «Проект»</li>
-                        <li>Разработка конструктивных решений стадии «Проект»</li>
-                        <li>Разработка конструктивных решений стадии «Проект»</li>
-                        <li>Разработка конструктивных решений стадии «Проект»</li>
-                    </ul>
-                    {item && item.about && <p onClick={() => this.openMoreDetail()} className={styles.moreDetails}>Подробнее о проекте</p>}
-                    {this.state.width < 1200 &&
+                    {item && item.address && item.address !== ' ' && <p className={styles.location}>Местоположение:</p>}
+                    {item && item.address && item.address !== ' ' && <p className={styles.locationName}>{item.address}</p> }
+                    {item && item.area && item.area !== ' ' && <p className={styles.square}>S={item.area} м²</p>}
+                    {item && item.list && <ul className={styles.description2}>
+                        {item.list.map(el => <li>{el}</li>)}
+                    </ul> }
+                    {item && item.about && item.about.about && <p onClick={() => this.openMoreDetail()} className={styles.moreDetails}>Подробнее о проекте</p>}
+                    {this.state.width < 1400 &&
                         <div className={styles.actions}>
                             <Link class={styles.linkBack} to={(this.props.location.state && this.props.location.state.prevPath) || '/building'}>
                                 <button className={styles.buttonBack}>
@@ -122,17 +125,24 @@ class BuildingTemplate extends React.Component {
                    }
 
                 </div>
-                {this.state.width > 1200 &&
+                {this.state.width > 1400 && item.photos && item.photos.length > 0 &&
 
                 <div onClick={() => this.openModal()} className={styles.gallery}>
-                    {item.avatar && images.map(el => <Img className={styles.galleryItem} key={el.id} alt={item.name} fluid={item.avatar.fluid} /> )}
+                    {item.photos.map((el, i) => {
+                       if (i >=4 ) {
+                           return null
+                       } else {
+                           return <Img className={styles.galleryItem} alt={item.name} fluid={el.fluid} />
+                       }
+                    }
+                    )}
                 </div>
 
 
                 }
                 <Modal visible={this.state.visible} width="1724" height="100%" effect="fadeInUp" onClickAway={() => this.closeModal()}>
                     <img onClick={() => this.closeModal()} src={closeImage} className={styles.close}/>
-                    <Gallery/>
+                    <Gallery images={item.photos}/>
                 </Modal>
 
                 <Modal visible={this.state.visibleDetail} width="80%" height="60%" effect="fadeInUp" onClickAway={() => this.closeMoreDetail()}>
@@ -140,7 +150,7 @@ class BuildingTemplate extends React.Component {
                     <div className={styles.modalDetails}>
                         <div className={styles.customerTitle}>Заказчикам</div>
                         <p>
-                            {item && item.about}
+                            {item && item.about && item.about.about}
                         </p>
                     </div>
                 </Modal>

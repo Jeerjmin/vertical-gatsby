@@ -21,6 +21,7 @@ exports.createPages = ({ graphql, actions }) => {
                       area
                       works
                       about
+                      list
                       customer
                       avatar {
                           fluid(quality: 100, sizes: "") {
@@ -55,7 +56,10 @@ exports.createPages = ({ graphql, actions }) => {
                         address
                         area
                         works
-                        about
+                        list
+                        about {
+                          about
+                        }
                         customer
                         avatar {
                             fluid(quality: 100, sizes: "") {
@@ -90,7 +94,10 @@ exports.createPages = ({ graphql, actions }) => {
                         address
                         area
                         works
-                        about
+                        list
+                        about {
+                          about
+                        }
                         customer
                         avatar {
                             fluid(quality: 100, sizes: "") {
@@ -125,6 +132,7 @@ exports.createPages = ({ graphql, actions }) => {
                         area
                         works
                         about
+                        list
                         customer
                         avatar {
                             fluid(quality: 100, sizes: "") {
@@ -160,6 +168,7 @@ exports.createPages = ({ graphql, actions }) => {
                         area
                         works
                         about
+                        list
                         customer
                         avatar {
                             fluid(quality: 100, sizes: "") {

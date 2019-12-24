@@ -4,7 +4,15 @@
     <list default="true" id="d11bcfd6-a9e7-457b-9bb6-2fb02ece65d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatsby-node.js" beforeDir="false" afterPath="$PROJECT_DIR$/gatsby-node.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/gallery/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/type/type.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/type/type.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/type/type.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/type/type.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/building.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/building.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/building.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/design.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -105,7 +113,10 @@
       <workItem from="1575447922725" duration="2400000" />
       <workItem from="1576514847927" duration="6946000" />
       <workItem from="1576565880705" duration="865000" />
-      <workItem from="1577017842705" duration="11974000" />
+      <workItem from="1577017842705" duration="12030000" />
+      <workItem from="1577104176899" duration="9358000" />
+      <workItem from="1577183324729" duration="213000" />
+      <workItem from="1577213728026" duration="1596000" />
     </task>
     <servers />
   </component>

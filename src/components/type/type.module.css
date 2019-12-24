@@ -119,6 +119,8 @@ h3 {
     padding-top: 20px !important;
 }
 
+.contentDescription4,
+.contentDescription3,
 .contentDescription2,
 .contentDescription {
     font-style: normal;
@@ -133,8 +135,20 @@ h3 {
 
 .contentDescription2 {
     width: 90%;
-
     padding-left: 100px;
+}
+
+.contentDescription4 {
+    width: 90%;
+    padding-left: 100px;
+    padding-bottom: 50px;
+}
+
+.contentDescription3 {
+    width: 90%;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 100px;
 }
 
 
@@ -227,6 +241,9 @@ h3 {
     margin-left: 63px;
 }
 
+.content .constrDec {
+
+}
 
 
 .verticalEto {
@@ -331,9 +348,19 @@ h3 {
     }
 
 
+    .contentDescription4,
+    .contentDescription3,
     .contentDescription2,
     .contentDescription {
         padding: 0 40px;
+    }
+
+    .contentDescription4 {
+        padding-bottom: 50px;
+    }
+
+    .contentDescription3 {
+        padding-top: 50px;
     }
 
 
@@ -459,9 +486,19 @@ h3 {
         padding: 20px 10px;
     }
 
+    .contentDescription3,
+    .contentDescription4,
     .contentDescription,
     .contentDescription2 {
         padding: 0 10px;
+    }
+
+    .contentDescription4 {
+        padding-bottom: 30px;
+    }
+
+    .contentDescription3 {
+        padding-top: 30px;
     }
 
     .content h3 {

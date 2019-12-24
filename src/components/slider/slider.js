@@ -39,7 +39,7 @@ class Slider extends React.Component {
                         return (
                             <Link key={item.node.id}
                                   state={{ prevPath: location.pathname + location.search }}
-                                  to={`/${this.props.type.toLowerCase()}/${item.node.id}`}
+                                  to={`/${this.props.type ? this.props.type.toLowerCase() : ''}/${item.node.id}`}
                             >
                                 <div className={styles.sliderItem}>
                                     {item.node && !item.node.avatar && <div  className={styles.sliderNonImage}   />}
@@ -69,7 +69,7 @@ class Slider extends React.Component {
                             <img src={arrowRight}  className={styles.imageArrowRight} onClick={this.toScrollRight} />
                         </button>
                     </div>
-                    <Link to={`/projects?type=${this.props.type.toLowerCase()}`}>
+                    <Link to={`/projects?type=${this.props.type ? this.props.type.toLowerCase() : ''}`}>
                         <button className={styles.allProjects}>
                             Все проекты
                         </button>

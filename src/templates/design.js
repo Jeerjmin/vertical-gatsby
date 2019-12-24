@@ -81,13 +81,13 @@ class DesignTemplate extends React.Component {
 
         return (
             <div className={styles.container}>
-                {item.node && !item.node.avatar && <div  style={{background: "grey"}} className={styles.wrapper}   />}
-                {item.node && item.node.avatar && <Img  className={styles.wrapper} alt={item.node.name} fluid={item.node.avatar.fluid} />}
+                {item && !item.avatar && <div  style={{background: "grey"}} className={styles.wrapper}   />}
+                {item && item.avatar && <Img  className={styles.wrapper} alt={item.name} fluid={item.avatar.fluid} />}
 
                 <div className={styles.header}>
                     <Header template />
                 </div>
-                {this.state.width > 1200 &&
+                {this.state.width > 1400 &&
                 (<>
                     <Link class={styles.linkBack} to={(this.props.location.state && this.props.location.state.prevPath) || '/design'}>
                     <button className={styles.buttonBack}>
@@ -97,22 +97,26 @@ class DesignTemplate extends React.Component {
 
                     </>
                 )}
-                    <p className={styles.name}>{item.name}</p>
-                    <p className={styles.type}>ПРОЕКТИРОВАНИЕ. КОНСТРУКТИВНЫЕ РЕШЕНИЯ. ПРОЕКТНАЯ И РАБОЧАЯ ДОКУМЕНТАЦИЯ</p>
-                    <p className={styles.customer} >Заказчик:</p>
-                    <p className={styles.customerName}>«NCC — Жилищное строительство»</p>
-                    <p className={styles.location}>Местоположение:</p>
-                    <p className={styles.locationName}>Санкт-Петербург, Аптекарский проспект, д. 16, литера Б</p>
-                    <p className={styles.square}>S=113 000 м²</p>
-                    <ul className={styles.description2}>
-                        <li>Разработка конструктивных решений стадии «Проект»</li>
-                        <li>Разработка конструктивных решений стадии «Проект»</li>
-                        <li>Разработка конструктивных решений стадии «Проект»</li>
-                        <li>Разработка конструктивных решений стадии «Проект»</li>
-                    </ul>
-                    <p onClick={() => this.openMoreDetail()} className={styles.moreDetails}>Подробнее о проекте</p>
+                {item && item.name && <p className={styles.name}>{item.name}</p> }
+                {item && item.works && <p className={styles.type}>{item.works.map((el, i) => {
+                    if (i + 1 === item.works.length) {
+                        return el
+                    } else {
+                        return el + ", "
+                    }
+                })}</p> }
+                {item && item.customer && <p className={styles.customer} >Заказчик:</p> }
+                {item && item.customer && <p className={styles.customerName}>{item.customer}</p> }
+                {item && item.address && item.address !== ' ' && <p className={styles.location}>Местоположение:</p>}
+                {item && item.address && item.address !== ' ' && <p className={styles.locationName}>{item.address}</p> }
+                {item && item.area && item.area !== ' ' && <p className={styles.square}>S={item.area} м²</p>}
+                {item && item.list && <ul className={styles.description2}>
+                    {item.list.map(el => <li>{el}</li>)}
+                </ul> }
+                {item && item.about && item.about.about && <p onClick={() => this.openMoreDetail()} className={styles.moreDetails}>Подробнее о проекте</p>}
 
-                {this.state.width < 1200 &&
+
+                {this.state.width < 1400 &&
                     <div className={styles.actions}>
 
 
@@ -129,10 +133,17 @@ class DesignTemplate extends React.Component {
                     </div>
                     }
 
-                {this.state.width > 1200 &&
+                {this.state.width > 1400 && item.photos && item.photos.length > 0 &&
 
                 <div onClick={() => this.openModal()} className={styles.gallery}>
-                    {images.map(el => <Img className={styles.galleryItem} alt={item.name} fluid={item.image.fluid} /> )}
+                    {item.photos && item.photos.map((el, i) => {
+                            if (i >=4 ) {
+                                return null
+                            } else {
+                                return <Img className={styles.galleryItem} alt={item.name} fluid={el.fluid} />
+                            }
+                        }
+                    )}
                 </div>
 
 
@@ -141,7 +152,7 @@ class DesignTemplate extends React.Component {
 
                 <Modal visible={this.state.visible} width="1724" height="100%" effect="fadeInUp" onClickAway={() => this.closeModal()}>
                     <img onClick={() => this.closeModal()} src={closeImage} className={styles.close}/>
-                    <Gallery/>
+                    <Gallery images={item.photos}/>
                 </Modal>
 
                 <Modal visible={this.state.visibleDetail} width="80%" height="60%" effect="fadeInUp" onClickAway={() => this.closeMoreDetail()}>
@@ -149,19 +160,7 @@ class DesignTemplate extends React.Component {
                     <div className={styles.modalDetails}>
                         <div className={styles.customerTitle}>Заказчикам</div>
                         <p>
-                            Наше призвание-изучать, придумывать, проектировать, строить, осуществлять строительный
-                            контроль, осуществлять экспертизу проектов, консультировать, искать и применять новейшие
-                            технологии, выбирать наилучшие варианты решения стоящих перед Вами задач.
-                            <br/> <br/>
-                            Мы живем в период времени, когда отточенная и яркая мысль двигает экономику вперед, больше
-                            чем деньги, а
-                            знания приобретают ключевое значение для успеха всего дела в целом. Именно поэтому мы
-                            сосредоточили свое внимание на инженерном деле, специальных знаниях и технологиях.
-                            <br/><br/>
-                            Наше главное конкурентное преимущество – это четкое видение перспективы и комплексное ведение
-                            проектов: от замысла до завершения проекта и сдачи его в эксплуатацию. Фундаментальные
-                            знания, полученные нашими сотрудниками в учебных заведениях, в совокупности с опытом
-                            работы и интеграцией в одной компании, создают объединенный.
+                            {item && item.about && item.about.about}
                         </p>
                     </div>
                 </Modal>

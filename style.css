@@ -2,6 +2,12 @@
     max-height: 600px !important;
 }
 
+.image-gallery-thumbnail-inner img,
+.image-gallery-thumbnail-inner,
+.image-gallery-thumbnail {
+    max-height: 72px;
+}
+
 body {
     overflow-x: hidden;
 
