@@ -97,6 +97,9 @@
     visibility: hidden;
 }
 
+.text:nth-child(3) {
+}
+
 .line {
     position: absolute;
     right: 10%;

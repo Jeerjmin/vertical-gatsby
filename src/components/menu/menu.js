@@ -61,7 +61,19 @@ export default class Menu extends React.Component {
                         <img className={styles.image} src={menuAbout} alt="О нас"/>
                         <span className={styles.title}>О Нас</span>
 
-                        <div className={styles.text}>
+                        <div style={{left: "75px"}} className={styles.text}>
+                            <span>
+                                <Link to={`/about/?type=about`}>О компании</Link>
+                            </span>
+                            <span>
+                                <Link to={`/about?type=team`}>Наша команда</Link>
+                            </span>
+                            <span>
+                                <Link to={`/about/?type=documents`}>Документы</Link>
+                            </span>
+                            <span>
+                                <Link to={`/about/?type=object`}>Объекты</Link>
+                            </span>
                         </div>
                         <div className={styles.line}>
                         </div>
