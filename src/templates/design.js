@@ -17,13 +17,15 @@ class DesignTemplate extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            width : 0
+            width : 0,
+            imageIndex: 0
         }
     }
 
-    openModal() {
+    openModal(i) {
         this.setState({
-            visible : true
+            visible : true,
+            imageIndex: i
         });
     }
     closeModal() {
@@ -54,7 +56,11 @@ class DesignTemplate extends React.Component {
 
     updatePredicate = () => {
         this.setState({ width: window.innerWidth });
-    }
+    };
+
+    back = () => {
+        window.history.back()
+    };
 
     render() {
 
@@ -76,9 +82,6 @@ class DesignTemplate extends React.Component {
 
         const {item} = this.props.pageContext
 
-        console.log('this.props.location.state.prevPath', this.props.pageContext)
-
-
         return (
             <div className={styles.container}>
                 {item && !item.avatar && <div  style={{background: "grey"}} className={styles.wrapper}   />}
@@ -89,11 +92,11 @@ class DesignTemplate extends React.Component {
                 </div>
                 {this.state.width > 1400 &&
                 (<>
-                    <Link class={styles.linkBack} to={(this.props.location.state && this.props.location.state.prevPath) || '/design'}>
-                    <button className={styles.buttonBack}>
+                    <div class={styles.linkBack} >
+                    <button onClick={this.back} className={styles.buttonBack}>
                         <img src={arrowLeftWhite}/>
                     </button>
-                </Link>
+                </div>
 
                     </>
                 )}
@@ -118,14 +121,11 @@ class DesignTemplate extends React.Component {
 
                 {this.state.width < 1400 &&
                     <div className={styles.actions}>
-
-
-                        <Link class={styles.linkBack} to={(this.props.location.state && this.props.location.state.prevPath) || '/design'}>
-                            <button className={styles.buttonBack}>
+                        <div class={styles.linkBack} >
+                            <button onClick={this.back} className={styles.buttonBack}>
                                 <img src={arrowLeftWhite}/>
                             </button>
-                        </Link>
-
+                        </div>
 
                         {item.photos && item.photos.length > 0 && <button  onClick={() => this.openModal()} className={styles.galleryLink}>
                             <span>Фото объекта</span>
@@ -135,12 +135,12 @@ class DesignTemplate extends React.Component {
 
                 {this.state.width > 1400 && item.photos && item.photos.length > 0 &&
 
-                <div onClick={() => this.openModal()} className={styles.gallery}>
+                <div  className={styles.gallery}>
                     {item.photos && item.photos.map((el, i) => {
                             if (i >=4 ) {
                                 return null
                             } else {
-                                return <Img className={styles.galleryItem} alt={item.name} fluid={el.fluid} />
+                                return <Img onClick={() => this.openModal(i)} className={styles.galleryItem} alt={item.name} fluid={el.fluid} />
                             }
                         }
                     )}
@@ -152,7 +152,7 @@ class DesignTemplate extends React.Component {
 
                 <Modal visible={this.state.visible} width="1724" height="100%" effect="fadeInUp" onClickAway={() => this.closeModal()}>
                     <img onClick={() => this.closeModal()} src={closeImage} className={styles.close}/>
-                    <Gallery images={item.photos}/>
+                    <Gallery imageIndex={this.state.imageIndex} images={item.photos}/>
                 </Modal>
 
                 <Modal visible={this.state.visibleDetail} width="80%" height="60%" effect="fadeInUp" onClickAway={() => this.closeMoreDetail()}>

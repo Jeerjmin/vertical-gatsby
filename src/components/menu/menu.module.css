@@ -97,6 +97,10 @@
     visibility: hidden;
 }
 
+.text a {
+    text-decoration: none;
+}
+
 .text:nth-child(3) {
 }
 

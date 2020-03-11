@@ -49,7 +49,7 @@ export default class Gallery extends React.Component {
 
         return (
             <div>
-                <ImageGallery ref={f => this._imageGallery = f} items={newImages || []} showFullscreenButton={false} useBrowserFullscreen={false} />
+                <ImageGallery originalClass={styles.image} startIndex={this.props.imageIndex} ref={f => this._imageGallery = f} items={newImages || []} showFullscreenButton={false} useBrowserFullscreen={false} />
             </div>
 
 

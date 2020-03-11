@@ -15,10 +15,14 @@
 .logo {
   width: 170.75px;
   height: 88px;
+  vertical-align: top;
+  horiz-align: left;
 
 }
 
 .menu {
+  vertical-align: top;
+  horiz-align: left;
   display: flex;
   align-items: flex-end;
   cursor: pointer;

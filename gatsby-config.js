@@ -27,6 +27,15 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
     {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: true,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-layout',
       options: {
         component: require.resolve('./src/components/layouts/index.js')

@@ -7,10 +7,10 @@ import withLocation from "../../modules/withLocation";
 
 class Slider extends React.Component {
 
-    constructor(props) {
-        super(props);
-        this.containerRef = React.createRef()
-    }
+    // constructor(props) {
+    //     super(props);
+    //     this.containerRef = React.createRef()
+    // }
 
     componentDidMount() {
 
@@ -18,12 +18,12 @@ class Slider extends React.Component {
 
 
     toScrollRight = () => {
-        this.containerRef.current.scroll({top: 0, left: this.containerRef.current.scrollLeft + 548, behavior: 'smooth'})
+        this.containerRef.current.scroll({top: 'auto', left: this.containerRef.current.scrollLeft + 548, behavior: 'smooth'})
         console.log(' this.containerRef.current.scrollLeft',  this.containerRef.current.scrollLeft)
     };
 
     toScrollLeft = () => {
-        this.containerRef.current.scroll({top: 0, left: this.containerRef.current.scrollLeft - 548, behavior: 'smooth'})
+        this.containerRef.current.scroll({top: 'auto', left: this.containerRef.current.scrollLeft - 548, behavior: 'smooth'})
     };
 
 

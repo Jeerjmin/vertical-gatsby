@@ -16,7 +16,7 @@ export default class Contacts extends React.Component {
                 <div className={styles.contacts}>
                     <div className={styles.phone}>
                         <p className={styles.phoneTitle}>Телефон</p>
-                        <p className={styles.phoneNumber}>+7 812.244.0158</p>
+                        <p className={styles.phoneNumber}>+7 812 244 0158</p>
                     </div>
                     <div className={styles.email}>
                         <p className={styles.emailTitle}>E-mail</p>
