@@ -136,7 +136,7 @@ class BuildingTemplate extends React.Component {
                        if (i >=4 ) {
                            return null
                        } else {
-                           return <Img onClick={() => { this.openModal(i) }} className={styles.galleryItem} alt={item.name} fluid={el.fluid} />
+                           return <div onClick={() => { this.openModal(i) }}><Img className={styles.galleryItem} alt={item.name} fluid={el.fluid} /></div>
                        }
                     }
                     )}

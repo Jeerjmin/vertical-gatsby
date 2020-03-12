@@ -28,6 +28,7 @@ class DesignTemplate extends React.Component {
             imageIndex: i
         });
     }
+
     closeModal() {
         this.setState({
             visible : false
@@ -135,12 +136,12 @@ class DesignTemplate extends React.Component {
 
                 {this.state.width > 1400 && item.photos && item.photos.length > 0 &&
 
-                <div  className={styles.gallery}>
+                <div className={styles.gallery}>
                     {item.photos && item.photos.map((el, i) => {
-                            if (i >=4 ) {
+                            if (i >=4) {
                                 return null
                             } else {
-                                return <Img onClick={() => this.openModal(i)} className={styles.galleryItem} alt={item.name} fluid={el.fluid} />
+                                return <div onClick={() => this.openModal(i)}><Img key={i} className={styles.galleryItem} alt={item.name} fluid={el.fluid}/></div>
                             }
                         }
                     )}
