@@ -586,6 +586,7 @@
     .showRealTitle {
         font-size: 23px;
         max-width: 280px;
+        line-height: 20px;
     }
 
 

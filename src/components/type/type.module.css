@@ -272,7 +272,7 @@ h3 {
 .description2 {
     margin-top: 100px;
     width: 100%;
-    border: 6px solid #B9261A;
+    outline: 6px solid #B9261A;
     padding: 52px 0;
     text-align: center;
 
