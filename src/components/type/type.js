@@ -79,7 +79,7 @@ export default ({
                             <h3 className={styles.verticalEto}>Vertical - это</h3>
                             <ul className={styles.generalProject} style={{paddingInlineStart: "10px"}}>
                                 {list && list.map(item => {
-                                    const tire = item.indexOf('-') === -1 ? 0: item.indexOf('0');
+                                    const tire = item.indexOf('-') === -1 ? 0: item.indexOf('-');
 
                                     return <li><b>{item.slice(0, tire)}</b> <span>{item.slice(tire)}</span></li>
                                 })}
