@@ -3,41 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d11bcfd6-a9e7-457b-9bb6-2fb02ece65d8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/about/about.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/about.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/documents.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/documents.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/objects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/objects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/about/team.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/about/team.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/building/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/building/building.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/contacts/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/contacts/contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/design/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/design/design.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/footer/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/footer/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/gallery/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/gallery/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/menu-white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/menu-white.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/menu.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/home/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/home.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/home.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/menu/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/menu/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/projectBuilding.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectBuilding.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/projects/projectDesign.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/projects/projectDesign.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/slider/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/slider/slider.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/type/type.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/type/type.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/type/type.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/type/type.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/building.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/contacts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/contacts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/design.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/gallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/type.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/type.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/building.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/building.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/building.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/building.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/design.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/design.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +118,7 @@
       <workItem from="1584044440361" duration="3446000" />
       <workItem from="1584086475276" duration="353000" />
       <workItem from="1584196223764" duration="18492000" />
-      <workItem from="1584264577189" duration="11075000" />
+      <workItem from="1584264577189" duration="11886000" />
     </task>
     <servers />
   </component>
