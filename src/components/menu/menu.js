@@ -63,6 +63,9 @@ export default class Menu extends React.Component {
 
                         <div style={{left: "75px"}} className={styles.text}>
                             <span>
+                                <Link to={`/projects`}>Объекты</Link>
+                            </span>
+                            <span>
                                 <Link to={`/about/?type=about`}>О компании</Link>
                             </span>
                             <span>
@@ -70,9 +73,6 @@ export default class Menu extends React.Component {
                             </span>
                             <span>
                                 <Link to={`/about/?type=documents`}>Документы</Link>
-                            </span>
-                            <span>
-                                <Link to={`/about/?type=object`}>Объекты</Link>
                             </span>
                         </div>
                         <div className={styles.line}>

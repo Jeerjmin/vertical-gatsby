@@ -7,7 +7,7 @@ export default class Contacts extends React.Component {
 
 
     render() {
-
+        const {contactsTitles: {phone, email, adressName, addressLink, schedule}} = this.props
 
         return (
             <div className={styles.container}>
@@ -16,19 +16,20 @@ export default class Contacts extends React.Component {
                 <div className={styles.contacts}>
                     <div className={styles.phone}>
                         <p className={styles.phoneTitle}>Телефон</p>
-                        <p className={styles.phoneNumber}>+7 812 244 0158</p>
+                        <p className={styles.phoneNumber}>{phone.phone}</p>
                     </div>
                     <div className={styles.email}>
                         <p className={styles.emailTitle}>E-mail</p>
-                        <p className={styles.emailNumber}>info@vertical.spb.ru</p>
+                        <p className={styles.emailNumber}>{email.email}</p>
                     </div>
                     <div className={styles.schedule}>
-                        <p className={styles.scheduleTitle}> Пн – Пт: 8:00 – 19:00</p>
-                        <p className={styles.scheduleNumber}> Сб – Вс: Выходной</p>
+                        {schedule && schedule.map(item => {
+                            return <p className={styles.scheduleTitle}>{item}</p>
+                        })}
                     </div>
                     <div className={styles.address}>
-                        <p className={styles.addressTitle}>194044 г. Санкт-Петербург, ул. Выборгская, д.5, лит.А, пом. 23-Н</p>
-                        <a href="https://yandex.ru/maps/-/CGHPjHi~" className={styles.addressNumber}>Смотреть на карте</a>
+                        <p className={styles.addressTitle}>{adressName.adressName}</p>
+                        <a href={addressLink.addressLink} className={styles.addressNumber}>Смотреть на карте</a>
                     </div>
                 </div>
                 <Link to={`/`}>

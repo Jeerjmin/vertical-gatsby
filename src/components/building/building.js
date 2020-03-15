@@ -6,16 +6,21 @@ import building from './building.jpg';
 import building1 from './building-1.jpg';
 import building2 from './building-2.png';
 
-export default ({data}) => {
+export default ({data, titles}) => {
+
+    const buildingTitle = titles.buildingTitle.buildingTitle;
+    const buildingDescription = titles.buildingDescription.buildingDescription;
+    const firstBlockTitle = titles.childContentfulBuildingPageFirstBlockTitleTextNode.firstBlockTitle;
+    const firstBlockDescription = titles.childContentfulBuildingPageFirstBlockDescriptionTextNode.firstBlockDescription;
+    const secondBlockTitle = titles.childContentfulBuildingPageSecondBlockTitleTextNode.secondBlockTitle;
+    const secondBlockDescription = titles.childContentfulBuildingPageSecondBlockDescriptionTextNode.secondBlockDescription;
 
     return (
         <div className={styles.building} style={{ maxWidth: 1718, margin: '0 auto', marginTop: '40px'}}>
             <div className={styles.wrapper}>
                 <img src={building} alt="Архитектурно-строительное проектирование" />
-                <p className={styles.title}>Строительство коммерческой недвижимости</p>
-                <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p className={styles.title}>{buildingTitle}</p>
+                <p className={styles.description}>{buildingDescription}</p>
                 <Link to={`/design`}>
                     <button className={styles.link} >
                         Проектирование
@@ -31,12 +36,9 @@ export default ({data}) => {
                 <Link to={'/type?type=generalContract'}>
                     <div className={styles.generalContract}>
                         <img src={building1} alt="Генеральный подряд" />
-                        <h6>Генеральный подряд</h6>
-                        <p>«Вертикаль» выступает в качестве генерального
-                                подрядчика при строительстве объектов различной сложности.
-                                Генеральный подряд реализует полный комплекс функций по управлению
-                                строительством объекта благодаря умениям и знаниям по эффективному
-                                использованию кадровых, финансовых, материальных, технических и временных ресурсов.
+                        <h6>{firstBlockTitle}</h6>
+                        <p>
+                            {firstBlockDescription}
                         </p>
                         <div className={styles.buttonContainer}>
                             <button>Перейти</button>
@@ -46,11 +48,9 @@ export default ({data}) => {
                 <Link to={`/type?type=zeroCycle`}>
                     <div className={styles.zeroCycle}>
                         <img src={building2} alt="Нулевой цикл" />
-                        <h6>Нулевой цикл</h6>
-                        <p>Важной возможностью нашего коллектива является ведение
-                                строительства на основе разработанного нами оптимального проекта.
-                                Эта возможность доступна далеко не всем, так как многие не владеют
-                                опытом практического строительства и собственными инженерно-строительными кадрами.
+                        <h6>{secondBlockTitle}</h6>
+                        <p>
+                            {secondBlockDescription}
                         </p>
                         <div className={styles.buttonContainer}>
                             <button>Перейти</button>

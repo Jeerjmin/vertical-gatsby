@@ -20,7 +20,7 @@
 .description2 {
     margin-top: 40px;
     width: 100%;
-    background: #B9261A;
+    border: 6px solid #B9261A;
     padding: 52px 0;
     text-align: center;
 
@@ -32,7 +32,7 @@
     font-family: Muller, sans-serif;
     font-size: 25px;
     line-height: 130%;
-    color: #F2F2F2;
+    color: #2B2A29;;
     opacity: 0.9;
 }
 
@@ -67,6 +67,7 @@
     font-size: 18px;
     padding-left: 50px;
     line-height: 28px;
+    white-space:pre-wrap;
     /* or 156% */
 
 

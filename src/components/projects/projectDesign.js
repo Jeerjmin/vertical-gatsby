@@ -5,7 +5,6 @@ import {Link} from "gatsby";
 
 export default ({data, location}) => {
 
-    console.log('this.location', location)
 
     return (
         <div className={styles.projectDesign} style={{ maxWidth: 1718, margin: '0 auto', marginTop: '40px'}}>

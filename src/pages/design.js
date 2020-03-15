@@ -10,11 +10,10 @@ class DesignContainer extends React.Component {
         const ConstructiveDecisions = get(this, 'props.data.allContentfulConstructiveDecisions.edges');
         const GeneralDesign = get(this, 'props.data.allContentfulGeneralDesign.edges');
         const GeotechnicalSubstantiation = get(this, 'props.data.allContentfulGeotechnicalSubstantiation.edges');
-
-        console.log('designItems', this.props)
+        const allContentfulDesignPage = get(this, 'props.data.allContentfulDesignPage');
 
         return (
-                <Design data={[...ConstructiveDecisions, ...GeneralDesign, ...GeotechnicalSubstantiation]}/>
+                <Design data={[...ConstructiveDecisions, ...GeneralDesign, ...GeotechnicalSubstantiation]} titles={allContentfulDesignPage.edges[0].node} />
         )
     }
 }
@@ -78,6 +77,37 @@ query designItemQuery {
                 }
             }
         }
+        
+  allContentfulDesignPage {
+    edges {
+      node {
+        childContentfulDesignPageFirstBlockDescriptionTextNode {
+          firstBlockDescription
+        }
+        childContentfulDesignPageFirstBlockTitleTextNode {
+          firstBlockTitle
+        }
+        childContentfulDesignPageMainDescriptionTextNode {
+          mainDescription
+        }
+        childContentfulDesignPageMainTitleTextNode {
+          mainTitle
+        }
+        childContentfulDesignPageSecondBlockDescriptionTextNode {
+          secondBlockDescription
+        }
+        childContentfulDesignPageSecondBlockTitleTextNode {
+          secondBlockTitle
+        }
+        childContentfulDesignPageThirdBlockDescriptionTextNode {
+          thirdBlockDescription
+        }
+        childContentfulDesignPageThirdBlockTitleTextNode {
+          thirdBlockTitle
+        }
+      }
+    }
+  }
 }
 
 `

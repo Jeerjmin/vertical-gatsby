@@ -37,7 +37,9 @@ export default class Header extends React.Component {
 
     openModal = () => {
         document.body.style.overflow = 'hidden';
-        document.body.style.marginLeft = '-17px'
+        if (window.innerWidth > 1713) {
+            document.body.style.marginLeft = '-17px'
+        }
 
         if (window.innerHeight < 500 && window.innerWidth > 1000) {
             this.setState({

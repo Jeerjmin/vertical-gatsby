@@ -10,13 +10,14 @@ class Documents extends React.Component {
 
     render() {
 
+        const {filesLinks, filesNames} = this.props
+        const files = filesLinks && filesLinks.map((link, i) => {
+            return <h4 onClick={() => this.open(link)}>{filesNames[i]}</h4>
+        });
 
         return (
             <div className={styles.documents}>
-                <h4 onClick={() => this.open('https://onedrive.live.com/?authkey=%21AG5JcPyeGmJMS%5Fw&cid=BC03DA86024FDDAA&id=BC03DA86024FDDAA%2117848&parId=BC03DA86024FDDAA%2117847&o=OneUp')}>Отчёт о проведении специальной оценки условий труда</h4>
-                <h4 onClick={() => this.open('https://onedrive.live.com/?authkey=%21AG5JcPyeGmJMS%5Fw&cid=BC03DA86024FDDAA&id=BC03DA86024FDDAA%2117850&parId=BC03DA86024FDDAA%2117847&o=OneUp')} >Свидетельство СРО (проектирование)</h4>
-                <h4 onClick={() => this.open('https://onedrive.live.com/?authkey=%21AG5JcPyeGmJMS%5Fw&cid=BC03DA86024FDDAA&id=BC03DA86024FDDAA%2117851&parId=BC03DA86024FDDAA%2117847&o=OneUp')}>Свидетельство СРО (строительство)</h4>
-                <h4 onClick={() => this.open('https://onedrive.live.com/?authkey=%21AG5JcPyeGmJMS%5Fw&cid=BC03DA86024FDDAA&id=BC03DA86024FDDAA%2117849&parId=BC03DA86024FDDAA%2117847&o=OneUp')}>Специальная оценка условий труда</h4>
+                {files}
             </div>
 
 

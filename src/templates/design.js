@@ -84,87 +84,93 @@ class DesignTemplate extends React.Component {
         const {item} = this.props.pageContext
 
         return (
-            <div className={styles.container}>
-                {item && !item.avatar && <div  style={{background: "grey"}} className={styles.wrapper}   />}
-                {item && item.avatar && <Img  className={styles.wrapper} alt={item.name} fluid={item.avatar.fluid} />}
+            <div>
+                <div className={styles.container}>
+                    {item && !item.avatar && <div  style={{background: "grey"}} className={styles.wrapper}   />}
+                    {item && item.avatar && <Img  className={styles.wrapper} alt={item.name} fluid={item.avatar.fluid} />}
 
-                <div className={styles.header}>
-                    <Header template />
-                </div>
-                {this.state.width > 1400 &&
-                (<>
-                    <div class={styles.linkBack} >
-                    <button onClick={this.back} className={styles.buttonBack}>
-                        <img src={arrowLeftWhite}/>
-                    </button>
-                </div>
-
-                    </>
-                )}
-                {item && item.name && <p className={styles.name}>{item.name}</p> }
-                {item && item.works && <p className={styles.type}>{item.works.map((el, i) => {
-                    if (i + 1 === item.works.length) {
-                        return el
-                    } else {
-                        return el + ", "
-                    }
-                })}</p> }
-                {item && item.customer && <p className={styles.customer} >Заказчик:</p> }
-                {item && item.customer && <p className={styles.customerName}>{item.customer}</p> }
-                {item && item.address && item.address !== ' ' && <p className={styles.location}>Местоположение:</p>}
-                {item && item.address && item.address !== ' ' && <p className={styles.locationName}>{item.address}</p> }
-                {item && item.area && item.area !== ' ' && <p className={styles.square}>S={item.area} м²</p>}
-                {item && item.list && <ul className={styles.description2}>
-                    {item.list.map(el => <li>{el}</li>)}
-                </ul> }
-                {item && item.about && item.about.about && <p onClick={() => this.openMoreDetail()} className={styles.moreDetails}>Подробнее о проекте</p>}
-
-
-                {this.state.width < 1400 &&
-                    <div className={styles.actions}>
-                        <div class={styles.linkBack} >
-                            <button onClick={this.back} className={styles.buttonBack}>
-                                <img src={arrowLeftWhite}/>
-                            </button>
-                        </div>
-
-                        {item.photos && item.photos.length > 0 && <button  onClick={() => this.openModal()} className={styles.galleryLink}>
-                            <span>Фото объекта</span>
-                        </button>}
+                    <div className={styles.header}>
+                        <Header template />
                     </div>
+                    {this.state.width > 1400 &&
+                    (<>
+                        <div class={styles.linkBack} >
+                        <button onClick={this.back} className={styles.buttonBack}>
+                            <img src={arrowLeftWhite}/>
+                        </button>
+                    </div>
+
+                        </>
+                    )}
+                    {item && item.name && <p className={styles.name}>{item.name}</p> }
+                    {item && item.works && <p className={styles.type}>{item.works.map((el, i) => {
+                        if (i + 1 === item.works.length) {
+                            return el
+                        } else {
+                            return el + ", "
+                        }
+                    })}</p> }
+                    {item && item.customer && <p className={styles.customer} >Заказчик:</p> }
+                    {item && item.customer && <p className={styles.customerName}>{item.customer}</p> }
+                    {item && item.address && item.address !== ' ' && <p className={styles.location}>Местоположение:</p>}
+                    {item && item.address && item.address !== ' ' && <p className={styles.locationName}>{item.address}</p> }
+                    {item && item.area && item.area !== ' ' && <p className={styles.square}>S={item.area} м²</p>}
+                    {item && item.list && <ul className={styles.description2}>
+                        {item.list.map(el => <li>{el}</li>)}
+                    </ul> }
+                    {item && item.about && item.about.about && <p onClick={() => this.openMoreDetail()} className={styles.moreDetails}>Подробнее о проекте</p>}
+                    {this.state.width < 1400 &&
+                        <div className={styles.actions}>
+                            <div class={styles.linkBack} >
+                                <button onClick={this.back} className={styles.buttonBack}>
+                                    <img src={arrowLeftWhite}/>
+                                </button>
+                            </div>
+
+                            {item.photos && item.photos.length > 0 && <button  onClick={() => this.openModal()} className={styles.galleryLink}>
+                                <span>Фото объекта</span>
+                            </button>}
+                        </div>
                     }
+                    {this.state.width > 1400 && item.photos && item.photos.length > 0 &&
+                        <div className={styles.gallery}>
+                            {item.photos && item.photos.map((el, i) => {
+                                    if (i >=4) {
+                                        return null
+                                    } else {
+                                        return <div onClick={() => this.openModal(i)}><Img key={i} className={styles.galleryItem} alt={item.name} fluid={el.fluid}/></div>
+                                    }
+                                }
+                            )}
+                        </div>
+                    }
+                    <Modal visible={this.state.visible} width="1724" height="100%" effect="fadeInUp" onClickAway={() => this.closeModal()}>
+                        <img onClick={() => this.closeModal()} src={closeImage} className={styles.close}/>
+                        <Gallery imageIndex={this.state.imageIndex} images={item.photos}/>
+                    </Modal>
 
-                {this.state.width > 1400 && item.photos && item.photos.length > 0 &&
-
-                <div className={styles.gallery}>
-                    {item.photos && item.photos.map((el, i) => {
-                            if (i >=4) {
+                    <Modal visible={this.state.visibleDetail} width="80%" height="60%" effect="fadeInUp" onClickAway={() => this.closeMoreDetail()}>
+                        <img onClick={() => this.closeMoreDetail()} src={closeImage} className={styles.detailsClose}/>
+                        <div className={styles.modalDetails}>
+                            <div className={styles.customerTitle}>Заказчикам</div>
+                            <p>
+                                {item && item.about && item.about.about}
+                            </p>
+                        </div>
+                    </Modal>
+                </div>
+                {this.state.width < 1400 && item.photos && item.photos.length > 0 &&
+                <div  className={styles.galleryBottom}>
+                    {item.photos.map((el, i) => {
+                            if (i >=4 ) {
                                 return null
                             } else {
-                                return <div onClick={() => this.openModal(i)}><Img key={i} className={styles.galleryItem} alt={item.name} fluid={el.fluid}/></div>
+                                return <div className={styles.galleryItemBoottomContainer} onClick={() => { this.openModal(i) }}><Img className={styles.galleryItemBottom} alt={item.name} fluid={el.fluid} /></div>
                             }
                         }
                     )}
                 </div>
-
-
                 }
-
-
-                <Modal visible={this.state.visible} width="1724" height="100%" effect="fadeInUp" onClickAway={() => this.closeModal()}>
-                    <img onClick={() => this.closeModal()} src={closeImage} className={styles.close}/>
-                    <Gallery imageIndex={this.state.imageIndex} images={item.photos}/>
-                </Modal>
-
-                <Modal visible={this.state.visibleDetail} width="80%" height="60%" effect="fadeInUp" onClickAway={() => this.closeMoreDetail()}>
-                    <img onClick={() => this.closeMoreDetail()} src={closeImage} className={styles.detailsClose}/>
-                    <div className={styles.modalDetails}>
-                        <div className={styles.customerTitle}>Заказчикам</div>
-                        <p>
-                            {item && item.about && item.about.about}
-                        </p>
-                    </div>
-                </Modal>
             </div>
         )
     }

@@ -7,8 +7,6 @@ class RootIndex extends React.Component {
     render() {
 
 
-        console.log('posts', )
-
         return (
             <Gallery/>
             )

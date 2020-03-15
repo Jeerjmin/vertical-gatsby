@@ -77,9 +77,8 @@
 
 .showReal .titleContainer {
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 5%;
-
 }
 
 .showRealTitle {
@@ -87,17 +86,18 @@
     position: relative;
     font-size: 55px;
     font-weight: bold;
-    line-height: 55px;
+    line-height: 25px;
     text-transform: uppercase;
     color: #2B2A29;
+    white-space: pre-wrap;
+
 }
 
 .showReal .descriptionContainer {
     width: 100%;
     position: absolute;
     top: 45%;
-    display: flex;
-    justify-content: center;
+    left: 5%;
 }
 
 .showRealDescription {
@@ -106,8 +106,8 @@
     width: 90%;
     position: relative;
     font-size: 18px;
-    line-height: 28px;
     color: #2B2A29;
+    white-space: pre-wrap;
 }
 
 .showReal .buttonContainer {
@@ -342,7 +342,7 @@
 
     .showRealTitle {
         font-size: 25px;
-        line-height: 25px;
+        line-height: 20px;
     }
 
     .showRealDescription {
@@ -383,9 +383,12 @@
 }
 
 @media (max-width: 1000px) {
-
     .showReal .descriptionContainer {
         top: 23%;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        max-width: 100%;
 
     }
 
@@ -395,7 +398,18 @@
         left: 0;
         display: flex;
         justify-content: center;
+        max-width: 100%;
+
     }
+
+    .showReal .descriptionContainer p {
+        width: 90%
+    }
+
+    .showReal .titleContainer p {
+        width: 70%
+    }
+
 
     .showReal .buttonContainerPlay {
         top: 75%;
@@ -425,7 +439,7 @@
         left: 0;
         width: 100%;
         font-size: 45px;
-        line-height: 45px;
+        line-height: 25px;
     }
 
     .showRealDescription {
@@ -490,6 +504,10 @@
 }
 
 @media (max-width: 800px) {
+
+    .showReal .titleContainer p {
+        width: 100%
+    }
 
     .playerClose {
         width: 25px;
@@ -561,9 +579,6 @@
 
 
 @media (max-width: 420px) {
-
-
-
     .showReal {
         margin: 0;
     }

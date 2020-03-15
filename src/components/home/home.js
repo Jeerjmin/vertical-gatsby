@@ -15,42 +15,30 @@ import ReactPlayer from "react-player";
 import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
-export default ({showReal}) => {
+export default ({showReal, homeLeft, homeRight}) => {
 
     const [video, setVideo] = useState(false);
     const [play, setPlay] = useState(true);
 
-    const Title = ({ children }) => <p className={styles.showRealTitle}>{children}</p>;
-    const Description = ({ children }) => <p className={styles.showRealDescription}>{children}</p>;
+    const Title = () => <p className={styles.showRealTitle}>{ShowRealTitle}</p>;
+    const Description = () => <p className={styles.showRealDescription}>{ShowRealDescription}</p>;
 
-    const TitleOptions = {
-        renderNode: {
-            [BLOCKS.PARAGRAPH]: (node, children) => <Title>{children}</Title>
-        },
-        renderText: text =>
-            text.split("/n").flatMap((text, i) => [i > 0 && <br />, text])
-    };
+    const ShowRealTitle = showReal.childContentfulHomeTitleTextNode.title.replace(/{new_line}/g,'\n')
+    const ShowRealDescription = showReal.childContentfulHomeDescriptionTextNode.description.replace(/{new_line}/g,'')
 
-    const DescriptionOptions = {
-        renderNode: {
-            [BLOCKS.PARAGRAPH]: (node, children) => <Description>{children}</Description>
-        },
-        renderText: text =>
-            text.split("/n").flatMap((text, i) => [i > 0 && <br />, text])
-    };
+    const HomeLeftTitle = homeLeft.title.replace(/{new_line}/g,'\n')
+    const HomeLeftDescription = homeLeft.description.description.replace(/{new_line}/g,'')
 
-    const ShowRealTitle = documentToReactComponents(showReal.title.json, TitleOptions)
-    const ShowRealDescription = documentToReactComponents(showReal.descr.json, DescriptionOptions)
-
-    console.log('showReal', showReal)
+    const HomeRightTitle = homeRight.title.replace(/{new_line}/g,'\n')
+    const HomeRightDescription = homeRight.childContentfulHomeBuildingRightDescriptionTextNode.description.replace(/{new_line}/g,'')
 
         return (
             <div className={styles.container}>
                 {!video &&
                 <div className={styles.showReal}>
-                    <Img className={styles.showRealImage} alt={showReal.title.title} fluid={showReal.image.fluid}/>
-                    <div className={styles.titleContainer}>{ShowRealTitle}</div>
-                    <div className={styles.descriptionContainer}>{ShowRealDescription}</div>
+                    <Img className={styles.showRealImage} alt={showReal.title} fluid={showReal.image.fluid}/>
+                    <div className={styles.titleContainer}>{Title()}</div>
+                    <div className={styles.descriptionContainer}>{Description()}</div>
                     <div className={styles.buttonContainer}>
                         <Link to={`/projects`}>
                             <button className={styles.showRealButton}>К ПРОЕКТАМ</button>
@@ -83,14 +71,11 @@ export default ({showReal}) => {
                 <div className={styles.types}>
                     <div className={styles.design}>
                         <img src={homeDesign} alt="Проектирование" />
-                        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" className={styles.designTitle}>ПРОЕКТИРОВАНИЕ </ScrollAnimation>
+                        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" className={styles.designTitle}>{HomeLeftTitle} </ScrollAnimation>
                         <div className={styles.designDescriptionContainer}>
                             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" className={styles.designDescription}>
                                 <p>
-                                Проектирование зданий и сооружений – это, пожалуй,
-                                основополагающий этап строительства объекта. Именно
-                                на этой стадии закладывается базис всех последующих
-                                этапов строительных или реконструкционных работ
+                                    {HomeLeftDescription}
                                 </p>
                             </ScrollAnimation>
                         </div>
@@ -102,14 +87,11 @@ export default ({showReal}) => {
                     </div>
                     <div className={styles.building}>
                         <img src={homeBuilding} alt="Строительство" />
-                        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" className={styles.buildingTitle}>СТРОИТЕЛЬСТВО </ScrollAnimation>
+                        <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" className={styles.buildingTitle}>{HomeRightTitle} </ScrollAnimation>
                         <div className={styles.buildingDescriptionContainer}>
                             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" className={styles.buildingDescription}>
                                 <p>
-                                Строительство жилых домов – востребованное
-                                направление в сфере недвижимости, и компания «ООО
-                                Вертикаль» уже несколько лет успешно развивается в
-                                этой области.
+                                    {HomeRightDescription}
                                 </p>
                             </ScrollAnimation>
                         </div>

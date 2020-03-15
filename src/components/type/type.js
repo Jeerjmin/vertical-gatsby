@@ -7,7 +7,19 @@ import typeWrapper from './type-wrapper.png';
 import arrowRight from './arrow-right.svg';
 import designImage2 from './design2.jpg';
 
-export default ({ConstructiveDecisions, GeneralContract, GeneralDesign, GeotechnicalSubstantation, ZeroCycle, type}) => {
+export default ({
+                    ConstructiveDecisions,
+                    GeneralContract,
+                    GeneralDesign,
+                    GeotechnicalSubstantation,
+                    ZeroCycle,
+                    type,
+                    firstBlockTitles,
+                    secondBlockTitles,
+                    thirdBlockTitles,
+                    firstBlockBuildingTitles,
+                    secondBlockBuildingTitles
+    }) => {
 
     let wrapperTitle;
     let wrapperDescription;
@@ -18,53 +30,37 @@ export default ({ConstructiveDecisions, GeneralContract, GeneralDesign, Geotechn
     let content;
     let data;
 
+
+    console.log('titles', firstBlockBuildingTitles, secondBlockBuildingTitles)
+
     switch (type) {
         case 'generalContract': {
             data = GeneralContract
-            wrapperTitle = 'Генеральный подряд';
-            wrapperDescription =
-                'Проектирование зданий и сооружений – это, ' +
-                'пожалуй, основополагающий этап строительства объекта. ' +
-                'Именно на этой стадии закладывается базис всех последующих этапов ' +
-                'строительных или реконструкционных работ';
+            wrapperTitle = firstBlockBuildingTitles.title.title;
+            wrapperDescription = firstBlockBuildingTitles.description.description;
             link = 'Строительство';
             linkTitle = 'building';
-            description = 'Наше призвание-изучать, придумывать, проектировать, ' +
-                'строить, осуществлять строительный контроль, осуществлять экспертизу проектов, ' +
-                'консультировать, искать и применять новейшие технологии, выбирать наилучшие варианты ' +
-                'решения стоящих перед Вами задач. \n \n Мы живем в период времени, когда отточенная и ' +
-                'яркая мысль двигает экономику вперед, больше чем деньги, а знания приобретают ' +
-                'ключевое значение для успеха всего дела в целом. ' +
-                'Именно поэтому мы сосредоточили свое внимание на инженерном деле, ' +
-                'специальных знаниях и технологиях. \n \n Наше главное конкурентное преимущество – ' +
-                'это четкое видение перспективы и комплексное ведение проектов: от замысла до завершения ' +
-                'проекта и сдачи его в эксплуатацию. Фундаментальные знания, полученные нашими сотрудниками ' +
-                'в учебных заведениях, в совокупности с опытом работы и интеграцией в одной компании, создают объединенный.'
+            description = firstBlockBuildingTitles.firstBlock.firstBlock.replace(/{new_line}/g, '\n');
             break;
         }
         case 'generalDesign': {
-            data=GeneralDesign
-            wrapperTitle = 'Генеральное проектирование';
-            wrapperDescription =
-                'Разработка проекта – важнейший этап жизненного цикла объекта капитального строительства. ' +
-                'Решения, закладываемые в проект, определяют стоимость его реализации и эксплуатации, ' +
-                'именно поэтому в вопросе выбора генерального проектировщика необходим основательный подход.';
+            data = GeneralDesign;
+            wrapperTitle = firstBlockTitles.childContentfulDesignFirstBlockPageTitleTextNode.title;
+            wrapperDescription = firstBlockTitles.childContentfulDesignFirstBlockPageDescriptionTextNode.description;
+            const titleParagraph = firstBlockTitles.childContentfulDesignFirstBlockPageTitleParagraphTextNode.titleParagraph;
+            const firstBlockText = firstBlockTitles.childContentfulDesignFirstBlockPageFirstBlockTextTextNode.firstBlockText.replace(/{new_line}/g, '\n');
+            const secondBlockText = firstBlockTitles.childContentfulDesignFirstBlockPageSecondBlockTextTextNode.secondBlockText.replace(/{new_line}/g, '\n');
+            const list = firstBlockTitles.verticalList;
+            const notification  = firstBlockTitles.childContentfulDesignFirstBlockPageNotificationTextNode.notification;
+
             link = 'Проектирование';
             linkTitle = 'design';
             content = <div className={styles.content}>
                     <div className={styles.contentRow}>
                         <div className={styles.contentRowCol}>
-                            <p className={styles.contentTitle}>«Дешевый проект – дорогое строительство»</p>
+                            <p className={styles.contentTitle}>{titleParagraph}</p>
                             <p className={styles.contentDescription}>
-                                Естественным желанием любого предпринимателя является уменьшить издержки на всех этапах реализации проекта.
-                                В условиях высокой конкуренции на рынке многие организации в погоне за снижением стоимости разработки проектной
-                                документации привлекают малоквалифицированных и/или перегруженных сотрудников.
-                                Отсутствие опыта и времени, которые должны быть уделены проекту, приводит к ошибкам и принятию нерациональных решений,
-                                что порождает снижение экономической эффективности проекта для Заказчика и инвесторов в момент его реализации.
-                                <br/> <br/>
-                                Грамотное распределение рабочей нагрузки на специалистов и большой опыт наших сотрудников позволяют
-                                нам реализовывать наиболее оптимальные решения, которые дают значительный экономический
-                                эффект для всего инвестиционного проекта. Мы знаем, где и как можно сэкономить деньги Заказчика.
+                                {firstBlockText}
                             </p>
                         </div>
                         <div className={styles.designImageContainer2}>
@@ -77,49 +73,23 @@ export default ({ConstructiveDecisions, GeneralContract, GeneralDesign, Geotechn
                         </div>
                         <div className={styles.contentRowCol}>
                             <p className={styles.contentDescription2}>
-                                Благодаря профессионализму команды проектировщиков, работающей в тандеме с коллегами из
-                                строительного подразделения, уже на начальном этапе работ закладываются оптимальные для
-                                каждого конкретного случая проектные решения, в реализации которых мы уверены.
-                                <br/> <br/>
-                                Проектирование представляет собой сложный процесс непрерывного взаимного обмена
-                                информацией между архитекторами, конструкторами, инженерами и другими специалистами,
-                                участвующими в разработке проектной и рабочей документации. Современные инструменты
-                                управления проектами и технологии информационного моделирования (BIM), используемые
-                                в нашей компании, позволяют оптимизировать процессы обмена информацией. Таким образом,
-                                мы максимально сокращаем сроки разработки документации и моментально реагируем на
-                                ситуации, возникающие при строительстве или же изменении технического задания со
-                                стороны Заказчика. Разрабатываемая комплексная трехмерная модель объекта, проверяемая
-                                в том числе и автоматизированными средствами, позволяет избежать большей части ошибок
-                                и коллизий. Общеизвестно, что чем позднее обнаружена ошибка в документации, тем сложнее
-                                и дороже будет ее исправление, поэтому мы уделяем большое внимание качеству
-                                разрабатываемой документации как на уровне принимаемых решений, так и при оформлении
-                                выпускаемой документации.
-                                <br/> <br/>
-                                За годы работы нашими специалистами реализованы многочисленные проекты различной
-                                степени сложности: жилые дома, автостоянки, гостиницы, спортивные комплексы и другие
-                                общественные здания.
+                                {secondBlockText}
                             </p>
 
                             <h3 className={styles.verticalEto}>Vertical - это</h3>
                             <ul className={styles.generalProject} style={{paddingInlineStart: "10px"}}>
-                                    <li><b>Профессионализм</b> <span>– высокая компетентность сотрудников,</span></li>
-                                    <li><b>Практичность</b><span> - поиск оптимальных технических и организационных путей,
-                                        которые позволяют предлагать наилучшие, как с производственной, так и с проектной точки зрения решения,</span>
-                                    </li>
-                                    <li><b>Понимание</b><span> - желание и умение разделять ключевые интересы Заказчика,</span></li>
+                                {list && list.map(item => {
+                                    const tire = item.indexOf('-') === -1 ? 0: item.indexOf('0');
 
-                                    <li>
-                                        <b>Технологичность</b><span> - использование технологий виртуального строительства (VDC или BIM) при разработке и проверке трехмерной модели и проектных решений.</span>
-                                    </li>
+                                    return <li><b>{item.slice(0, tire)}</b> <span>{item.slice(tire)}</span></li>
+                                })}
                                 </ul>
 
                         </div>
                 </div>
                 <div className={styles.description2}>
                     <span>
-                        Мы готовы приступить к участию в проекте на любом из его этапов.
-                        Оперативно проанализировав исходные данные и выполненные работы, мы сформируем подробный пакет предложений,
-                        нацеленных на минимизацию затрат Заказчика. Учтем сроки реализации, неизменность технико-экономических показателей и другие его интересы.
+                        {notification}
                     </span>
                 </div>
             </div>
@@ -129,12 +99,13 @@ export default ({ConstructiveDecisions, GeneralContract, GeneralDesign, Geotechn
         }
         case 'geotechnicalSubstantiation': {
             data = GeotechnicalSubstantation;
-            wrapperTitle = 'Геотехническое обоснование';
-            wrapperDescription =
-                'Проектирование зданий и сооружений – это, ' +
-                'пожалуй, основополагающий этап строительства объекта. ' +
-                'Именно на этой стадии закладывается базис всех последующих этапов ' +
-                'строительных или реконструкционных работ';
+            wrapperTitle = thirdBlockTitles.childContentfulDesignThirdPageTitleTextNode.title
+            wrapperDescription = thirdBlockTitles.childContentfulDesignThirdPageDescriptionTextNode.description;
+            const firstBlockText = thirdBlockTitles.childContentfulDesignThirdPageFirstBlockTextTextNode.firstBlockText.replace(/{new_line}/g, '\n');
+            const secondBlockText = thirdBlockTitles.childContentfulDesignThirdPageSecondBlockTextTextNode.secondBlockText.replace(/{new_line}/g, '\n');
+            const thirdBlockText = thirdBlockTitles.childContentfulDesignThirdPageThirdBlockTextTextNode.thirdBlockText.replace(/{new_line}/g, '\n');
+            const list = thirdBlockTitles.list;
+            const notification  = thirdBlockTitles.childContentfulDesignThirdPageNotificationTextNode.notification;
             link = 'Проектирование';
             linkTitle = 'design';
 
@@ -142,19 +113,7 @@ export default ({ConstructiveDecisions, GeneralContract, GeneralDesign, Geotechn
                 <div className={styles.contentRow}>
                     <div className={styles.contentRowCol}>
                         <p className={styles.contentDescription}>
-                            Изменилось и их содержание, произошла эволюция от простых расчетов по отдельным сечениям
-                            c краткими выводами до сложной многофакторной структуры, включающую пошаговый анализ
-                            производства работ нулевого цикла в трехмерной постановке задачи с развернутым набором
-                            рекомендаций и необходимых мероприятий. Сегодня геотехническое обоснование находится в
-                            тесной связи с такими разделами проектирования как ПОС и КР, и его выполнение требуется
-                            практически для каждого строительного объекта.
-                            <br/> <br/>
-                            Современному строительству характерно все большее заглубление подземной части здания,
-                            сопряженное с негативным воздействием на фундаменты и массив грунта основания вблизи зданий
-                            и сооружений, в том числе имеющих историческую ценность. В грунтовых условиях, сложенных
-                            слабыми тиксотропными грунтами особенно важно на стадии первоначальной разработки проекта
-                            принять верные решения на основании расчетов и проработки конструктивных и технологических
-                            решений.
+                           {firstBlockText}
                         </p>
                     </div>
                     <div className={styles.designImageContainer2}>
@@ -167,44 +126,16 @@ export default ({ConstructiveDecisions, GeneralContract, GeneralDesign, Geotechn
                     </div>
                     <div className={styles.contentRowCol}>
                         <p className={styles.contentDescription2}>
-                            Строительный рынок предлагает разнообразные решения нулевого цикла и среди этого множества
-                            стоимость затрат на данный этап работ может отличаться в разы.
-                            <br/> <br/>
-                            Принимая во внимание важность экономической составляющей строительства, геотехническое
-                            обоснование специалистами ООО «Вертикаль» рассматривается как работа, требующая всесторонних
-                            знаний инженера. Приоритетом является поиск точки оптимального конструктивного решения в
-                            сочетании с безопасностью ведения строительных работ и экономической эффективности. Для нас
-                            важно, чтобы разработанные решения могли быть реализованы практически, а не оставаться на
-                            бумаге по причине их высокой стоимости или технической невозможности. В конечном итоге
-                            качество геотехнического обоснования влияет на рентабельность объекта, потому что сроки
-                            строительства напрямую зависят от технологичности решений.
+                            {secondBlockText}
                         </p>
 
                         <h3 className={styles.verticalEto}>В геотехническую оценку входит:</h3>
                         <ul className={styles.geoBase} style={{paddingInlineStart: "10px"}}>
-                            <li><span>Определение необходимой технологии по выполнению ограждения котлована,
-                                производству работ по откопке котлована. При разделении строительства на очереди,
-                                расчет ведется с учетом взаимного влияния очередности строительства</span></li>
-                            <li><span>Расчет осадок проектируемого комплекса аналитическими методами и численно.
-                                При делении здания на секции, учитывается их взаимное влияние и очередность возведения
-                            </span></li>
-                            <li><span>Определение фактических размеров зоны влияния нового строительства. Разработка
-                                рекомендаций по минимизации негативного влияния на примыкающие к площадке строительства
-                                здания в том числе объектов культурного наследия</span></li>
+                            {list && list.map(item => {
+                                const tire = item.indexOf('-') === -1 ? 0: item.indexOf('0');
 
-                            <li>
-                                <span>Определение схемы крепления и усилий в элементах крепления. Разработка необходимых
-                                    мероприятий по сохранению окружающей застройки</span>
-                            </li>
-
-                            <li>
-                                <span>Оценка влияния нагружения основания весом новых конструкций на окружающие здания
-                                    в 30-ти метровой зоне влияния, в том числе объектов культурного наследия</span>
-                            </li>
-                            <li>
-                                <span>Для объектов культурного наследия предусмотрена разработка Мероприятий по
-                                    сохранности объекта культурного наследия</span>
-                            </li>
+                                return <li><b>{item.slice(0, tire)}</b> <span>{item.slice(tire)}</span></li>
+                            })}
 
                         </ul>
 
@@ -214,11 +145,7 @@ export default ({ConstructiveDecisions, GeneralContract, GeneralDesign, Geotechn
                     <div className={styles.contentRowCol}>
                         <h3 className={styles.geoBaseH3}>Рекомендации к геотехническому мониторингу</h3>
                         <p className={styles.contentDescription}>
-                            Техническое заключение, содержащее расчеты, выводы, схемы крепления котлована
-                            и технологию производства работ, рекомендации.
-                            <br/> <br/>
-                            ООО «Вертикаль» выполняет полный комплекс работ, связанный с анализом решений по нулевому циклу,
-                            оценки стоимости строительства, подготовки документации, защиты принятых решений в экспертизе.
+                            {thirdBlockText}
                         </p>
                     </div>
                     <div className={styles.designImageContainer2}>
@@ -227,11 +154,7 @@ export default ({ConstructiveDecisions, GeneralContract, GeneralDesign, Geotechn
                 </div>
                 <div className={styles.description2}>
                     <span>
-                        Также специалисты компании могут выполнить геотехнический консалтинг на этапе выбора участка
-                        под застройку. Основываясь на объеме предполагаемого строительства, производится оценка
-                        ожидаемых затрат и рисков при выполнении нулевого цикла. По сути, это предпроектное
-                        геотехническое обоснование, содержащее укрупненные показатели по материалам, стоимости и
-                        времени производства работ.
+                        {notification}
                     </span>
                 </div>
             </div>
@@ -240,55 +163,30 @@ export default ({ConstructiveDecisions, GeneralContract, GeneralDesign, Geotechn
         }
         case 'zeroCycle': {
             data = ZeroCycle
-            wrapperTitle = 'Нулевой цикл';
-            wrapperDescription =
-                'Проектирование зданий и сооружений – это, ' +
-                'пожалуй, основополагающий этап строительства объекта. ' +
-                'Именно на этой стадии закладывается базис всех последующих этапов ' +
-                'строительных или реконструкционных работ';
+            wrapperTitle = secondBlockBuildingTitles.title.title;
+            wrapperDescription = secondBlockBuildingTitles.description.description;
             link = 'Строительство';
             linkTitle = 'building';
-            description = 'Наше призвание-изучать, придумывать, проектировать, ' +
-                'строить, осуществлять строительный контроль, осуществлять экспертизу проектов, ' +
-                'консультировать, искать и применять новейшие технологии, выбирать наилучшие варианты ' +
-                'решения стоящих перед Вами задач. \n \n Мы живем в период времени, когда отточенная и ' +
-                'яркая мысль двигает экономику вперед, больше чем деньги, а знания приобретают ' +
-                'ключевое значение для успеха всего дела в целом. ' +
-                'Именно поэтому мы сосредоточили свое внимание на инженерном деле, ' +
-                'специальных знаниях и технологиях. \n \n Наше главное конкурентное преимущество – ' +
-                'это четкое видение перспективы и комплексное ведение проектов: от замысла до завершения ' +
-                'проекта и сдачи его в эксплуатацию. Фундаментальные знания, полученные нашими сотрудниками ' +
-                'в учебных заведениях, в совокупности с опытом работы и интеграцией в одной компании, создают объединенный.'
+            description = secondBlockBuildingTitles.firstBlockText.firstBlockText.replace(/{new_line}/g, '\n');
             break;
         }
         case 'сonstructiveDecisions': {
             data = ConstructiveDecisions
-            wrapperTitle = 'Конструктивные решения';
-            wrapperDescription =
-                'Проектирование зданий и сооружений – это, ' +
-                'пожалуй, основополагающий этап строительства объекта. ' +
-                'Именно на этой стадии закладывается базис всех последующих этапов ' +
-                'строительных или реконструкционных работ';
             link = 'Проектирование';
             linkTitle = 'design';
+
+            wrapperTitle = secondBlockTitles.childContentfulDesignSecondPageTitleTextNode.title;
+            wrapperDescription = secondBlockTitles.childContentfulDesignSecondPageDescriptionTextNode.description;
+            const firstBlockText = secondBlockTitles.childContentfulDesignSecondPageFirstBlockTitleTextNode.firstBlockTitle.replace(/{new_line}/g, '\n');
+            const secondBlockText = secondBlockTitles.childContentfulDesignSecondPageSecondBlockTitleTextNode.secondBlockTitle.replace(/{new_line}/g, '\n');
+            const thirdBlockText = secondBlockTitles.childContentfulDesignSecondPageThirdBlockTitleTextNode.thirdBlockTitle.replace(/{new_line}/g, '\n');
+            const list = secondBlockTitles.list;
+
             content = <div className={styles.content}>
                 <div className={styles.contentRow}>
                     <div className={styles.contentRowCol}>
                         <p className={styles.contentDescription}>
-                            Основное направление работы — разработка конструктивной документации для монолитных,
-                            сборных, крупнопанельных зданий с различной конструктивной схемой, решение сложных
-                            геотехнических задач, проектирование технически сложных объектов. В основе нашей
-                            деятельности лежит инженерный подход. Наработанный опыт, база решений, постоянное
-                            взаимодействие с производственным процессом при строительстве, позволяют на данный
-                            момент получать эффективный продукт и конкурировать на рынке проектных работ.
-                            <br/> <br/>
-                            Сегодня не существует похожих объектов, к каждому проекту необходимо проявлять
-                            индивидуальный подход, учитывая требования заказчика, архитектурные решения,
-                            градостроительную ситуацию, геологические условия. При этом на первое место выходит
-                            всеобщее стремление к экономической эффективности проекта. В случае проектирования
-                            с нуля, наши специалисты подключаются с момента формирования концепта и совместно
-                            с архитектором формирует основу здания. В этом случае анализ возможных путей
-                            совершенствования производится на начальной стадии и является наиболее эффективным.
+                            {firstBlockText}
                         </p>
                     </div>
                     <div className={styles.designImageContainer2}>
@@ -301,40 +199,19 @@ export default ({ConstructiveDecisions, GeneralContract, GeneralDesign, Geotechn
                     </div>
                     <div className={styles.contentRowCol}>
                         <p className={styles.contentDescription4}>
-                            В тоже время, много объектов поступает на переработку и оптимизацию конструктивных решений,
-                            в этом случае выполняются предварительные технико-экономические сопоставления для оценки
-                            целесообразности корректировки проекта с учетом всех затрат, если решения экономически
-                            оправданы проект дорабатывается. Добиться оптимального решения получается за счет следующих
-                            направлений:
+                            {secondBlockText}
                         </p>
 
                         <ul className={styles.constrDec} style={{paddingInlineStart: "10px"}}>
-                            <li><span>Комплексный анализ работ по выполнению нулевого цикла, включая фундамент,
-                                устройство свайного основания, технологии и порядка производства работ
-                            </span></li>
-                            <li><span>Общей оптимизации конструктивной схемы
-                            </span></li>
-                            <li><span>Выбора параметров основных несущих конструкций, таких как материалы,
-                                сечения элементов, схемы армирования
-                            </span></li>
+                            {list && list.map(item => {
+                                const tire = item.indexOf('-') === -1 ? 0: item.indexOf('0');
 
-                            <li>
-                                <span>Детальной проработкой конструктивных решений, для исключения отступлений от
-                                    проекта и учета всех возможных факторов при производстве работ.
-                                </span>
-                            </li>
+                                return <li><b>{item.slice(0, tire)}</b> <span>{item.slice(tire)}</span></li>
+                            })}
                         </ul>
                         <p className={styles.contentDescription3}>
-                            Применяются все необходимые современные программные комплексы для работы в информационных
-                            моделях, расчета основных несущих конструкций, геотехнических расчетов, оформления и
-                            выпуска документации. Взаимодействие с информационным моделированием позволяет детально
-                            и точно интегрировать архитектурные и инженерные решения в основные несущие конструкции.
-                            <br/> <br/>
-                            В результате для всех стадий проектирования предоставляем полный пакет технической и
-                            сопроводительной документации, оформленной в соответствии с действующими нормативными
-                            требованиями.
+                            {thirdBlockText}
                         </p>
-
                     </div>
                 </div>
             </div>

@@ -4,7 +4,6 @@ import Img from "gatsby-image";
 import {Link} from "gatsby";
 
 export default ({data, location}) => {
-    console.log('location', location)
 
     return (
         <div className={styles.projectBuilding} style={{ maxWidth: 1718, margin: '0 auto', marginTop: '40px'}}>

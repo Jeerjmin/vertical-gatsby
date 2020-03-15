@@ -5,10 +5,11 @@ import Header from '../header/header'
 import Footer from "../footer/footer";
 import { TransitionProvider, TransitionViews } from "gatsby-plugin-transitions";
 import withLocation from "../../modules/withLocation";
+import {graphql, useStaticQuery} from "gatsby";
+import get from "lodash/get";
 
-class Template extends React.Component {
-  render() {
-    const { location, children, footer, template, pageContext } = this.props
+export default ({ location, children, footer, template, pageContext }) => {
+
     let header
 
     let rootPath = `/`
@@ -16,14 +17,32 @@ class Template extends React.Component {
       rootPath = __PATH_PREFIX__ + `/`
     }
 
-    console.log('_ffff',  this.props)
+      const data = useStaticQuery(
+          graphql`
+query layoutsItemQuery {
+    allContentfulContacts {
+        nodes {
+            phone {
+                phone
+            }
+            email {
+                email
+            }
+        }
+    }
+}
+    `
+      )
 
-    const childrenWithLocation = React.cloneElement(
+      const {phone, email} = data.allContentfulContacts.nodes[0]
+
+      const childrenWithLocation = React.cloneElement(
         <>
           {children}
-          {location && location.pathname !== '/contacts' && <Footer template={template} /> }
+          {location && location.pathname !== '/contacts' && <Footer phone={phone.phone} email={email.email} template={template} /> }
         </>,
         { location })
+
     if (pageContext.type !== 'template') {
       return (
           <Container location={location}>
@@ -49,7 +68,5 @@ class Template extends React.Component {
       )
     }
 
-  }
 }
 
-export default Template

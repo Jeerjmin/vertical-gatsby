@@ -7,8 +7,6 @@ import ProjectsComponent from "../components/projects";
 class ProjectsContainer extends React.Component {
     render() {
 
-        console.log('this', this);
-
         const ConstructiveDecisions = get(this, 'props.data.allContentfulConstructiveDecisions.edges');
         const GeneralContract = get(this, 'props.data.allContentfulGeneralContract.edges');
         const GeneralDesign = get(this, 'props.data.allContentfulGeneralDesign.edges');

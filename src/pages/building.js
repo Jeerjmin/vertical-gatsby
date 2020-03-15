@@ -9,10 +9,11 @@ class BuildingContainer extends React.Component {
 
         const GeneralContract = get(this, 'props.data.allContentfulGeneralContract.edges');
         const ZeroCycle = get(this, 'props.data.allContentfulZeroCycle.edges');
+        const allContentfulBuildingPage = get(this, 'props.data.allContentfulBuildingPage');
 
 
         return (
-                <Building data={[...GeneralContract, ...ZeroCycle ]}/>
+                <Building data={[...GeneralContract, ...ZeroCycle ]} titles={allContentfulBuildingPage.edges[0].node}/>
         )
     }
 }
@@ -57,8 +58,37 @@ export const buildingItemQuery2 = graphql`
                 }
             }
         }
+      allContentfulBuildingPage {
+        edges {
+          node {
+            buildingDescription {
+              buildingDescription
+            }
+            buildingTitle {
+              buildingTitle
+            }
+            childContentfulBuildingPageBuildingDescriptionTextNode {
+              buildingDescription
+            }
+            childContentfulBuildingPageBuildingTitleTextNode {
+              buildingTitle
+            }
+            childContentfulBuildingPageFirstBlockDescriptionTextNode {
+              firstBlockDescription
+            }
+            childContentfulBuildingPageFirstBlockTitleTextNode {
+              firstBlockTitle
+            }
+            childContentfulBuildingPageSecondBlockDescriptionTextNode {
+              secondBlockDescription
+            }
+            childContentfulBuildingPageSecondBlockTitleTextNode {
+              secondBlockTitle
+            }
+          }
+        }
+      }
     }
-
 `
 
 export default BuildingContainer

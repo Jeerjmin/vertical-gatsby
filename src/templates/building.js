@@ -1,18 +1,13 @@
 import React from 'react'
-import Layout from '../components/layouts'
 import styles from './building.module.css'
 import Img from "gatsby-image";
-import {Link} from "gatsby";
 import Header from "../components/header/header";
-import Container from "../components/container";
 import Modal from "react-awesome-modal";
 import Gallery from "../components/gallery";
 import arrowLeftWhite from './arrow-left-white.svg';
 import closeImage from "./close-menu.svg";
 
 class BuildingTemplate extends React.Component {
-
-
     constructor(props) {
         super(props);
         this.state = {
@@ -59,7 +54,6 @@ class BuildingTemplate extends React.Component {
     };
 
     back = () => {
-        console.log('back build')
         window.history.back()
     };
 
@@ -83,6 +77,7 @@ class BuildingTemplate extends React.Component {
         const {item} = this.props.pageContext
 
         return (
+            <div>
             <div className={styles.container}>
                 {item && !item.avatar && <div  style={{background: "grey"}} className={styles.wrapper}   />}
                 {item && item.avatar && <Img  className={styles.wrapper} alt={item.name} fluid={item.avatar.fluid} />}
@@ -158,6 +153,19 @@ class BuildingTemplate extends React.Component {
                         </p>
                     </div>
                 </Modal>
+            </div>
+                {this.state.width < 1400 && item.photos && item.photos.length > 0 &&
+                    <div  className={styles.galleryBottom}>
+                        {item.photos.map((el, i) => {
+                                if (i >=4 ) {
+                                    return null
+                                } else {
+                                    return <div className={styles.galleryItemBoottomContainer} onClick={() => { this.openModal(i) }}><Img className={styles.galleryItemBottom} alt={item.name} fluid={el.fluid} /></div>
+                                }
+                            }
+                        )}
+                    </div>
+                }
             </div>
         )
     }

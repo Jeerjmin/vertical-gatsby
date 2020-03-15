@@ -38,14 +38,9 @@ export default class Gallery extends React.Component {
         ];
 
 
-
-        console.log('this.props.images', this.props.images)
-
         const newImages = this.props.images && this.props.images.map(el => {
             return {original: 'https://' + el.fluid.src.slice(2), thumbnail: 'https://'+ el.fluid.src.slice(2)}
         });
-
-        console.log('newImages', newImages)
 
         return (
             <div>

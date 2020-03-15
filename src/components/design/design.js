@@ -7,15 +7,24 @@ import building1 from './building-1.jpg';
 import building2 from './building-2.png';
 import building3 from './building-3.png';
 
-export default ({data}) => {
+export default ({data, titles}) => {
+
+
+    const mainTitle = titles.childContentfulDesignPageMainTitleTextNode.mainTitle;
+    const mainDescription = titles.childContentfulDesignPageMainDescriptionTextNode.mainDescription;
+    const firstBlockTitle = titles.childContentfulDesignPageFirstBlockTitleTextNode.firstBlockTitle;
+    const firstBlockDescription = titles.childContentfulDesignPageFirstBlockDescriptionTextNode.firstBlockDescription;
+    const secondBlockTitle = titles.childContentfulDesignPageSecondBlockTitleTextNode.secondBlockTitle;
+    const secondBlockDescription = titles.childContentfulDesignPageSecondBlockDescriptionTextNode.secondBlockDescription;
+    const thirdBlockTitle = titles.childContentfulDesignPageThirdBlockTitleTextNode.thirdBlockTitle;
+    const thirdBlockDescription = titles.childContentfulDesignPageThirdBlockDescriptionTextNode.thirdBlockDescription;
 
         return (
             <div className={styles.design} style={{ maxWidth: 1718, margin: '0 auto', marginTop: '40px'}}>
                 <div className={styles.wrapper}>
                     <img src={design} alt="Архитектурно-строительное проектирование" />
-                    <p className={styles.title}>Архитектурно-строительстное проектирование</p>
-                    <p className={styles.description}>Проектирование зданий и сооружений – это, пожалуй, основополагающий этап строительства объекта.
-                        Именно на этой стадии закладывается базис всех последующих этапов строительных или реконструкционных работ</p>
+                    <p className={styles.title}>{mainTitle}</p>
+                    <p className={styles.description}>{mainDescription}</p>
                     <Link to={`/building`}>
                         <button className={styles.link} >
                             Строительство
@@ -31,12 +40,9 @@ export default ({data}) => {
                     <Link to={`/type?type=generalDesign`}>
                         <div className={styles.generalDesign}>
                             <img src={building1} alt="Генеральное проектирование" />
-                                    <h6>Генеральное проектирование</h6>
-                                    <p>Проектирование является профильной деятельностью,
-                                    где мы зарекомендовали себя как профессионалы своего дела.
-                                    Проектная деятельность основана не только на опыте проектирования,
-                                    но и на понимании всех нюансов самого строительного процесса.
-                                    Поэтому мы гарантируем разработку реализуемых и оптимальных проектов
+                                    <h6>{firstBlockTitle}</h6>
+                                    <p>
+                                        {firstBlockDescription}
                                     </p>
                                     <div className={styles.buttonContainer}>
                                         <button>Перейти</button>
@@ -46,12 +52,9 @@ export default ({data}) => {
                     <Link to={`/type?type=сonstructiveDecisions`}>
                         <div className={styles.сonstructiveDecisions}>
                             <img src={building2} alt="Конструктивные решение" />
-                                    <h6>Конструктивные решения</h6>
-                                    <p>Конструктивные решения – это неотъемлемая
-                                    составляющая проекта. Согласно действующим
-                                    нормативам, данный раздел обязательно включается в
-                                    состав документации по вновь возводимому зданию и
-                                    содержит графическую и текстовую информацию
+                                    <h6>{secondBlockTitle}</h6>
+                                    <p>
+                                        {secondBlockDescription}
                                     </p>
                                     <div className={styles.buttonContainer}>
                                         <button>Перейти</button>
@@ -61,15 +64,9 @@ export default ({data}) => {
                     <Link to={`/type?type=geotechnicalSubstantiation`}>
                         <div className={styles.geotechnicalSubstantiation}>
                             <img src={building3} alt="Геотехническое обоснование" />
-                                <h6>Геотехническое обоснование</h6>
+                                <h6>{thirdBlockTitle}</h6>
                                 <p>
-                                Геотехника объединяет инженерную геологию,
-                                занимающуюся исследованием грунтов, механику
-                                грунтов, создающую расчетные модели,
-                                проектирование фундаментов и подземных сооружений
-                                (с учетом особенностей подземных конструкций),
-                                технологию производства работ по их устройству и
-                                мониторинг за ведением этих работ.
+                                    {thirdBlockDescription}
                                 </p>
                                 <div className={styles.buttonContainer}>
                                     <button>Перейти</button>

@@ -227,6 +227,22 @@ p {
      display: flex;
  }
 
+ .galleryBottom {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+
+.galleryItemBoottomContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.galleryItemBottom {
+    cursor: pointer;
+    margin-bottom: 35px;
+    width: 90%;
+}
 
  .galleryItem {
      cursor: pointer;
@@ -244,6 +260,7 @@ p {
      opacity: 1 !important;
      z-index: 1000000;
      cursor: pointer;
+     filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 1));
  }
 
 

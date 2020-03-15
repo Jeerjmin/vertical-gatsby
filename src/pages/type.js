@@ -15,6 +15,11 @@ class TypeContainer extends React.Component {
         const GeotechnicalSubstantation = get(this, 'props.data.allContentfulGeotechnicalSubstantiation.edges');
         const ZeroCycle = get(this, 'props.data.allContentfulZeroCycle.edges');
 
+        const allContentfulDesignFirstBlockPage = get(this, 'props.data.allContentfulDesignFirstBlockPage.edges');
+        const allContentfulDesignSecondPage = get(this, 'props.data.allContentfulDesignSecondPage');
+        const allContentfulDesignThirdPage = get(this, 'props.data.allContentfulDesignThirdPage');
+        const allContentfulBuildingFirstBlock = get(this, 'props.data.allContentfulBuildingFirstBlock.edges');
+        const allContentfulBuildingSecondBlock = get(this, 'props.data.allContentfulBuildingSecondBlock.edges');
 
         const {type} = this.props.param
 
@@ -25,7 +30,13 @@ class TypeContainer extends React.Component {
                     GeneralDesign={GeneralDesign}
                     GeotechnicalSubstantation={GeotechnicalSubstantation}
                     ZeroCycle={ZeroCycle}
-                    type={type}/>
+                    type={type}
+                    firstBlockTitles={allContentfulDesignFirstBlockPage[0].node}
+                    secondBlockTitles={allContentfulDesignSecondPage.nodes[0]}
+                    thirdBlockTitles={allContentfulDesignThirdPage.nodes[0]}
+                    firstBlockBuildingTitles={allContentfulBuildingFirstBlock[0].node}
+                    secondBlockBuildingTitles={allContentfulBuildingSecondBlock[0].node}
+                />
         )
     }
 }
@@ -128,7 +139,111 @@ export const buildingItemQuery = graphql`
                 }
             }
         }
+        
+  allContentfulDesignFirstBlockPage {
+    edges {
+      node {
+        childContentfulDesignFirstBlockPageDescriptionTextNode {
+          description
+        }
+        childContentfulDesignFirstBlockPageFirstBlockTextTextNode {
+          firstBlockText
+        }
+        childContentfulDesignFirstBlockPageNotificationTextNode {
+          notification
+        }
+        childContentfulDesignFirstBlockPageSecondBlockTextTextNode {
+          secondBlockText
+        }
+        childContentfulDesignFirstBlockPageTitleParagraphTextNode {
+          titleParagraph
+        }
+        childContentfulDesignFirstBlockPageTitleTextNode {
+          title
+        }
+        verticalList
+      }
     }
+  }
+  
+    allContentfulDesignSecondPage {
+    nodes {
+      childContentfulDesignSecondPageDescriptionTextNode {
+        description
+      }
+      childContentfulDesignSecondPageFirstBlockTitleTextNode {
+        firstBlockTitle
+      }
+      childContentfulDesignSecondPageSecondBlockTitleTextNode {
+        secondBlockTitle
+      }
+      childContentfulDesignSecondPageThirdBlockTitleTextNode {
+        thirdBlockTitle
+      }
+      childContentfulDesignSecondPageTitleTextNode {
+        title
+      }
+      list
+    }
+  }
+  
+    allContentfulDesignThirdPage {
+    nodes {
+      childContentfulDesignThirdPageDescriptionTextNode {
+        description
+      }
+      childContentfulDesignThirdPageFirstBlockTextTextNode {
+        firstBlockText
+      }
+      childContentfulDesignThirdPageNotificationTextNode {
+        notification
+      }
+      childContentfulDesignThirdPageSecondBlockTextTextNode {
+        secondBlockText
+      }
+      childContentfulDesignThirdPageThirdBlockTextTextNode {
+        thirdBlockText
+      }
+      childContentfulDesignThirdPageTitleTextNode {
+        title
+      }
+      list
+    }
+  }
+  
+    allContentfulBuildingFirstBlock {
+    edges {
+      node {
+        description {
+          description
+        }
+        title {
+          title
+        }
+        firstBlock {
+          firstBlock
+        }
+      }
+    }
+  }
+  
+    allContentfulBuildingSecondBlock {
+    edges {
+      node {
+        title {
+          title
+        }
+        description {
+          description
+        }
+        firstBlockText {
+          firstBlockText
+        }
+      }
+    }
+  }
+  
+}
 
 `
 

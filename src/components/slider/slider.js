@@ -19,7 +19,6 @@ class Slider extends React.Component {
 
     toScrollRight = () => {
         this.containerRef.current.scroll({top: 'auto', left: this.containerRef.current.scrollLeft + 548, behavior: 'smooth'})
-        console.log(' this.containerRef.current.scrollLeft',  this.containerRef.current.scrollLeft)
     };
 
     toScrollLeft = () => {
