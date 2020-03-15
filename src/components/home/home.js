@@ -1,13 +1,9 @@
 import React, { useState } from 'react';
 import styles from './home.module.css'
 import Img from "gatsby-image";
-import { BLOCKS } from "@contentful/rich-text-types"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import {Link} from "gatsby";
 import mouse from './mouse.svg';
 import showRealPlay from './showReal-play.svg';
-import homeDesign from './home-design.jpg';
-import homeBuilding from './home-building.jpg';
 import closeMenu from './close-menu.svg';
 import pauseButton from './pause-button.svg';
 
@@ -32,6 +28,7 @@ export default ({showReal, homeLeft, homeRight}) => {
     const HomeRightTitle = homeRight.title.replace(/{new_line}/g,'\n')
     const HomeRightDescription = homeRight.childContentfulHomeBuildingRightDescriptionTextNode.description.replace(/{new_line}/g,'')
 
+    console.log('showReal', showReal)
         return (
             <div className={styles.container}>
                 {!video &&
@@ -44,10 +41,10 @@ export default ({showReal, homeLeft, homeRight}) => {
                             <button className={styles.showRealButton}>К ПРОЕКТАМ</button>
                         </Link>
                     </div>
-                    <div className={styles.buttonContainerPlay}>
+                    {showReal.url && showReal.url !== 'none' && <div className={styles.buttonContainerPlay}>
                         <img onClick={() => setVideo(true)} className={styles.showRealPlay}
                              src={showRealPlay} alt="Плэй"/>
-                    </div>
+                    </div>}
                 </div>
                 }
                 {video &&
@@ -70,7 +67,7 @@ export default ({showReal, homeLeft, homeRight}) => {
                 </div>
                 <div className={styles.types}>
                     <div className={styles.design}>
-                        <img src={homeDesign} alt="Проектирование" />
+                        <Img className={styles.img} fluid={homeLeft.image.fluid} alt="Проектирование" />
                         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" className={styles.designTitle}>{HomeLeftTitle} </ScrollAnimation>
                         <div className={styles.designDescriptionContainer}>
                             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" className={styles.designDescription}>
@@ -86,7 +83,7 @@ export default ({showReal, homeLeft, homeRight}) => {
                         </ScrollAnimation>
                     </div>
                     <div className={styles.building}>
-                        <img src={homeBuilding} alt="Строительство" />
+                        <Img className={styles.img} fluid={homeRight.image.fluid}  alt="Строительство" />
                         <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" className={styles.buildingTitle}>{HomeRightTitle} </ScrollAnimation>
                         <div className={styles.buildingDescriptionContainer}>
                             <ScrollAnimation animateIn="fadeIn" animateOut="fadeOut" className={styles.buildingDescription}>

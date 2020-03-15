@@ -1,15 +1,11 @@
 import React from 'react'
 import styles from './about.module.css'
 import './styles.css';
-import toCustomers from './toCustomers.jpg';
+import Img from "gatsby-image";
 
 class About extends React.Component {
-
-
     render() {
-
-        const {notification, firstBlockText, secondBlockText, thirdBlockText} = this.props
-
+        const {notification, firstBlockText, secondBlockText, thirdBlockText, image} = this.props
 
         return (
             <div className={styles.about}>
@@ -30,7 +26,7 @@ class About extends React.Component {
                 <div className={styles.toCustomers}>
                     <h4>Заказчикам</h4>
                     <div className={styles.container}>
-                        <img src={toCustomers} alt="Заказчикам" />
+                        <Img className={styles.img} fluid={image && image.fluid} alt="Заказчикам" />
                         <div className={styles.text}>
                             {thirdBlockText}
                         </div>

@@ -163,32 +163,31 @@
 .types {
     display: flex;
     margin-bottom: 100px;
+    width: 100%;
 }
 
 .types a {
     flex: 1;
 }
 
+.types a:nth-child(2) {
+    margin: 0 20px;
+}
+
 .geotechnicalSubstantiation,
 .сonstructiveDecisions,
 .generalDesign {
     position: relative;
-    margin-left: 20px;
+    width: 100%;
+    height: 100%;
 }
 
-.generalDesign {
-    margin: 0;
-}
-
-
-.geotechnicalSubstantiation img,
-.сonstructiveDecisions img,
-.generalDesign img {
+.geotechnicalSubstantiation .img,
+.сonstructiveDecisions .img,
+.generalDesign .img {
     position: relative;
     width: 100%;
     height: 520px;
-    opacity: 0.4;
-
 }
 
 
@@ -360,11 +359,13 @@
         margin: 0;
     }
 
-
     .types {
         flex-direction: column;
     }
 
+    .types a:nth-child(2) {
+        margin: 0
+    }
 
     .geotechnicalSubstantiation h6,
     .сonstructiveDecisions h6,

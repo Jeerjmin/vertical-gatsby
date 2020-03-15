@@ -1,14 +1,11 @@
 import React from 'react'
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import { CSSTransition, TransitionGroup } from "react-transition-group";
-
 import withLocation from "../../modules/withLocation";
 
 import styles from './index.module.css'
 import About from "./about";
 import Team from "./team";
 import Objects from "./objects";
-import Work from "./work";
 import AboutNavigation from "./navigation";
 import './styles.css';
 
@@ -33,12 +30,14 @@ class AboutComponent extends React.Component {
                 const secondBlockText = aboutCompanyTitles[0].node.secondBlockText.secondBlockText.replace(/{new_line}/g, '\n');
                 const notification = aboutCompanyTitles[0].node.notification.notification.replace(/{new_line}/g, '\n');
                 const thirdBlockText = aboutCompanyTitles[0].node.thirdBlockText.thirdBlockText.replace(/{new_line}/g, '\n');
+                const image = aboutCompanyTitles[0].node.thirdBlockImage;
 
                 return <About
                               firstBlockText={firstBlockText}
                               secondBlockText={secondBlockText}
                               notification={notification}
                               thirdBlockText={thirdBlockText}
+                              image={image}
                 />;
             }
             case 'team': {
@@ -47,16 +46,17 @@ class AboutComponent extends React.Component {
                 const secondBlockText = aboutOurTeamTitles[0].secondBlockText.secondBlockText.replace(/{new_line}/g, '\n');
                 const notification = aboutOurTeamTitles[0].notification.notification.replace(/{new_line}/g, '\n');
                 const thirdBlockText = aboutOurTeamTitles[0].thirdBlockText.thirdBlockText.replace(/{new_line}/g, '\n');
+                const image = aboutOurTeamTitles[0].thirdBlockImage;
+
                 return <Team
                         secondTitle={secondTitle}
                         firstBlockText={firstBlockText}
                         secondBlockText={secondBlockText}
                         notification={notification}
                         thirdBlockText={thirdBlockText}
+                        image={image}
                 />;
             }
-            case 'work':
-                return <Work />
             case 'object':
                 return <Objects />;
             case 'documents': {
@@ -65,8 +65,22 @@ class AboutComponent extends React.Component {
 
                 return <Documents filesLinks={filesLinks} filesNames={filesNames}/>;
             }
-            default:
-                return <About />;
+            default: {
+                const firstBlockText = aboutCompanyTitles[0].node.firstBlockText.firstBlockText.replace(/{new_line}/g, '\n');
+                const secondBlockText = aboutCompanyTitles[0].node.secondBlockText.secondBlockText.replace(/{new_line}/g, '\n');
+                const notification = aboutCompanyTitles[0].node.notification.notification.replace(/{new_line}/g, '\n');
+                const thirdBlockText = aboutCompanyTitles[0].node.thirdBlockText.thirdBlockText.replace(/{new_line}/g, '\n');
+                const image = aboutCompanyTitles[0].node.thirdBlockImage;
+
+                return <About
+                    firstBlockText={firstBlockText}
+                    secondBlockText={secondBlockText}
+                    notification={notification}
+                    thirdBlockText={thirdBlockText}
+                    image={image}
+                />;
+            }
+
         }
     }
 
@@ -74,6 +88,7 @@ class AboutComponent extends React.Component {
 
         let title;
         let description;
+        let image;
         const {aboutCompanyTitles, aboutDocuments, aboutOurTeamTitles} = this.props
 
         switch (this.props.param.type) {
@@ -101,7 +116,8 @@ class AboutComponent extends React.Component {
                 break;
             }
             default: {
-                title = 'О компании'
+                title = aboutCompanyTitles[0].node.title.title;
+                description = aboutCompanyTitles[0].node.description.description.replace(/{new_line}/g, '\n');
             }
         }
 
@@ -125,8 +141,6 @@ class AboutComponent extends React.Component {
                     </CSSTransition>
                 </TransitionGroup>
             </div>
-
-
         );
     }
 }

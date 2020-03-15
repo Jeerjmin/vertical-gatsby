@@ -162,6 +162,28 @@ export const buildingItemQuery = graphql`
           title
         }
         verticalList
+        firstBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
+        secondBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
       }
     }
   }
@@ -184,6 +206,28 @@ export const buildingItemQuery = graphql`
         title
       }
       list
+      firstBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
+        secondBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
     }
   }
   
@@ -208,6 +252,39 @@ export const buildingItemQuery = graphql`
         title
       }
       list
+      firstBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
+        secondBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
+        thirdBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
     }
   }
   
@@ -222,6 +299,17 @@ export const buildingItemQuery = graphql`
         }
         firstBlock {
           firstBlock
+        }
+        firstBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
         }
       }
     }
@@ -238,6 +326,17 @@ export const buildingItemQuery = graphql`
         }
         firstBlockText {
           firstBlockText
+        }
+        firstBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
         }
       }
     }

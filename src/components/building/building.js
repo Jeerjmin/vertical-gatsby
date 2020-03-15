@@ -3,8 +3,8 @@ import styles from './building.module.css'
 import Slider from "../slider/slider";
 import {Link} from "gatsby";
 import building from './building.jpg';
-import building1 from './building-1.jpg';
-import building2 from './building-2.png';
+
+import Img from "gatsby-image";
 
 export default ({data, titles}) => {
 
@@ -35,7 +35,7 @@ export default ({data, titles}) => {
             <div className={styles.types}>
                 <Link to={'/type?type=generalContract'}>
                     <div className={styles.generalContract}>
-                        <img src={building1} alt="Генеральный подряд" />
+                        <Img className={styles.img} fluid={titles.firstBlockImage.fluid} alt="Генеральный подряд" />
                         <h6>{firstBlockTitle}</h6>
                         <p>
                             {firstBlockDescription}
@@ -47,7 +47,7 @@ export default ({data, titles}) => {
                 </Link>
                 <Link to={`/type?type=zeroCycle`}>
                     <div className={styles.zeroCycle}>
-                        <img src={building2} alt="Нулевой цикл" />
+                        <Img className={styles.img} fluid={titles.secondBlockImage.fluid} alt="Нулевой цикл" />
                         <h6>{secondBlockTitle}</h6>
                         <p>
                             {secondBlockDescription}

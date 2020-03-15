@@ -85,6 +85,28 @@ export const buildingItemQuery2 = graphql`
             childContentfulBuildingPageSecondBlockTitleTextNode {
               secondBlockTitle
             }
+        firstBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
+        secondBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
           }
         }
       }

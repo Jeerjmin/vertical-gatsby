@@ -4,8 +4,8 @@ import {Link} from "gatsby";
 import Slider from "../slider/slider";
 import designImage from './design.jpg';
 import typeWrapper from './type-wrapper.png';
-import arrowRight from './arrow-right.svg';
 import designImage2 from './design2.jpg';
+import Img from "gatsby-image";
 
 export default ({
                     ConstructiveDecisions,
@@ -29,6 +29,7 @@ export default ({
     let list;
     let content;
     let data;
+    let image;
 
 
     console.log('titles', firstBlockBuildingTitles, secondBlockBuildingTitles)
@@ -41,6 +42,7 @@ export default ({
             link = 'Строительство';
             linkTitle = 'building';
             description = firstBlockBuildingTitles.firstBlock.firstBlock.replace(/{new_line}/g, '\n');
+            image = firstBlockBuildingTitles.firstBlockImage;
             break;
         }
         case 'generalDesign': {
@@ -64,12 +66,12 @@ export default ({
                             </p>
                         </div>
                         <div className={styles.designImageContainer2}>
-                            <img  className={styles.designImage} src={typeWrapper} />
+                            <Img fluid={firstBlockTitles.firstBlockImage.fluid} className={styles.designImage} src={typeWrapper} />
                         </div>
                     </div>
                     <div className={styles.contentRow}>
                         <div className={styles.designImageContainer}>
-                            <img className={styles.designImage2} src={designImage2} />
+                            <Img fluid={firstBlockTitles.secondBlockImage.fluid}  className={styles.designImage2} src={designImage2} />
                         </div>
                         <div className={styles.contentRowCol}>
                             <p className={styles.contentDescription2}>
@@ -79,7 +81,7 @@ export default ({
                             <h3 className={styles.verticalEto}>Vertical - это</h3>
                             <ul className={styles.generalProject} style={{paddingInlineStart: "10px"}}>
                                 {list && list.map(item => {
-                                    const tire = item.indexOf('-') === -1 ? 0: item.indexOf('-');
+                                    const tire = item.indexOf('—') === -1 ? 0: item.indexOf('—');
 
                                     return <li><b>{item.slice(0, tire)}</b> <span>{item.slice(tire)}</span></li>
                                 })}
@@ -117,12 +119,12 @@ export default ({
                         </p>
                     </div>
                     <div className={styles.designImageContainer2}>
-                        <img  className={styles.designImage} src={typeWrapper} />
+                        <Img fluid={thirdBlockTitles.firstBlockImage.fluid}  className={styles.designImage} />
                     </div>
                 </div>
                 <div className={styles.contentRow}>
                     <div className={styles.designImageContainer}>
-                        <img className={styles.designImage2} src={designImage2} />
+                        <Img fluid={thirdBlockTitles.secondBlockImage.fluid} className={styles.designImage2} />
                     </div>
                     <div className={styles.contentRowCol}>
                         <p className={styles.contentDescription2}>
@@ -132,7 +134,7 @@ export default ({
                         <h3 className={styles.verticalEto}>В геотехническую оценку входит:</h3>
                         <ul className={styles.geoBase} style={{paddingInlineStart: "10px"}}>
                             {list && list.map(item => {
-                                const tire = item.indexOf('-') === -1 ? 0: item.indexOf('0');
+                                const tire = item.indexOf('—') === -1 ? 0: item.indexOf('—');
 
                                 return <li><b>{item.slice(0, tire)}</b> <span>{item.slice(tire)}</span></li>
                             })}
@@ -149,7 +151,7 @@ export default ({
                         </p>
                     </div>
                     <div className={styles.designImageContainer2}>
-                        <img className={styles.designImage3} src={typeWrapper} />
+                        <Img fluid={thirdBlockTitles.thirdBlockImage.fluid} className={styles.designImage3} src={typeWrapper} />
                     </div>
                 </div>
                 <div className={styles.description2}>
@@ -168,6 +170,7 @@ export default ({
             link = 'Строительство';
             linkTitle = 'building';
             description = secondBlockBuildingTitles.firstBlockText.firstBlockText.replace(/{new_line}/g, '\n');
+            image = secondBlockBuildingTitles.firstBlockImage;
             break;
         }
         case 'сonstructiveDecisions': {
@@ -190,12 +193,12 @@ export default ({
                         </p>
                     </div>
                     <div className={styles.designImageContainer2}>
-                        <img  className={styles.designImage} src={typeWrapper} />
+                        <Img fluid={secondBlockTitles.firstBlockImage.fluid} className={styles.designImage} />
                     </div>
                 </div>
                 <div className={styles.contentRow}>
                     <div className={styles.designImageContainer}>
-                        <img className={styles.designImage2} src={designImage2} />
+                        <Img fluid={secondBlockTitles.secondBlockImage.fluid} className={styles.designImage2}/>
                     </div>
                     <div className={styles.contentRowCol}>
                         <p className={styles.contentDescription4}>
@@ -204,7 +207,7 @@ export default ({
 
                         <ul className={styles.constrDec} style={{paddingInlineStart: "10px"}}>
                             {list && list.map(item => {
-                                const tire = item.indexOf('-') === -1 ? 0: item.indexOf('0');
+                                const tire = item.indexOf('—') === -1 ? 0: item.indexOf('—');
 
                                 return <li><b>{item.slice(0, tire)}</b> <span>{item.slice(tire)}</span></li>
                             })}
@@ -238,8 +241,9 @@ export default ({
                     {description}
                 </p>}
                 {description && <div className={styles.image}>
-                    <img src={typeWrapper} alt={wrapperTitle} />
-                    </div> }
+                                    <Img fluid={image.fluid} alt={wrapperTitle} />
+                                </div>
+                }
 
                 {content}
             </div>

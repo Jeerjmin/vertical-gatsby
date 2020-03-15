@@ -3,10 +3,7 @@ import styles from './design.module.css'
 import Slider from "../slider/slider";
 import {Link} from "gatsby";
 import design from './design.jpg'
-import building1 from './building-1.jpg';
-import building2 from './building-2.png';
-import building3 from './building-3.png';
-
+import Img from "gatsby-image";
 export default ({data, titles}) => {
 
 
@@ -18,6 +15,8 @@ export default ({data, titles}) => {
     const secondBlockDescription = titles.childContentfulDesignPageSecondBlockDescriptionTextNode.secondBlockDescription;
     const thirdBlockTitle = titles.childContentfulDesignPageThirdBlockTitleTextNode.thirdBlockTitle;
     const thirdBlockDescription = titles.childContentfulDesignPageThirdBlockDescriptionTextNode.thirdBlockDescription;
+
+    console.log('titles', titles)
 
         return (
             <div className={styles.design} style={{ maxWidth: 1718, margin: '0 auto', marginTop: '40px'}}>
@@ -39,7 +38,7 @@ export default ({data, titles}) => {
                 <div className={styles.types}>
                     <Link to={`/type?type=generalDesign`}>
                         <div className={styles.generalDesign}>
-                            <img src={building1} alt="Генеральное проектирование" />
+                            <Img className={styles.img} fluid={titles.firstBlockImage.fluid} alt="Генеральное проектирование" />
                                     <h6>{firstBlockTitle}</h6>
                                     <p>
                                         {firstBlockDescription}
@@ -51,7 +50,7 @@ export default ({data, titles}) => {
                     </Link>
                     <Link to={`/type?type=сonstructiveDecisions`}>
                         <div className={styles.сonstructiveDecisions}>
-                            <img src={building2} alt="Конструктивные решение" />
+                            <Img className={styles.img} fluid={titles.secondBlockImage.fluid} alt="Конструктивные решение" />
                                     <h6>{secondBlockTitle}</h6>
                                     <p>
                                         {secondBlockDescription}
@@ -63,7 +62,7 @@ export default ({data, titles}) => {
                     </Link>
                     <Link to={`/type?type=geotechnicalSubstantiation`}>
                         <div className={styles.geotechnicalSubstantiation}>
-                            <img src={building3} alt="Геотехническое обоснование" />
+                            <Img className={styles.img} fluid={titles.thirdBlockImage.fluid} alt="Геотехническое обоснование" />
                                 <h6>{thirdBlockTitle}</h6>
                                 <p>
                                     {thirdBlockDescription}

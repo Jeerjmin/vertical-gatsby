@@ -7,10 +7,10 @@ import withLocation from "../../modules/withLocation";
 
 class Slider extends React.Component {
 
-    // constructor(props) {
-    //     super(props);
-    //     this.containerRef = React.createRef()
-    // }
+    constructor(props) {
+        super(props);
+        this.containerRef = React.createRef()
+    }
 
     componentDidMount() {
 

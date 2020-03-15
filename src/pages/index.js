@@ -46,6 +46,7 @@ export const pageQuery = graphql`
               sizes
             }
           }
+          url
       }
     }
   }
@@ -57,6 +58,17 @@ export const pageQuery = graphql`
           description
         }
         title
+        image {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
       }
     }
   }
@@ -66,6 +78,17 @@ export const pageQuery = graphql`
         title
         description {
           description
+        }
+        image {
+          fluid(quality: 100, maxWidth: 1720, toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
         }
       }
     }

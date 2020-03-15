@@ -45,6 +45,17 @@ export const buildingItemQuery = graphql`
             title {
               title
             }
+            thirdBlockImage {
+              fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+                  base64
+                  aspectRatio
+                  src
+                  srcSet
+                  srcWebp
+                  srcSetWebp
+                  sizes
+              }
+            }
           }
         }
       }
@@ -85,6 +96,17 @@ export const buildingItemQuery = graphql`
       thirdBlockText {
         thirdBlockText
       }
+      thirdBlockImage {
+      fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+          base64
+          aspectRatio
+          src
+          srcSet
+          srcWebp
+          srcSetWebp
+          sizes
+      }
+    }
     }
   }
       

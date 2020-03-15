@@ -105,6 +105,40 @@ query designItemQuery {
         childContentfulDesignPageThirdBlockTitleTextNode {
           thirdBlockTitle
         }
+        
+        firstBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
+        secondBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
+        thirdBlockImage {
+          fluid(quality: 100, maxWidth: 1720,  toFormat: JPG) {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+          }
+        }
       }
     }
   }
