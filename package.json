@@ -19,7 +19,7 @@
     "gatsby-plugin-sharp": "^2.2.36",
     "gatsby-plugin-transitions": "1.5.0",
     "gatsby-source-contentful": "^2.1.55",
-    "gatsby-transformer-remark": "^2.6.32",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.3.2",
     "lodash": "^4.17.11",
     "react": "^16.11.0",
